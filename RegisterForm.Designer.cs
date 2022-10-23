@@ -28,384 +28,864 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.PanelLogo = new System.Windows.Forms.Panel();
             this.LeftPanel = new System.Windows.Forms.Panel();
-            this.RightPanel = new System.Windows.Forms.Panel();
-            this.GmsLogo = new System.Windows.Forms.Label();
-            this.EmailText = new System.Windows.Forms.TextBox();
-            this.Email = new System.Windows.Forms.Label();
-            this.FirstNameText = new System.Windows.Forms.TextBox();
-            this.FirstName = new System.Windows.Forms.Label();
-            this.LastName = new System.Windows.Forms.Label();
-            this.LatNameText = new System.Windows.Forms.TextBox();
-            this.Password = new System.Windows.Forms.Label();
-            this.PaswordText = new System.Windows.Forms.TextBox();
-            this.ConfirmPassword = new System.Windows.Forms.Label();
-            this.ConfirmText = new System.Windows.Forms.TextBox();
-            this.PhoneNumber = new System.Windows.Forms.Label();
-            this.Prefixtext = new System.Windows.Forms.TextBox();
-            this.TelText = new System.Windows.Forms.TextBox();
-            this.Country = new System.Windows.Forms.Label();
-            this.City = new System.Windows.Forms.Label();
-            this.Birthday = new System.Windows.Forms.Label();
-            this.Choose = new System.Windows.Forms.ListBox();
-            this.CityList = new System.Windows.Forms.ListBox();
-            this.DateTimeChoose = new System.Windows.Forms.DateTimePicker();
-            this.TermsServices = new System.Windows.Forms.Label();
-            this.TermsServicesBox = new System.Windows.Forms.CheckBox();
-            this.TermsServicesLink = new System.Windows.Forms.LinkLabel();
-            this.SignUpButton = new System.Windows.Forms.Button();
-            this.PanelLogo.SuspendLayout();
+            this.city = new System.Windows.Forms.ComboBox();
+            this.country = new System.Windows.Forms.ComboBox();
+            this.Birthday = new System.Windows.Forms.DateTimePicker();
+            this.newUsername = new System.Windows.Forms.TextBox();
+            this.newUsernameLbl = new System.Windows.Forms.Label();
+            this.signupTitle = new System.Windows.Forms.Label();
+            this.loginLink = new System.Windows.Forms.LinkLabel();
+            this.loginSuggestion = new System.Windows.Forms.Label();
+            this.signupBtn = new System.Windows.Forms.Button();
+            this.termsOfServiceLink = new System.Windows.Forms.LinkLabel();
+            this.readTermsOfService = new System.Windows.Forms.Label();
+            this.agreement = new System.Windows.Forms.CheckBox();
+            this.cityLbl = new System.Windows.Forms.Label();
+            this.countryLbl = new System.Windows.Forms.Label();
+            this.gender = new System.Windows.Forms.ComboBox();
+            this.genderLbl = new System.Windows.Forms.Label();
+            this.birthdayLbl = new System.Windows.Forms.Label();
+            this.prefix = new System.Windows.Forms.TextBox();
+            this.phone = new System.Windows.Forms.TextBox();
+            this.phoneLbl = new System.Windows.Forms.Label();
+            this.confirmPass = new System.Windows.Forms.TextBox();
+            this.confirmPassLbl = new System.Windows.Forms.Label();
+            this.newPass = new System.Windows.Forms.TextBox();
+            this.newPassLbl = new System.Windows.Forms.Label();
+            this.email = new System.Windows.Forms.TextBox();
+            this.emailLbl = new System.Windows.Forms.Label();
+            this.lastname = new System.Windows.Forms.TextBox();
+            this.lastnameLbl = new System.Windows.Forms.Label();
+            this.firstname = new System.Windows.Forms.TextBox();
+            this.firstnameLbl = new System.Windows.Forms.Label();
             this.LeftPanel.SuspendLayout();
-            this.RightPanel.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // PanelLogo
-            // 
-            this.PanelLogo.Controls.Add(this.GmsLogo);
-            this.PanelLogo.Dock = System.Windows.Forms.DockStyle.Top;
-            this.PanelLogo.Location = new System.Drawing.Point(0, 0);
-            this.PanelLogo.Name = "PanelLogo";
-            this.PanelLogo.Size = new System.Drawing.Size(982, 100);
-            this.PanelLogo.TabIndex = 0;
             // 
             // LeftPanel
             // 
-            this.LeftPanel.Controls.Add(this.ConfirmText);
-            this.LeftPanel.Controls.Add(this.ConfirmPassword);
-            this.LeftPanel.Controls.Add(this.PaswordText);
-            this.LeftPanel.Controls.Add(this.Password);
-            this.LeftPanel.Controls.Add(this.LatNameText);
-            this.LeftPanel.Controls.Add(this.LastName);
-            this.LeftPanel.Controls.Add(this.EmailText);
-            this.LeftPanel.Controls.Add(this.Email);
-            this.LeftPanel.Controls.Add(this.FirstNameText);
-            this.LeftPanel.Controls.Add(this.FirstName);
-            this.LeftPanel.Dock = System.Windows.Forms.DockStyle.Left;
-            this.LeftPanel.Location = new System.Drawing.Point(0, 100);
+            this.LeftPanel.Controls.Add(this.city);
+            this.LeftPanel.Controls.Add(this.country);
+            this.LeftPanel.Controls.Add(this.Birthday);
+            this.LeftPanel.Controls.Add(this.newUsername);
+            this.LeftPanel.Controls.Add(this.newUsernameLbl);
+            this.LeftPanel.Controls.Add(this.signupTitle);
+            this.LeftPanel.Controls.Add(this.loginLink);
+            this.LeftPanel.Controls.Add(this.loginSuggestion);
+            this.LeftPanel.Controls.Add(this.signupBtn);
+            this.LeftPanel.Controls.Add(this.termsOfServiceLink);
+            this.LeftPanel.Controls.Add(this.readTermsOfService);
+            this.LeftPanel.Controls.Add(this.agreement);
+            this.LeftPanel.Controls.Add(this.cityLbl);
+            this.LeftPanel.Controls.Add(this.countryLbl);
+            this.LeftPanel.Controls.Add(this.gender);
+            this.LeftPanel.Controls.Add(this.genderLbl);
+            this.LeftPanel.Controls.Add(this.birthdayLbl);
+            this.LeftPanel.Controls.Add(this.prefix);
+            this.LeftPanel.Controls.Add(this.phone);
+            this.LeftPanel.Controls.Add(this.phoneLbl);
+            this.LeftPanel.Controls.Add(this.confirmPass);
+            this.LeftPanel.Controls.Add(this.confirmPassLbl);
+            this.LeftPanel.Controls.Add(this.newPass);
+            this.LeftPanel.Controls.Add(this.newPassLbl);
+            this.LeftPanel.Controls.Add(this.email);
+            this.LeftPanel.Controls.Add(this.emailLbl);
+            this.LeftPanel.Controls.Add(this.lastname);
+            this.LeftPanel.Controls.Add(this.lastnameLbl);
+            this.LeftPanel.Controls.Add(this.firstname);
+            this.LeftPanel.Controls.Add(this.firstnameLbl);
+            this.LeftPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.LeftPanel.Location = new System.Drawing.Point(0, 0);
             this.LeftPanel.Name = "LeftPanel";
-            this.LeftPanel.Size = new System.Drawing.Size(484, 553);
+            this.LeftPanel.Size = new System.Drawing.Size(1100, 672);
             this.LeftPanel.TabIndex = 1;
             // 
-            // RightPanel
+            // city
             // 
-            this.RightPanel.Controls.Add(this.SignUpButton);
-            this.RightPanel.Controls.Add(this.TermsServicesLink);
-            this.RightPanel.Controls.Add(this.TermsServicesBox);
-            this.RightPanel.Controls.Add(this.TermsServices);
-            this.RightPanel.Controls.Add(this.DateTimeChoose);
-            this.RightPanel.Controls.Add(this.CityList);
-            this.RightPanel.Controls.Add(this.Choose);
-            this.RightPanel.Controls.Add(this.Birthday);
-            this.RightPanel.Controls.Add(this.City);
-            this.RightPanel.Controls.Add(this.Country);
-            this.RightPanel.Controls.Add(this.TelText);
-            this.RightPanel.Controls.Add(this.Prefixtext);
-            this.RightPanel.Controls.Add(this.PhoneNumber);
-            this.RightPanel.Dock = System.Windows.Forms.DockStyle.Right;
-            this.RightPanel.Location = new System.Drawing.Point(490, 100);
-            this.RightPanel.Name = "RightPanel";
-            this.RightPanel.Size = new System.Drawing.Size(492, 553);
-            this.RightPanel.TabIndex = 2;
-            this.RightPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.RightPanel_Paint);
+            this.city.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.city.Font = new System.Drawing.Font("Montserrat", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.city.FormattingEnabled = true;
+            this.city.Items.AddRange(new object[] {
+            "Abu Dhabi",
+            "Abuja",
+            "Accra",
+            "Addis Ababa",
+            "Algiers",
+            "Amman",
+            "Amsterdam[13]",
+            "Andorra la Vella",
+            "Ankara",
+            "Antananarivo",
+            "Apia",
+            "Ashgabat",
+            "Asmara",
+            "Asuncion",
+            "Athens",
+            "Baghdad",
+            "Baku",
+            "Bamako",
+            "Bandar Seri Begawan",
+            "Bangkok",
+            "Bangui",
+            "Banjul",
+            "Basseterre",
+            "Beijing",
+            "Beirut",
+            "Belfast",
+            "Belgrade",
+            "Belmopan",
+            "Berlin",
+            "Bern",
+            "Bishkek",
+            "Bissau",
+            "Bogota",
+            "Brasilia",
+            "Bratislava",
+            "Brazzaville",
+            "Bridgetown",
+            "Brussels",
+            "Bucharest",
+            "Budapest",
+            "Buenos Aires",
+            "Cairo",
+            "Canberra",
+            "Caracas",
+            "Cardiff",
+            "Castries",
+            "Chisinau",
+            "Colombo[18]",
+            "Conakry",
+            "Copenhagen",
+            "Dakar",
+            "Damascus",
+            "Dhaka",
+            "Dili",
+            "Djibouti",
+            "Dodoma[20]",
+            "Doha",
+            "Dublin",
+            "Dushanbe",
+            "Edinburgh",
+            "Freetown",
+            "Funafuti[21]",
+            "Gaborone",
+            "Georgetown",
+            "Gitega[3]",
+            "Guatemala City",
+            "Hanoi",
+            "Harare",
+            "Havana",
+            "Helsinki",
+            "Honiara",
+            "Islamabad",
+            "Jakarta",
+            "Jerusalem (very limited international recognition)[9]",
+            "Juba",
+            "Kabul",
+            "Kampala",
+            "Kathmandu",
+            "Khartoum",
+            "Kiev",
+            "Kigali",
+            "Kingston",
+            "Kingstown",
+            "Kinshasa",
+            "Kuala Lumpur[11]",
+            "Kuwait City",
+            "La Paz (administrative), Sucre (official)[2]",
+            "Libreville",
+            "Lilongwe",
+            "Lima",
+            "Lisbon",
+            "Ljubljana",
+            "Lome",
+            "London",
+            "London",
+            "Luanda",
+            "Lusaka",
+            "Luxembourg",
+            "Madrid",
+            "Majuro",
+            "Malabo",
+            "Male",
+            "Managua",
+            "Manama",
+            "Manila",
+            "Maputo",
+            "Maseru",
+            "Mbabana[8]",
+            "Melekeok",
+            "Mexico City",
+            "Minsk",
+            "Mogadishu",
+            "Monaco",
+            "Monrovia",
+            "Montevideo",
+            "Moroni",
+            "Moscow",
+            "Muscat",
+            "N\'Djamena",
+            "Nairobi",
+            "Nassau",
+            "Nay Pyi Taw[12]",
+            "New Delhi",
+            "Niamey",
+            "Nicosia",
+            "No official capital",
+            "Nouakchott",
+            "Nuku\'alofa",
+            "Nur-Sultan[10]",
+            "Oslo",
+            "Ottawa",
+            "Ouagadougou",
+            "Palikir",
+            "Panama City",
+            "Paramaribo",
+            "Paris",
+            "Phnom Penh",
+            "Podgorica",
+            "Port au Prince",
+            "Port Louis",
+            "Port Moresby",
+            "Port of Spain",
+            "Port Vila",
+            "Porto Novo[1]",
+            "Prague",
+            "Praia",
+            "Pretoria, Bloemfontein, Cape Town[17]",
+            "Pristina",
+            "Pyongyang",
+            "Quito",
+            "Rabat",
+            "Reykjavik",
+            "Riga",
+            "Riyadh",
+            "Rome",
+            "Roseau",
+            "Saint George\'s",
+            "Saint John\'s",
+            "San Jose",
+            "San Marino",
+            "San Salvador",
+            "Sana\'a[23]",
+            "Santiago",
+            "Santo Domingo",
+            "Sao Tome",
+            "Sarajevo",
+            "Seoul",
+            "Singapore",
+            "Skopje",
+            "Sofia",
+            "Stockholm",
+            "Suva",
+            "Taipei",
+            "Tallinn",
+            "Tarawa Atoll",
+            "Tashkent",
+            "Tbilisi",
+            "Tegucigalpa",
+            "Tehran",
+            "Thimphu",
+            "Tirana (Tirane)",
+            "Tokyo",
+            "Tripoli",
+            "Tunis",
+            "Ulaanbaatar",
+            "Vaduz",
+            "Valletta",
+            "Vatican City",
+            "Victoria",
+            "Vienna",
+            "Vientiane",
+            "Vilnius",
+            "Warsaw",
+            "Washington D.C.",
+            "Wellington",
+            "Windhoek",
+            "Yamoussoukro[4]",
+            "Yaounde",
+            "Yerevan",
+            "Zagreb"});
+            this.city.Location = new System.Drawing.Point(297, 477);
+            this.city.Name = "city";
+            this.city.Size = new System.Drawing.Size(148, 32);
+            this.city.TabIndex = 65;
+            this.city.Text = "City";
             // 
-            // GmsLogo
+            // country
             // 
-            this.GmsLogo.AutoSize = true;
-            this.GmsLogo.Font = new System.Drawing.Font("Montserrat", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GmsLogo.Location = new System.Drawing.Point(404, 29);
-            this.GmsLogo.Name = "GmsLogo";
-            this.GmsLogo.Size = new System.Drawing.Size(119, 55);
-            this.GmsLogo.TabIndex = 0;
-            this.GmsLogo.Text = "GMS";
-            // 
-            // EmailText
-            // 
-            this.EmailText.Font = new System.Drawing.Font("Montserrat", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.EmailText.ForeColor = System.Drawing.Color.DimGray;
-            this.EmailText.Location = new System.Drawing.Point(199, 118);
-            this.EmailText.Multiline = true;
-            this.EmailText.Name = "EmailText";
-            this.EmailText.Size = new System.Drawing.Size(186, 34);
-            this.EmailText.TabIndex = 8;
-            this.EmailText.Text = "Text...";
-            // 
-            // Email
-            // 
-            this.Email.AutoSize = true;
-            this.Email.Font = new System.Drawing.Font("Montserrat", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Email.Location = new System.Drawing.Point(63, 120);
-            this.Email.Name = "Email";
-            this.Email.Size = new System.Drawing.Size(79, 32);
-            this.Email.TabIndex = 7;
-            this.Email.Text = "Email";
-            this.Email.Click += new System.EventHandler(this.Email_Click);
-            // 
-            // FirstNameText
-            // 
-            this.FirstNameText.Font = new System.Drawing.Font("Montserrat", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FirstNameText.ForeColor = System.Drawing.Color.DimGray;
-            this.FirstNameText.Location = new System.Drawing.Point(199, 29);
-            this.FirstNameText.Multiline = true;
-            this.FirstNameText.Name = "FirstNameText";
-            this.FirstNameText.Size = new System.Drawing.Size(186, 34);
-            this.FirstNameText.TabIndex = 6;
-            this.FirstNameText.Text = "Text...";
-            // 
-            // FirstName
-            // 
-            this.FirstName.AutoSize = true;
-            this.FirstName.Font = new System.Drawing.Font("Montserrat", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FirstName.Location = new System.Drawing.Point(37, 29);
-            this.FirstName.Name = "FirstName";
-            this.FirstName.Size = new System.Drawing.Size(141, 32);
-            this.FirstName.TabIndex = 5;
-            this.FirstName.Text = "First Name";
-            // 
-            // LastName
-            // 
-            this.LastName.AutoSize = true;
-            this.LastName.Font = new System.Drawing.Font("Montserrat", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LastName.Location = new System.Drawing.Point(37, 208);
-            this.LastName.Name = "LastName";
-            this.LastName.Size = new System.Drawing.Size(133, 32);
-            this.LastName.TabIndex = 9;
-            this.LastName.Text = "LastName";
-            // 
-            // LatNameText
-            // 
-            this.LatNameText.Font = new System.Drawing.Font("Montserrat", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LatNameText.ForeColor = System.Drawing.Color.DimGray;
-            this.LatNameText.Location = new System.Drawing.Point(199, 211);
-            this.LatNameText.Multiline = true;
-            this.LatNameText.Name = "LatNameText";
-            this.LatNameText.Size = new System.Drawing.Size(186, 34);
-            this.LatNameText.TabIndex = 10;
-            this.LatNameText.Text = "Text...";
-            // 
-            // Password
-            // 
-            this.Password.AutoSize = true;
-            this.Password.Font = new System.Drawing.Font("Montserrat", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Password.Location = new System.Drawing.Point(37, 292);
-            this.Password.Name = "Password";
-            this.Password.Size = new System.Drawing.Size(126, 32);
-            this.Password.TabIndex = 11;
-            this.Password.Text = "Password";
-            // 
-            // PaswordText
-            // 
-            this.PaswordText.Font = new System.Drawing.Font("Montserrat", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PaswordText.ForeColor = System.Drawing.Color.DimGray;
-            this.PaswordText.Location = new System.Drawing.Point(199, 295);
-            this.PaswordText.Multiline = true;
-            this.PaswordText.Name = "PaswordText";
-            this.PaswordText.Size = new System.Drawing.Size(186, 34);
-            this.PaswordText.TabIndex = 12;
-            this.PaswordText.Text = "Text...";
-            // 
-            // ConfirmPassword
-            // 
-            this.ConfirmPassword.AutoSize = true;
-            this.ConfirmPassword.Font = new System.Drawing.Font("Montserrat", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ConfirmPassword.Location = new System.Drawing.Point(50, 375);
-            this.ConfirmPassword.Name = "ConfirmPassword";
-            this.ConfirmPassword.Size = new System.Drawing.Size(113, 32);
-            this.ConfirmPassword.TabIndex = 13;
-            this.ConfirmPassword.Text = "Confirm ";
-            // 
-            // ConfirmText
-            // 
-            this.ConfirmText.Font = new System.Drawing.Font("Montserrat", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ConfirmText.ForeColor = System.Drawing.Color.DimGray;
-            this.ConfirmText.Location = new System.Drawing.Point(199, 378);
-            this.ConfirmText.Multiline = true;
-            this.ConfirmText.Name = "ConfirmText";
-            this.ConfirmText.Size = new System.Drawing.Size(186, 34);
-            this.ConfirmText.TabIndex = 14;
-            this.ConfirmText.Text = "Text...";
-            // 
-            // PhoneNumber
-            // 
-            this.PhoneNumber.AutoSize = true;
-            this.PhoneNumber.Font = new System.Drawing.Font("Montserrat", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.PhoneNumber.Location = new System.Drawing.Point(3, 26);
-            this.PhoneNumber.Name = "PhoneNumber";
-            this.PhoneNumber.Size = new System.Drawing.Size(194, 32);
-            this.PhoneNumber.TabIndex = 6;
-            this.PhoneNumber.Text = "Phone Number";
-            // 
-            // Prefixtext
-            // 
-            this.Prefixtext.Font = new System.Drawing.Font("Montserrat", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Prefixtext.ForeColor = System.Drawing.Color.DimGray;
-            this.Prefixtext.Location = new System.Drawing.Point(214, 27);
-            this.Prefixtext.Multiline = true;
-            this.Prefixtext.Name = "Prefixtext";
-            this.Prefixtext.Size = new System.Drawing.Size(64, 34);
-            this.Prefixtext.TabIndex = 7;
-            this.Prefixtext.Text = "+";
-            // 
-            // TelText
-            // 
-            this.TelText.Font = new System.Drawing.Font("Montserrat", 10.8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TelText.ForeColor = System.Drawing.Color.DimGray;
-            this.TelText.Location = new System.Drawing.Point(294, 27);
-            this.TelText.Multiline = true;
-            this.TelText.Name = "TelText";
-            this.TelText.Size = new System.Drawing.Size(186, 34);
-            this.TelText.TabIndex = 8;
-            this.TelText.Text = "Number";
-            // 
-            // Country
-            // 
-            this.Country.AutoSize = true;
-            this.Country.Font = new System.Drawing.Font("Montserrat", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Country.Location = new System.Drawing.Point(26, 120);
-            this.Country.Name = "Country";
-            this.Country.Size = new System.Drawing.Size(105, 32);
-            this.Country.TabIndex = 9;
-            this.Country.Text = "Country";
-            // 
-            // City
-            // 
-            this.City.AutoSize = true;
-            this.City.Font = new System.Drawing.Font("Montserrat", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.City.Location = new System.Drawing.Point(55, 208);
-            this.City.Name = "City";
-            this.City.Size = new System.Drawing.Size(58, 32);
-            this.City.TabIndex = 11;
-            this.City.Text = "City";
+            this.country.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.country.Font = new System.Drawing.Font("Montserrat", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.country.FormattingEnabled = true;
+            this.country.Items.AddRange(new object[] {
+            "Afghanistan",
+            "Albania",
+            "Algeria",
+            "Andorra",
+            "Angola",
+            "Antigua and Barbuda",
+            "Argentina",
+            "Armenia",
+            "Australia",
+            "Austria",
+            "Azerbaijan",
+            "",
+            "The Bahamas",
+            "Bahrain",
+            "Bangladesh",
+            "Barbados",
+            "Belarus",
+            "Belgium",
+            "Belize",
+            "Benin",
+            "Bhutan",
+            "Bolivia",
+            "Bosnia and Herzegovina",
+            "Botswana",
+            "Brazil",
+            "Brunei",
+            "Bulgaria",
+            "Burkina Faso",
+            "Burundi",
+            "",
+            "Cabo Verde",
+            "Cambodia",
+            "Cameroon",
+            "Canada",
+            "Central African Republic",
+            "Chad",
+            "Chile",
+            "China",
+            "Colombia",
+            "Comoros",
+            "Congo, Democratic Republic of the",
+            "Congo, Republic of the",
+            "Costa Rica",
+            "Côte d’Ivoire",
+            "Croatia",
+            "Cuba",
+            "Cyprus",
+            "Czech Republic",
+            "",
+            "Denmark",
+            "Djibouti",
+            "Dominica",
+            "Dominican Republic",
+            "",
+            "East Timor (Timor-Leste)",
+            "Ecuador",
+            "Egypt",
+            "El Salvador",
+            "Equatorial Guinea",
+            "Eritrea",
+            "Estonia",
+            "Eswatini",
+            "Ethiopia",
+            "",
+            "Fiji",
+            "Finland",
+            "France",
+            "",
+            "Gabon",
+            "The Gambia",
+            "Georgia",
+            "Germany",
+            "Ghana",
+            "Greece",
+            "Grenada",
+            "Guatemala",
+            "Guinea",
+            "Guinea-Bissau",
+            "Guyana",
+            "",
+            "Haiti",
+            "Honduras",
+            "Hungary",
+            "",
+            "Iceland",
+            "India",
+            "Indonesia",
+            "Iran",
+            "Iraq",
+            "Ireland",
+            "Israel",
+            "Italy",
+            "",
+            "Jamaica",
+            "Japan",
+            "Jordan",
+            "",
+            "Kazakhstan",
+            "Kenya",
+            "Kiribati",
+            "Korea, North",
+            "Korea, South",
+            "Kosovo",
+            "Kuwait",
+            "Kyrgyzstan",
+            "",
+            "Laos",
+            "Latvia",
+            "Lebanon",
+            "Lesotho",
+            "Liberia",
+            "Libya",
+            "Liechtenstein",
+            "Lithuania",
+            "Luxembourg",
+            "",
+            "Madagascar",
+            "Malawi",
+            "Malaysia",
+            "Maldives",
+            "Mali",
+            "Malta",
+            "Marshall Islands",
+            "Mauritania",
+            "Mauritius",
+            "Mexico",
+            "Micronesia, Federated States of",
+            "Moldova",
+            "Monaco",
+            "Mongolia",
+            "Montenegro",
+            "Morocco",
+            "Mozambique",
+            "Myanmar (Burma)",
+            "",
+            "Namibia",
+            "Nauru",
+            "Nepal",
+            "Netherlands",
+            "New Zealand",
+            "Nicaragua",
+            "Niger",
+            "Nigeria",
+            "North Macedonia",
+            "Norway",
+            "",
+            "Oman",
+            "",
+            "Pakistan",
+            "Palau",
+            "Panama",
+            "Papua New Guinea",
+            "Paraguay",
+            "Peru",
+            "Philippines",
+            "Poland",
+            "Portugal",
+            "",
+            "Qatar",
+            "",
+            "Romania",
+            "Russia",
+            "Rwanda",
+            "",
+            "Saint Kitts and Nevis",
+            "Saint Lucia",
+            "Saint Vincent and the Grenadines",
+            "Samoa",
+            "San Marino",
+            "Sao Tome and Principe",
+            "Saudi Arabia",
+            "Senegal",
+            "Serbia",
+            "Seychelles",
+            "Sierra Leone",
+            "Singapore",
+            "Slovakia",
+            "Slovenia",
+            "Solomon Islands",
+            "Somalia",
+            "South Africa",
+            "Spain",
+            "Sri Lanka",
+            "Sudan",
+            "Sudan, South",
+            "Suriname",
+            "Sweden",
+            "Switzerland",
+            "Syria",
+            "",
+            "Taiwan",
+            "Tajikistan",
+            "Tanzania",
+            "Thailand",
+            "Togo",
+            "Tonga",
+            "Trinidad and Tobago",
+            "Tunisia",
+            "Turkey",
+            "Turkmenistan",
+            "Tuvalu",
+            "",
+            "Uganda",
+            "Ukraine",
+            "United Arab Emirates",
+            "United Kingdom",
+            "United States",
+            "Uruguay",
+            "Uzbekistan",
+            "",
+            "Vanuatu",
+            "Vatican City",
+            "Venezuela",
+            "Vietnam",
+            "",
+            "Yemen",
+            "",
+            "Zambia",
+            "Zimbabwe"});
+            this.country.Location = new System.Drawing.Point(92, 480);
+            this.country.Name = "country";
+            this.country.Size = new System.Drawing.Size(148, 32);
+            this.country.TabIndex = 64;
+            this.country.Text = "Country";
             // 
             // Birthday
             // 
-            this.Birthday.AutoSize = true;
-            this.Birthday.Font = new System.Drawing.Font("Montserrat", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Birthday.Location = new System.Drawing.Point(35, 297);
+            this.Birthday.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.Birthday.Location = new System.Drawing.Point(680, 99);
             this.Birthday.Name = "Birthday";
-            this.Birthday.Size = new System.Drawing.Size(113, 32);
-            this.Birthday.TabIndex = 13;
-            this.Birthday.Text = "Birthday";
+            this.Birthday.Size = new System.Drawing.Size(200, 22);
+            this.Birthday.TabIndex = 63;
             // 
-            // Choose
+            // newUsername
             // 
-            this.Choose.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.Choose.Font = new System.Drawing.Font("Montserrat", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Choose.ForeColor = System.Drawing.Color.DimGray;
-            this.Choose.FormattingEnabled = true;
-            this.Choose.ItemHeight = 25;
-            this.Choose.Location = new System.Drawing.Point(184, 120);
-            this.Choose.Name = "Choose";
-            this.Choose.Size = new System.Drawing.Size(186, 29);
-            this.Choose.TabIndex = 15;
+            this.newUsername.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.newUsername.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.newUsername.Location = new System.Drawing.Point(302, 238);
+            this.newUsername.Name = "newUsername";
+            this.newUsername.Size = new System.Drawing.Size(148, 26);
+            this.newUsername.TabIndex = 62;
             // 
-            // CityList
+            // newUsernameLbl
             // 
-            this.CityList.BackColor = System.Drawing.SystemColors.HighlightText;
-            this.CityList.Font = new System.Drawing.Font("Montserrat", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CityList.ForeColor = System.Drawing.Color.DimGray;
-            this.CityList.FormattingEnabled = true;
-            this.CityList.ItemHeight = 25;
-            this.CityList.Location = new System.Drawing.Point(184, 208);
-            this.CityList.Name = "CityList";
-            this.CityList.Size = new System.Drawing.Size(186, 29);
-            this.CityList.TabIndex = 16;
+            this.newUsernameLbl.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.newUsernameLbl.AutoSize = true;
+            this.newUsernameLbl.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.newUsernameLbl.Location = new System.Drawing.Point(298, 208);
+            this.newUsernameLbl.Name = "newUsernameLbl";
+            this.newUsernameLbl.Size = new System.Drawing.Size(117, 27);
+            this.newUsernameLbl.TabIndex = 61;
+            this.newUsernameLbl.Text = "Username";
             // 
-            // DateTimeChoose
+            // signupTitle
             // 
-            this.DateTimeChoose.Location = new System.Drawing.Point(184, 307);
-            this.DateTimeChoose.Name = "DateTimeChoose";
-            this.DateTimeChoose.Size = new System.Drawing.Size(186, 22);
-            this.DateTimeChoose.TabIndex = 17;
+            this.signupTitle.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.signupTitle.AutoSize = true;
+            this.signupTitle.Font = new System.Drawing.Font("Montserrat SemiBold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.signupTitle.Location = new System.Drawing.Point(86, 63);
+            this.signupTitle.Name = "signupTitle";
+            this.signupTitle.Size = new System.Drawing.Size(198, 32);
+            this.signupTitle.TabIndex = 60;
+            this.signupTitle.Text = "Sign Up to GMS";
             // 
-            // TermsServices
+            // loginLink
             // 
-            this.TermsServices.AutoSize = true;
-            this.TermsServices.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TermsServices.Location = new System.Drawing.Point(28, 391);
-            this.TermsServices.Name = "TermsServices";
-            this.TermsServices.Size = new System.Drawing.Size(262, 21);
-            this.TermsServices.TabIndex = 18;
-            this.TermsServices.Text = "I Agree with the Terms of Services";
-            this.TermsServices.Click += new System.EventHandler(this.TermsServices_Click);
+            this.loginLink.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.loginLink.AutoSize = true;
+            this.loginLink.Font = new System.Drawing.Font("Montserrat", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loginLink.Location = new System.Drawing.Point(556, 480);
+            this.loginLink.Name = "loginLink";
+            this.loginLink.Size = new System.Drawing.Size(64, 24);
+            this.loginLink.TabIndex = 59;
+            this.loginLink.TabStop = true;
+            this.loginLink.Text = "Log In";
             // 
-            // TermsServicesBox
+            // loginSuggestion
             // 
-            this.TermsServicesBox.AutoSize = true;
-            this.TermsServicesBox.Location = new System.Drawing.Point(313, 395);
-            this.TermsServicesBox.Name = "TermsServicesBox";
-            this.TermsServicesBox.Size = new System.Drawing.Size(18, 17);
-            this.TermsServicesBox.TabIndex = 19;
-            this.TermsServicesBox.UseVisualStyleBackColor = true;
+            this.loginSuggestion.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.loginSuggestion.Font = new System.Drawing.Font("Montserrat", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loginSuggestion.Location = new System.Drawing.Point(556, 453);
+            this.loginSuggestion.Name = "loginSuggestion";
+            this.loginSuggestion.Size = new System.Drawing.Size(460, 59);
+            this.loginSuggestion.TabIndex = 58;
+            this.loginSuggestion.Text = "If you already have an account, please ";
             // 
-            // TermsServicesLink
+            // signupBtn
             // 
-            this.TermsServicesLink.AutoSize = true;
-            this.TermsServicesLink.Location = new System.Drawing.Point(49, 426);
-            this.TermsServicesLink.Name = "TermsServicesLink";
-            this.TermsServicesLink.Size = new System.Drawing.Size(116, 16);
-            this.TermsServicesLink.TabIndex = 20;
-            this.TermsServicesLink.TabStop = true;
-            this.TermsServicesLink.Text = "Terms of Services";
+            this.signupBtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.signupBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(117)))), ((int)(((byte)(216)))));
+            this.signupBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold);
+            this.signupBtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.signupBtn.Location = new System.Drawing.Point(560, 402);
+            this.signupBtn.Name = "signupBtn";
+            this.signupBtn.Size = new System.Drawing.Size(179, 36);
+            this.signupBtn.TabIndex = 57;
+            this.signupBtn.Text = "Sign Up";
+            this.signupBtn.UseVisualStyleBackColor = false;
             // 
-            // SignUpButton
+            // termsOfServiceLink
             // 
-            this.SignUpButton.Font = new System.Drawing.Font("Montserrat SemiBold", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.SignUpButton.Location = new System.Drawing.Point(294, 475);
-            this.SignUpButton.Name = "SignUpButton";
-            this.SignUpButton.Size = new System.Drawing.Size(124, 36);
-            this.SignUpButton.TabIndex = 21;
-            this.SignUpButton.Text = "SignUp";
-            this.SignUpButton.UseVisualStyleBackColor = true;
+            this.termsOfServiceLink.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.termsOfServiceLink.AutoSize = true;
+            this.termsOfServiceLink.Font = new System.Drawing.Font("Montserrat", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.termsOfServiceLink.Location = new System.Drawing.Point(591, 284);
+            this.termsOfServiceLink.Name = "termsOfServiceLink";
+            this.termsOfServiceLink.Size = new System.Drawing.Size(148, 24);
+            this.termsOfServiceLink.TabIndex = 56;
+            this.termsOfServiceLink.TabStop = true;
+            this.termsOfServiceLink.Text = "Terms of Service";
+            // 
+            // readTermsOfService
+            // 
+            this.readTermsOfService.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.readTermsOfService.Font = new System.Drawing.Font("Montserrat", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.readTermsOfService.Location = new System.Drawing.Point(556, 260);
+            this.readTermsOfService.Name = "readTermsOfService";
+            this.readTermsOfService.Size = new System.Drawing.Size(460, 59);
+            this.readTermsOfService.TabIndex = 55;
+            this.readTermsOfService.Text = "To create a PocketPATRON, you’ll need to agree to the ";
+            // 
+            // agreement
+            // 
+            this.agreement.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.agreement.AutoSize = true;
+            this.agreement.Font = new System.Drawing.Font("Montserrat", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.agreement.Location = new System.Drawing.Point(560, 343);
+            this.agreement.Name = "agreement";
+            this.agreement.Size = new System.Drawing.Size(310, 28);
+            this.agreement.TabIndex = 54;
+            this.agreement.Text = "I Agree with the Terms of Service";
+            this.agreement.UseVisualStyleBackColor = true;
+            // 
+            // cityLbl
+            // 
+            this.cityLbl.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.cityLbl.AutoSize = true;
+            this.cityLbl.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cityLbl.Location = new System.Drawing.Point(292, 450);
+            this.cityLbl.Name = "cityLbl";
+            this.cityLbl.Size = new System.Drawing.Size(50, 27);
+            this.cityLbl.TabIndex = 53;
+            this.cityLbl.Text = "City";
+            // 
+            // countryLbl
+            // 
+            this.countryLbl.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.countryLbl.AutoSize = true;
+            this.countryLbl.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.countryLbl.Location = new System.Drawing.Point(87, 450);
+            this.countryLbl.Name = "countryLbl";
+            this.countryLbl.Size = new System.Drawing.Size(93, 27);
+            this.countryLbl.TabIndex = 52;
+            this.countryLbl.Text = "Country";
+            // 
+            // gender
+            // 
+            this.gender.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.gender.Font = new System.Drawing.Font("Montserrat", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gender.FormattingEnabled = true;
+            this.gender.Items.AddRange(new object[] {
+            "Male",
+            "Female"});
+            this.gender.Location = new System.Drawing.Point(680, 176);
+            this.gender.Name = "gender";
+            this.gender.Size = new System.Drawing.Size(114, 32);
+            this.gender.TabIndex = 51;
+            this.gender.Text = "Gender";
+            // 
+            // genderLbl
+            // 
+            this.genderLbl.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.genderLbl.AutoSize = true;
+            this.genderLbl.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.genderLbl.Location = new System.Drawing.Point(555, 181);
+            this.genderLbl.Name = "genderLbl";
+            this.genderLbl.Size = new System.Drawing.Size(87, 27);
+            this.genderLbl.TabIndex = 50;
+            this.genderLbl.Text = "Gender";
+            // 
+            // birthdayLbl
+            // 
+            this.birthdayLbl.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.birthdayLbl.AutoSize = true;
+            this.birthdayLbl.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.birthdayLbl.Location = new System.Drawing.Point(555, 95);
+            this.birthdayLbl.Name = "birthdayLbl";
+            this.birthdayLbl.Size = new System.Drawing.Size(99, 27);
+            this.birthdayLbl.TabIndex = 49;
+            this.birthdayLbl.Text = "Birthday";
+            // 
+            // prefix
+            // 
+            this.prefix.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.prefix.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.prefix.Location = new System.Drawing.Point(92, 399);
+            this.prefix.Name = "prefix";
+            this.prefix.Size = new System.Drawing.Size(80, 26);
+            this.prefix.TabIndex = 48;
+            this.prefix.Text = "+";
+            // 
+            // phone
+            // 
+            this.phone.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.phone.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.phone.Location = new System.Drawing.Point(178, 399);
+            this.phone.Name = "phone";
+            this.phone.Size = new System.Drawing.Size(267, 26);
+            this.phone.TabIndex = 47;
+            // 
+            // phoneLbl
+            // 
+            this.phoneLbl.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.phoneLbl.AutoSize = true;
+            this.phoneLbl.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.phoneLbl.Location = new System.Drawing.Point(85, 369);
+            this.phoneLbl.Name = "phoneLbl";
+            this.phoneLbl.Size = new System.Drawing.Size(166, 27);
+            this.phoneLbl.TabIndex = 46;
+            this.phoneLbl.Text = "Phone number";
+            // 
+            // confirmPass
+            // 
+            this.confirmPass.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.confirmPass.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.confirmPass.Location = new System.Drawing.Point(303, 322);
+            this.confirmPass.Name = "confirmPass";
+            this.confirmPass.PasswordChar = '*';
+            this.confirmPass.Size = new System.Drawing.Size(148, 26);
+            this.confirmPass.TabIndex = 45;
+            // 
+            // confirmPassLbl
+            // 
+            this.confirmPassLbl.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.confirmPassLbl.AutoSize = true;
+            this.confirmPassLbl.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.confirmPassLbl.Location = new System.Drawing.Point(299, 292);
+            this.confirmPassLbl.Name = "confirmPassLbl";
+            this.confirmPassLbl.Size = new System.Drawing.Size(96, 27);
+            this.confirmPassLbl.TabIndex = 44;
+            this.confirmPassLbl.Text = "Confirm";
+            // 
+            // newPass
+            // 
+            this.newPass.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.newPass.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.newPass.Location = new System.Drawing.Point(90, 322);
+            this.newPass.Name = "newPass";
+            this.newPass.PasswordChar = '*';
+            this.newPass.Size = new System.Drawing.Size(148, 26);
+            this.newPass.TabIndex = 43;
+            // 
+            // newPassLbl
+            // 
+            this.newPassLbl.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.newPassLbl.AutoSize = true;
+            this.newPassLbl.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.newPassLbl.Location = new System.Drawing.Point(85, 292);
+            this.newPassLbl.Name = "newPassLbl";
+            this.newPassLbl.Size = new System.Drawing.Size(111, 27);
+            this.newPassLbl.TabIndex = 42;
+            this.newPassLbl.Text = "Password";
+            // 
+            // email
+            // 
+            this.email.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.email.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.email.Location = new System.Drawing.Point(90, 238);
+            this.email.Name = "email";
+            this.email.Size = new System.Drawing.Size(202, 26);
+            this.email.TabIndex = 41;
+            // 
+            // emailLbl
+            // 
+            this.emailLbl.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.emailLbl.AutoSize = true;
+            this.emailLbl.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.emailLbl.Location = new System.Drawing.Point(85, 208);
+            this.emailLbl.Name = "emailLbl";
+            this.emailLbl.Size = new System.Drawing.Size(68, 27);
+            this.emailLbl.TabIndex = 40;
+            this.emailLbl.Text = "Email";
+            // 
+            // lastname
+            // 
+            this.lastname.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.lastname.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lastname.Location = new System.Drawing.Point(303, 151);
+            this.lastname.Name = "lastname";
+            this.lastname.Size = new System.Drawing.Size(148, 26);
+            this.lastname.TabIndex = 39;
+            // 
+            // lastnameLbl
+            // 
+            this.lastnameLbl.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.lastnameLbl.AutoSize = true;
+            this.lastnameLbl.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lastnameLbl.Location = new System.Drawing.Point(299, 121);
+            this.lastnameLbl.Name = "lastnameLbl";
+            this.lastnameLbl.Size = new System.Drawing.Size(113, 27);
+            this.lastnameLbl.TabIndex = 38;
+            this.lastnameLbl.Text = "Lastname";
+            // 
+            // firstname
+            // 
+            this.firstname.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.firstname.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.firstname.Location = new System.Drawing.Point(90, 151);
+            this.firstname.Name = "firstname";
+            this.firstname.Size = new System.Drawing.Size(148, 26);
+            this.firstname.TabIndex = 37;
+            // 
+            // firstnameLbl
+            // 
+            this.firstnameLbl.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.firstnameLbl.AutoSize = true;
+            this.firstnameLbl.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.firstnameLbl.Location = new System.Drawing.Point(85, 121);
+            this.firstnameLbl.Name = "firstnameLbl";
+            this.firstnameLbl.Size = new System.Drawing.Size(115, 27);
+            this.firstnameLbl.TabIndex = 36;
+            this.firstnameLbl.Text = "Firstname";
             // 
             // RegisterForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(982, 653);
-            this.Controls.Add(this.RightPanel);
+            this.ClientSize = new System.Drawing.Size(1100, 675);
             this.Controls.Add(this.LeftPanel);
-            this.Controls.Add(this.PanelLogo);
             this.Name = "RegisterForm";
             this.Text = "RegisterForm";
-            this.PanelLogo.ResumeLayout(false);
-            this.PanelLogo.PerformLayout();
             this.LeftPanel.ResumeLayout(false);
             this.LeftPanel.PerformLayout();
-            this.RightPanel.ResumeLayout(false);
-            this.RightPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel PanelLogo;
-        private System.Windows.Forms.Label GmsLogo;
         private System.Windows.Forms.Panel LeftPanel;
-        private System.Windows.Forms.Panel RightPanel;
-        private System.Windows.Forms.TextBox EmailText;
-        private System.Windows.Forms.Label Email;
-        private System.Windows.Forms.TextBox FirstNameText;
-        private System.Windows.Forms.Label FirstName;
-        private System.Windows.Forms.TextBox PaswordText;
-        private System.Windows.Forms.Label Password;
-        private System.Windows.Forms.TextBox LatNameText;
-        private System.Windows.Forms.Label LastName;
-        private System.Windows.Forms.TextBox ConfirmText;
-        private System.Windows.Forms.Label ConfirmPassword;
-        private System.Windows.Forms.ListBox Choose;
-        private System.Windows.Forms.Label Birthday;
-        private System.Windows.Forms.Label City;
-        private System.Windows.Forms.Label Country;
-        private System.Windows.Forms.TextBox TelText;
-        private System.Windows.Forms.TextBox Prefixtext;
-        private System.Windows.Forms.Label PhoneNumber;
-        private System.Windows.Forms.CheckBox TermsServicesBox;
-        private System.Windows.Forms.Label TermsServices;
-        private System.Windows.Forms.DateTimePicker DateTimeChoose;
-        private System.Windows.Forms.ListBox CityList;
-        private System.Windows.Forms.Button SignUpButton;
-        private System.Windows.Forms.LinkLabel TermsServicesLink;
+        private System.Windows.Forms.ComboBox city;
+        private System.Windows.Forms.ComboBox country;
+        private System.Windows.Forms.DateTimePicker Birthday;
+        private System.Windows.Forms.TextBox newUsername;
+        private System.Windows.Forms.Label newUsernameLbl;
+        private System.Windows.Forms.Label signupTitle;
+        private System.Windows.Forms.LinkLabel loginLink;
+        private System.Windows.Forms.Label loginSuggestion;
+        private System.Windows.Forms.Button signupBtn;
+        private System.Windows.Forms.LinkLabel termsOfServiceLink;
+        private System.Windows.Forms.Label readTermsOfService;
+        private System.Windows.Forms.CheckBox agreement;
+        private System.Windows.Forms.Label cityLbl;
+        private System.Windows.Forms.Label countryLbl;
+        private System.Windows.Forms.ComboBox gender;
+        private System.Windows.Forms.Label genderLbl;
+        private System.Windows.Forms.Label birthdayLbl;
+        private System.Windows.Forms.TextBox prefix;
+        private System.Windows.Forms.TextBox phone;
+        private System.Windows.Forms.Label phoneLbl;
+        private System.Windows.Forms.TextBox confirmPass;
+        private System.Windows.Forms.Label confirmPassLbl;
+        private System.Windows.Forms.TextBox newPass;
+        private System.Windows.Forms.Label newPassLbl;
+        private System.Windows.Forms.TextBox email;
+        private System.Windows.Forms.Label emailLbl;
+        private System.Windows.Forms.TextBox lastname;
+        private System.Windows.Forms.Label lastnameLbl;
+        private System.Windows.Forms.TextBox firstname;
+        private System.Windows.Forms.Label firstnameLbl;
     }
 }

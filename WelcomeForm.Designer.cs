@@ -65,7 +65,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(982, 124);
+            this.panel3.Size = new System.Drawing.Size(1100, 124);
             this.panel3.TabIndex = 8;
             // 
             // label3
@@ -89,14 +89,14 @@
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Location = new System.Drawing.Point(0, 124);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(982, 529);
+            this.panel4.Size = new System.Drawing.Size(1100, 551);
             this.panel4.TabIndex = 9;
             // 
             // signupCaller
             // 
             this.signupCaller.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.signupCaller.Font = new System.Drawing.Font("Montserrat SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.signupCaller.Location = new System.Drawing.Point(667, 310);
+            this.signupCaller.Location = new System.Drawing.Point(785, 321);
             this.signupCaller.Name = "signupCaller";
             this.signupCaller.Size = new System.Drawing.Size(220, 42);
             this.signupCaller.TabIndex = 7;
@@ -109,7 +109,7 @@
             this.label4.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Montserrat", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(677, 250);
+            this.label4.Location = new System.Drawing.Point(795, 261);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(210, 39);
             this.label4.TabIndex = 6;
@@ -120,7 +120,7 @@
             this.label5.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Montserrat", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(660, 66);
+            this.label5.Location = new System.Drawing.Point(778, 77);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(252, 39);
             this.label5.TabIndex = 5;
@@ -130,7 +130,7 @@
             // 
             this.loginFormCaller.Anchor = System.Windows.Forms.AnchorStyles.Right;
             this.loginFormCaller.Font = new System.Drawing.Font("Montserrat SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loginFormCaller.Location = new System.Drawing.Point(667, 123);
+            this.loginFormCaller.Location = new System.Drawing.Point(785, 134);
             this.loginFormCaller.Name = "loginFormCaller";
             this.loginFormCaller.Size = new System.Drawing.Size(220, 42);
             this.loginFormCaller.TabIndex = 4;
@@ -142,7 +142,7 @@
             // 
             this.pictureBox1.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(69, 57);
+            this.pictureBox1.Location = new System.Drawing.Point(69, 68);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(381, 194);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -154,7 +154,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(982, 653);
+            this.ClientSize = new System.Drawing.Size(1100, 675);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);

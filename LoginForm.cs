@@ -8,12 +8,16 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
+using MySql.Data.MySqlClient;
+
 
 namespace GMS
 {
     public partial class LoginForm : Form
     {
-        public string conString = "Data Source=127.0.0.1;Initial Catalog=gms;Integrated Security=True;User ID=root;Password=";
+        MySqlConnection con;
+        public string conString = "SERVER=127.0.0.1;PORT=3306;DATABASE=gms;UID=root;PASSWORD=";
+        
         public LoginForm()
         {
             InitializeComponent();
@@ -26,12 +30,29 @@ namespace GMS
 
         private void loginBtn_Click(object sender, EventArgs e)
         {
-            SqlConnection conn = new SqlConnection(conString);
-            conn.Open();
 
-            string query = "SELECT * FROM gms_users";
+            try
+            {
+                con = new MySqlConnection();
+                con.ConnectionString = conString;
+                con.Open();
+                MessageBox.Show("Connected!");
+               // string query = $"SELECT * FROM GMS_USERS";
+               // MySqlDataAdapter dt = new MySqlDataAdapter();
+               // dt.SelectCommand = new MySqlCommand(query, con);
 
-            
+               // DataTable tab = new DataTable();
+               // dt.Fill(tab);
+
+
+               // dataGridView1.DataSource = tab;
+
+
+            } catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
         }
     }
 }
