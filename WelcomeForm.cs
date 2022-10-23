@@ -26,7 +26,7 @@ namespace GMS
         {
             LoginForm Login = new LoginForm();
             Login.ShowDialog();
-            this.Close();
+            this.Hide();
         }
     }
 }
