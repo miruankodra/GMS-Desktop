@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace GMS
 {
@@ -23,6 +24,14 @@ namespace GMS
 
         }
 
-       
+        private void loginBtn_Click(object sender, EventArgs e)
+        {
+            SqlConnection conn = new SqlConnection(conString);
+            conn.Open();
+
+            string query = "SELECT * FROM gms_users";
+
+            
+        }
     }
 }
