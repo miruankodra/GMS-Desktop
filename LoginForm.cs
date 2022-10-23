@@ -12,6 +12,7 @@ namespace GMS
 {
     public partial class LoginForm : Form
     {
+        public string conString = "Data Source=127.0.0.1;Initial Catalog=gms;Integrated Security=True;User ID=root;Password=";
         public LoginForm()
         {
             InitializeComponent();
