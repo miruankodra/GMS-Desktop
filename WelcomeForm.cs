@@ -28,5 +28,12 @@ namespace GMS
             Login.ShowDialog();
             this.Hide();
         }
+
+        private void signupCaller_Click(object sender, EventArgs e)
+        {
+            RegisterForm Signup = new RegisterForm();
+            Signup.ShowDialog();
+            this.Hide();
+        }
     }
 }

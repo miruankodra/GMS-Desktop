@@ -34,7 +34,7 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.button3 = new System.Windows.Forms.Button();
+            this.signupCaller = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.loginFormCaller = new System.Windows.Forms.Button();
@@ -81,7 +81,7 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.White;
-            this.panel4.Controls.Add(this.button3);
+            this.panel4.Controls.Add(this.signupCaller);
             this.panel4.Controls.Add(this.label4);
             this.panel4.Controls.Add(this.label5);
             this.panel4.Controls.Add(this.loginFormCaller);
@@ -92,16 +92,17 @@
             this.panel4.Size = new System.Drawing.Size(982, 529);
             this.panel4.TabIndex = 9;
             // 
-            // button3
+            // signupCaller
             // 
-            this.button3.Anchor = System.Windows.Forms.AnchorStyles.Right;
-            this.button3.Font = new System.Drawing.Font("Montserrat SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(667, 310);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(220, 42);
-            this.button3.TabIndex = 7;
-            this.button3.Text = "SignUp";
-            this.button3.UseVisualStyleBackColor = true;
+            this.signupCaller.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.signupCaller.Font = new System.Drawing.Font("Montserrat SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.signupCaller.Location = new System.Drawing.Point(667, 310);
+            this.signupCaller.Name = "signupCaller";
+            this.signupCaller.Size = new System.Drawing.Size(220, 42);
+            this.signupCaller.TabIndex = 7;
+            this.signupCaller.Text = "SignUp";
+            this.signupCaller.UseVisualStyleBackColor = true;
+            this.signupCaller.Click += new System.EventHandler(this.signupCaller_Click);
             // 
             // label4
             // 
@@ -177,7 +178,7 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button signupCaller;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button loginFormCaller;
