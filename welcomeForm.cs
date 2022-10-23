@@ -10,15 +10,14 @@ using System.Windows.Forms;
 
 namespace GMS
 {
-    public partial class Form1 : Form
+    public partial class welcomeForm : Form
     {
-        public i;
-        public Form1()
+        public welcomeForm()
         {
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void welcomeForm_Load(object sender, EventArgs e)
         {
 
         }
