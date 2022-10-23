@@ -22,19 +22,11 @@ namespace GMS
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void loginFormCaller_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel4_Paint(object sender, PaintEventArgs e)
-        {
-
+            LoginForm Login = new LoginForm();
+            Login.ShowDialog();
+            this.Close();
         }
     }
 }
