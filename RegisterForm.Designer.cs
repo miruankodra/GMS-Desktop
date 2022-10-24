@@ -43,8 +43,6 @@
             this.agreement = new System.Windows.Forms.CheckBox();
             this.cityLbl = new System.Windows.Forms.Label();
             this.countryLbl = new System.Windows.Forms.Label();
-            this.gender = new System.Windows.Forms.ComboBox();
-            this.genderLbl = new System.Windows.Forms.Label();
             this.birthdayLbl = new System.Windows.Forms.Label();
             this.prefix = new System.Windows.Forms.TextBox();
             this.phone = new System.Windows.Forms.TextBox();
@@ -78,8 +76,6 @@
             this.LeftPanel.Controls.Add(this.agreement);
             this.LeftPanel.Controls.Add(this.cityLbl);
             this.LeftPanel.Controls.Add(this.countryLbl);
-            this.LeftPanel.Controls.Add(this.gender);
-            this.LeftPanel.Controls.Add(this.genderLbl);
             this.LeftPanel.Controls.Add(this.birthdayLbl);
             this.LeftPanel.Controls.Add(this.prefix);
             this.LeftPanel.Controls.Add(this.phone);
@@ -306,7 +302,7 @@
             "Yaounde",
             "Yerevan",
             "Zagreb"});
-            this.city.Location = new System.Drawing.Point(297, 477);
+            this.city.Location = new System.Drawing.Point(768, 148);
             this.city.Name = "city";
             this.city.Size = new System.Drawing.Size(148, 32);
             this.city.TabIndex = 65;
@@ -537,7 +533,7 @@
             "",
             "Zambia",
             "Zimbabwe"});
-            this.country.Location = new System.Drawing.Point(92, 480);
+            this.country.Location = new System.Drawing.Point(563, 151);
             this.country.Name = "country";
             this.country.Size = new System.Drawing.Size(148, 32);
             this.country.TabIndex = 64;
@@ -546,7 +542,7 @@
             // Birthday
             // 
             this.Birthday.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.Birthday.Location = new System.Drawing.Point(680, 99);
+            this.Birthday.Location = new System.Drawing.Point(683, 240);
             this.Birthday.Name = "Birthday";
             this.Birthday.Size = new System.Drawing.Size(200, 22);
             this.Birthday.TabIndex = 63;
@@ -555,7 +551,7 @@
             // 
             this.newUsername.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.newUsername.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.newUsername.Location = new System.Drawing.Point(302, 238);
+            this.newUsername.Location = new System.Drawing.Point(302, 265);
             this.newUsername.Name = "newUsername";
             this.newUsername.Size = new System.Drawing.Size(148, 26);
             this.newUsername.TabIndex = 62;
@@ -565,7 +561,7 @@
             this.newUsernameLbl.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.newUsernameLbl.AutoSize = true;
             this.newUsernameLbl.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.newUsernameLbl.Location = new System.Drawing.Point(298, 208);
+            this.newUsernameLbl.Location = new System.Drawing.Point(298, 235);
             this.newUsernameLbl.Name = "newUsernameLbl";
             this.newUsernameLbl.Size = new System.Drawing.Size(117, 27);
             this.newUsernameLbl.TabIndex = 61;
@@ -587,7 +583,7 @@
             this.loginLink.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.loginLink.AutoSize = true;
             this.loginLink.Font = new System.Drawing.Font("Montserrat", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loginLink.Location = new System.Drawing.Point(556, 480);
+            this.loginLink.Location = new System.Drawing.Point(559, 506);
             this.loginLink.Name = "loginLink";
             this.loginLink.Size = new System.Drawing.Size(64, 24);
             this.loginLink.TabIndex = 59;
@@ -598,7 +594,7 @@
             // 
             this.loginSuggestion.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.loginSuggestion.Font = new System.Drawing.Font("Montserrat", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loginSuggestion.Location = new System.Drawing.Point(556, 453);
+            this.loginSuggestion.Location = new System.Drawing.Point(559, 479);
             this.loginSuggestion.Name = "loginSuggestion";
             this.loginSuggestion.Size = new System.Drawing.Size(460, 59);
             this.loginSuggestion.TabIndex = 58;
@@ -610,7 +606,7 @@
             this.signupBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(117)))), ((int)(((byte)(216)))));
             this.signupBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold);
             this.signupBtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.signupBtn.Location = new System.Drawing.Point(560, 402);
+            this.signupBtn.Location = new System.Drawing.Point(563, 428);
             this.signupBtn.Name = "signupBtn";
             this.signupBtn.Size = new System.Drawing.Size(179, 36);
             this.signupBtn.TabIndex = 57;
@@ -622,7 +618,7 @@
             this.termsOfServiceLink.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.termsOfServiceLink.AutoSize = true;
             this.termsOfServiceLink.Font = new System.Drawing.Font("Montserrat", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.termsOfServiceLink.Location = new System.Drawing.Point(591, 284);
+            this.termsOfServiceLink.Location = new System.Drawing.Point(621, 310);
             this.termsOfServiceLink.Name = "termsOfServiceLink";
             this.termsOfServiceLink.Size = new System.Drawing.Size(148, 24);
             this.termsOfServiceLink.TabIndex = 56;
@@ -633,18 +629,18 @@
             // 
             this.readTermsOfService.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.readTermsOfService.Font = new System.Drawing.Font("Montserrat", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.readTermsOfService.Location = new System.Drawing.Point(556, 260);
+            this.readTermsOfService.Location = new System.Drawing.Point(559, 286);
             this.readTermsOfService.Name = "readTermsOfService";
             this.readTermsOfService.Size = new System.Drawing.Size(460, 59);
             this.readTermsOfService.TabIndex = 55;
-            this.readTermsOfService.Text = "To create a PocketPATRON, you’ll need to agree to the ";
+            this.readTermsOfService.Text = "To create a GMS account, you’ll need to agree \r\nto the ";
             // 
             // agreement
             // 
             this.agreement.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.agreement.AutoSize = true;
             this.agreement.Font = new System.Drawing.Font("Montserrat", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.agreement.Location = new System.Drawing.Point(560, 343);
+            this.agreement.Location = new System.Drawing.Point(563, 369);
             this.agreement.Name = "agreement";
             this.agreement.Size = new System.Drawing.Size(310, 28);
             this.agreement.TabIndex = 54;
@@ -656,7 +652,7 @@
             this.cityLbl.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.cityLbl.AutoSize = true;
             this.cityLbl.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cityLbl.Location = new System.Drawing.Point(292, 450);
+            this.cityLbl.Location = new System.Drawing.Point(763, 121);
             this.cityLbl.Name = "cityLbl";
             this.cityLbl.Size = new System.Drawing.Size(50, 27);
             this.cityLbl.TabIndex = 53;
@@ -667,43 +663,18 @@
             this.countryLbl.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.countryLbl.AutoSize = true;
             this.countryLbl.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.countryLbl.Location = new System.Drawing.Point(87, 450);
+            this.countryLbl.Location = new System.Drawing.Point(558, 121);
             this.countryLbl.Name = "countryLbl";
             this.countryLbl.Size = new System.Drawing.Size(93, 27);
             this.countryLbl.TabIndex = 52;
             this.countryLbl.Text = "Country";
-            // 
-            // gender
-            // 
-            this.gender.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.gender.Font = new System.Drawing.Font("Montserrat", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gender.FormattingEnabled = true;
-            this.gender.Items.AddRange(new object[] {
-            "Male",
-            "Female"});
-            this.gender.Location = new System.Drawing.Point(680, 176);
-            this.gender.Name = "gender";
-            this.gender.Size = new System.Drawing.Size(114, 32);
-            this.gender.TabIndex = 51;
-            this.gender.Text = "Gender";
-            // 
-            // genderLbl
-            // 
-            this.genderLbl.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.genderLbl.AutoSize = true;
-            this.genderLbl.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.genderLbl.Location = new System.Drawing.Point(555, 181);
-            this.genderLbl.Name = "genderLbl";
-            this.genderLbl.Size = new System.Drawing.Size(87, 27);
-            this.genderLbl.TabIndex = 50;
-            this.genderLbl.Text = "Gender";
             // 
             // birthdayLbl
             // 
             this.birthdayLbl.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.birthdayLbl.AutoSize = true;
             this.birthdayLbl.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.birthdayLbl.Location = new System.Drawing.Point(555, 95);
+            this.birthdayLbl.Location = new System.Drawing.Point(558, 236);
             this.birthdayLbl.Name = "birthdayLbl";
             this.birthdayLbl.Size = new System.Drawing.Size(99, 27);
             this.birthdayLbl.TabIndex = 49;
@@ -713,7 +684,7 @@
             // 
             this.prefix.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.prefix.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.prefix.Location = new System.Drawing.Point(92, 399);
+            this.prefix.Location = new System.Drawing.Point(92, 458);
             this.prefix.Name = "prefix";
             this.prefix.Size = new System.Drawing.Size(80, 26);
             this.prefix.TabIndex = 48;
@@ -723,7 +694,7 @@
             // 
             this.phone.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.phone.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.phone.Location = new System.Drawing.Point(178, 399);
+            this.phone.Location = new System.Drawing.Point(178, 458);
             this.phone.Name = "phone";
             this.phone.Size = new System.Drawing.Size(267, 26);
             this.phone.TabIndex = 47;
@@ -733,7 +704,7 @@
             this.phoneLbl.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.phoneLbl.AutoSize = true;
             this.phoneLbl.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.phoneLbl.Location = new System.Drawing.Point(85, 369);
+            this.phoneLbl.Location = new System.Drawing.Point(85, 428);
             this.phoneLbl.Name = "phoneLbl";
             this.phoneLbl.Size = new System.Drawing.Size(166, 27);
             this.phoneLbl.TabIndex = 46;
@@ -743,7 +714,7 @@
             // 
             this.confirmPass.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.confirmPass.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.confirmPass.Location = new System.Drawing.Point(303, 322);
+            this.confirmPass.Location = new System.Drawing.Point(303, 361);
             this.confirmPass.Name = "confirmPass";
             this.confirmPass.PasswordChar = '*';
             this.confirmPass.Size = new System.Drawing.Size(148, 26);
@@ -754,7 +725,7 @@
             this.confirmPassLbl.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.confirmPassLbl.AutoSize = true;
             this.confirmPassLbl.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.confirmPassLbl.Location = new System.Drawing.Point(299, 292);
+            this.confirmPassLbl.Location = new System.Drawing.Point(299, 331);
             this.confirmPassLbl.Name = "confirmPassLbl";
             this.confirmPassLbl.Size = new System.Drawing.Size(96, 27);
             this.confirmPassLbl.TabIndex = 44;
@@ -764,7 +735,7 @@
             // 
             this.newPass.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.newPass.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.newPass.Location = new System.Drawing.Point(90, 322);
+            this.newPass.Location = new System.Drawing.Point(90, 361);
             this.newPass.Name = "newPass";
             this.newPass.PasswordChar = '*';
             this.newPass.Size = new System.Drawing.Size(148, 26);
@@ -775,7 +746,7 @@
             this.newPassLbl.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.newPassLbl.AutoSize = true;
             this.newPassLbl.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.newPassLbl.Location = new System.Drawing.Point(85, 292);
+            this.newPassLbl.Location = new System.Drawing.Point(85, 331);
             this.newPassLbl.Name = "newPassLbl";
             this.newPassLbl.Size = new System.Drawing.Size(111, 27);
             this.newPassLbl.TabIndex = 42;
@@ -785,7 +756,7 @@
             // 
             this.email.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.email.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.email.Location = new System.Drawing.Point(90, 238);
+            this.email.Location = new System.Drawing.Point(90, 265);
             this.email.Name = "email";
             this.email.Size = new System.Drawing.Size(202, 26);
             this.email.TabIndex = 41;
@@ -795,7 +766,7 @@
             this.emailLbl.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.emailLbl.AutoSize = true;
             this.emailLbl.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.emailLbl.Location = new System.Drawing.Point(85, 208);
+            this.emailLbl.Location = new System.Drawing.Point(85, 235);
             this.emailLbl.Name = "emailLbl";
             this.emailLbl.Size = new System.Drawing.Size(68, 27);
             this.emailLbl.TabIndex = 40;
@@ -871,8 +842,6 @@
         private System.Windows.Forms.CheckBox agreement;
         private System.Windows.Forms.Label cityLbl;
         private System.Windows.Forms.Label countryLbl;
-        private System.Windows.Forms.ComboBox gender;
-        private System.Windows.Forms.Label genderLbl;
         private System.Windows.Forms.Label birthdayLbl;
         private System.Windows.Forms.TextBox prefix;
         private System.Windows.Forms.TextBox phone;
