@@ -585,7 +585,7 @@
             this.loginLink.Font = new System.Drawing.Font("Montserrat", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.loginLink.Location = new System.Drawing.Point(559, 506);
             this.loginLink.Name = "loginLink";
-            this.loginLink.Size = new System.Drawing.Size(64, 24);
+            this.loginLink.Size = new System.Drawing.Size(63, 24);
             this.loginLink.TabIndex = 59;
             this.loginLink.TabStop = true;
             this.loginLink.Text = "Log In";
@@ -612,6 +612,7 @@
             this.signupBtn.TabIndex = 57;
             this.signupBtn.Text = "Sign Up";
             this.signupBtn.UseVisualStyleBackColor = false;
+            this.signupBtn.Click += new System.EventHandler(this.signupBtn_Click);
             // 
             // termsOfServiceLink
             // 
@@ -642,7 +643,7 @@
             this.agreement.Font = new System.Drawing.Font("Montserrat", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.agreement.Location = new System.Drawing.Point(563, 369);
             this.agreement.Name = "agreement";
-            this.agreement.Size = new System.Drawing.Size(310, 28);
+            this.agreement.Size = new System.Drawing.Size(308, 28);
             this.agreement.TabIndex = 54;
             this.agreement.Text = "I Agree with the Terms of Service";
             this.agreement.UseVisualStyleBackColor = true;
@@ -727,7 +728,7 @@
             this.confirmPassLbl.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.confirmPassLbl.Location = new System.Drawing.Point(299, 331);
             this.confirmPassLbl.Name = "confirmPassLbl";
-            this.confirmPassLbl.Size = new System.Drawing.Size(96, 27);
+            this.confirmPassLbl.Size = new System.Drawing.Size(94, 27);
             this.confirmPassLbl.TabIndex = 44;
             this.confirmPassLbl.Text = "Confirm";
             // 
