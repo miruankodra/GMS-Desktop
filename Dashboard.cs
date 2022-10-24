@@ -12,9 +12,20 @@ namespace GMS
 {
     public partial class Dashboard : Form
     {
-        public Dashboard()
+        public Dashboard(string usr)
         {
             InitializeComponent();
+            
+        }
+
+        private void TopPanelDash_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Dashboard_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

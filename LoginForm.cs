@@ -30,28 +30,53 @@ namespace GMS
 
         private void loginBtn_Click(object sender, EventArgs e)
         {
-
+            if (username.Text == "" || password.Text == "")
+            {
+                MessageBox.Show("Please provide Username AND Password");
+                return;
+            }
             try
             {
+                //Create SqlConnection
                 con = new MySqlConnection();
                 con.ConnectionString = conString;
+                
+                string query = "SELECT * FROM GMS_USERS WHERE username = '" + username.Text + "' AND passkey = '" + password.Text + "'";
+       
                 con.Open();
-                MessageBox.Show("Connected!");
-               // string query = $"SELECT * FROM GMS_USERS";
-               // MySqlDataAdapter dt = new MySqlDataAdapter();
-               // dt.SelectCommand = new MySqlCommand(query, con);
+                MySqlDataAdapter da = new MySqlDataAdapter();
+                da.SelectCommand = new MySqlCommand(query, con);
 
-               // DataTable tab = new DataTable();
-               // dt.Fill(tab);
+                DataTable dt = new DataTable();
+
+                da.Fill(dt);
+
+                con.Close();
+
+                if (dt.Rows.Count == 1)
+                {
 
 
-               // dataGridView1.DataSource = tab;
+                    MessageBox.Show("Login Successful!");
+                    this.Hide();
+
+                    Form Dashboard = new Dashboard(username.Text);
+                    Dashboard.ShowDialog();
 
 
-            } catch (Exception ex)
+
+                }
+                else
+                {
+                    MessageBox.Show("Login Failed!");
+                }
+            }
+            catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
+
+           
 
         }
     }

@@ -38,7 +38,7 @@
             this.loginBtn = new System.Windows.Forms.Button();
             this.forgotPass = new System.Windows.Forms.LinkLabel();
             this.password = new System.Windows.Forms.TextBox();
-            this.usename = new System.Windows.Forms.TextBox();
+            this.username = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel4.SuspendLayout();
             this.SuspendLayout();
@@ -89,7 +89,7 @@
             this.panel4.Controls.Add(this.loginBtn);
             this.panel4.Controls.Add(this.forgotPass);
             this.panel4.Controls.Add(this.password);
-            this.panel4.Controls.Add(this.usename);
+            this.panel4.Controls.Add(this.username);
             this.panel4.Controls.Add(this.label1);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Location = new System.Drawing.Point(242, 159);
@@ -156,16 +156,16 @@
             this.password.TabIndex = 2;
             this.password.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // usename
+            // username
             // 
-            this.usename.Anchor = System.Windows.Forms.AnchorStyles.None;
-            this.usename.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.usename.Location = new System.Drawing.Point(210, 82);
-            this.usename.Multiline = true;
-            this.usename.Name = "usename";
-            this.usename.Size = new System.Drawing.Size(210, 43);
-            this.usename.TabIndex = 1;
-            this.usename.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.username.Anchor = System.Windows.Forms.AnchorStyles.None;
+            this.username.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.username.Location = new System.Drawing.Point(210, 82);
+            this.username.Multiline = true;
+            this.username.Name = "username";
+            this.username.Size = new System.Drawing.Size(210, 43);
+            this.username.TabIndex = 1;
+            this.username.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label1
             // 
@@ -206,7 +206,7 @@
         private System.Windows.Forms.Button loginBtn;
         private System.Windows.Forms.LinkLabel forgotPass;
         private System.Windows.Forms.TextBox password;
-        private System.Windows.Forms.TextBox usename;
+        private System.Windows.Forms.TextBox username;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.LinkLabel regLink;
