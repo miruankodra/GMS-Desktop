@@ -37,15 +37,18 @@
             this.DashBoardBtn = new System.Windows.Forms.Button();
             this.MiddelPanelDash = new System.Windows.Forms.Panel();
             this.mainPanel = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.TopPanelDash.SuspendLayout();
             this.sidebarPanel.SuspendLayout();
             this.MiddelPanelDash.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // TopPanelDash
             // 
-            this.TopPanelDash.BackColor = System.Drawing.Color.White;
+            this.TopPanelDash.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(253)))), ((int)(((byte)(249)))));
             this.TopPanelDash.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TopPanelDash.Controls.Add(this.pictureBox1);
             this.TopPanelDash.Controls.Add(this.LogoGms);
             this.TopPanelDash.Dock = System.Windows.Forms.DockStyle.Top;
             this.TopPanelDash.Location = new System.Drawing.Point(0, 0);
@@ -67,7 +70,7 @@
             // 
             // sidebarPanel
             // 
-            this.sidebarPanel.BackColor = System.Drawing.Color.White;
+            this.sidebarPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(253)))), ((int)(((byte)(249)))));
             this.sidebarPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.sidebarPanel.Controls.Add(this.ModalitetBtn);
             this.sidebarPanel.Controls.Add(this.ControlPanelBtn);
@@ -82,7 +85,7 @@
             // 
             // ModalitetBtn
             // 
-            this.ModalitetBtn.BackColor = System.Drawing.Color.White;
+            this.ModalitetBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(253)))), ((int)(((byte)(249)))));
             this.ModalitetBtn.FlatAppearance.BorderSize = 0;
             this.ModalitetBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ModalitetBtn.Font = new System.Drawing.Font("Montserrat", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -95,7 +98,7 @@
             // 
             // ControlPanelBtn
             // 
-            this.ControlPanelBtn.BackColor = System.Drawing.Color.White;
+            this.ControlPanelBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(253)))), ((int)(((byte)(249)))));
             this.ControlPanelBtn.FlatAppearance.BorderSize = 0;
             this.ControlPanelBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ControlPanelBtn.Font = new System.Drawing.Font("Montserrat", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -108,7 +111,7 @@
             // 
             // ClimateBtn
             // 
-            this.ClimateBtn.BackColor = System.Drawing.Color.White;
+            this.ClimateBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(253)))), ((int)(((byte)(249)))));
             this.ClimateBtn.FlatAppearance.BorderSize = 0;
             this.ClimateBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ClimateBtn.Font = new System.Drawing.Font("Montserrat", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -121,7 +124,7 @@
             // 
             // DashBoardBtn
             // 
-            this.DashBoardBtn.BackColor = System.Drawing.Color.White;
+            this.DashBoardBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(253)))), ((int)(((byte)(249)))));
             this.DashBoardBtn.FlatAppearance.BorderSize = 0;
             this.DashBoardBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.DashBoardBtn.Font = new System.Drawing.Font("Montserrat", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -145,16 +148,28 @@
             // 
             // mainPanel
             // 
+            this.mainPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(253)))), ((int)(((byte)(249)))));
             this.mainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.mainPanel.Location = new System.Drawing.Point(0, 0);
             this.mainPanel.Name = "mainPanel";
             this.mainPanel.Size = new System.Drawing.Size(916, 595);
             this.mainPanel.TabIndex = 0;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::GMS.Properties.Resources.bitmap;
+            this.pictureBox1.Location = new System.Drawing.Point(35, 4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(53, 50);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(142)))), ((int)(((byte)(228)))), ((int)(((byte)(175)))));
             this.ClientSize = new System.Drawing.Size(1230, 653);
             this.Controls.Add(this.MiddelPanelDash);
             this.Controls.Add(this.sidebarPanel);
@@ -167,6 +182,7 @@
             this.TopPanelDash.PerformLayout();
             this.sidebarPanel.ResumeLayout(false);
             this.MiddelPanelDash.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -182,5 +198,6 @@
         private System.Windows.Forms.Button DashBoardBtn;
         private System.Windows.Forms.Panel MiddelPanelDash;
         private System.Windows.Forms.Panel mainPanel;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

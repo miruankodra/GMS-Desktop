@@ -57,7 +57,7 @@ namespace GMS
                 {
 
 
-                    MessageBox.Show("Login Successful!");
+                    
                     this.Hide();
 
                     Form Dashboard = new Dashboard(username.Text);

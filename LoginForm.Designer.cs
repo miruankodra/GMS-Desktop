@@ -45,45 +45,49 @@
             // 
             // loginPanel
             // 
-            this.loginPanel.BackColor = System.Drawing.Color.White;
+            this.loginPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(253)))), ((int)(((byte)(249)))));
             this.loginPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.loginPanel.Font = new System.Drawing.Font("Montserrat", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.loginPanel.Location = new System.Drawing.Point(0, 0);
             this.loginPanel.Name = "loginPanel";
-            this.loginPanel.Size = new System.Drawing.Size(1100, 159);
+            this.loginPanel.Size = new System.Drawing.Size(1100, 179);
             this.loginPanel.TabIndex = 0;
             this.loginPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.loginPanel_Paint);
             // 
             // panel1
             // 
-            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(253)))), ((int)(((byte)(249)))));
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 516);
+            this.panel1.Font = new System.Drawing.Font("Montserrat", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel1.Location = new System.Drawing.Point(0, 580);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1100, 159);
+            this.panel1.Size = new System.Drawing.Size(1100, 179);
             this.panel1.TabIndex = 1;
             // 
             // panel2
             // 
-            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(253)))), ((int)(((byte)(249)))));
             this.panel2.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel2.Location = new System.Drawing.Point(0, 159);
+            this.panel2.Font = new System.Drawing.Font("Montserrat", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel2.Location = new System.Drawing.Point(0, 179);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(242, 357);
+            this.panel2.Size = new System.Drawing.Size(242, 401);
             this.panel2.TabIndex = 2;
             // 
             // panel3
             // 
             this.panel3.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.panel3.BackColor = System.Drawing.Color.White;
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(253)))), ((int)(((byte)(249)))));
             this.panel3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel3.Location = new System.Drawing.Point(858, 159);
+            this.panel3.Font = new System.Drawing.Font("Montserrat", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel3.Location = new System.Drawing.Point(858, 179);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(242, 357);
+            this.panel3.Size = new System.Drawing.Size(242, 401);
             this.panel3.TabIndex = 3;
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.Color.White;
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(253)))), ((int)(((byte)(249)))));
             this.panel4.Controls.Add(this.regLink);
             this.panel4.Controls.Add(this.label2);
             this.panel4.Controls.Add(this.loginBtn);
@@ -92,9 +96,10 @@
             this.panel4.Controls.Add(this.username);
             this.panel4.Controls.Add(this.label1);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(242, 159);
+            this.panel4.Font = new System.Drawing.Font("Montserrat", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.panel4.Location = new System.Drawing.Point(242, 179);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(616, 357);
+            this.panel4.Size = new System.Drawing.Size(616, 401);
             this.panel4.TabIndex = 4;
             // 
             // regLink
@@ -102,7 +107,7 @@
             this.regLink.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.regLink.AutoSize = true;
             this.regLink.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.regLink.Location = new System.Drawing.Point(408, 284);
+            this.regLink.Location = new System.Drawing.Point(408, 319);
             this.regLink.Name = "regLink";
             this.regLink.Size = new System.Drawing.Size(72, 21);
             this.regLink.TabIndex = 5;
@@ -114,7 +119,7 @@
             this.label2.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(176, 284);
+            this.label2.Location = new System.Drawing.Point(176, 319);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(217, 21);
             this.label2.TabIndex = 6;
@@ -124,9 +129,9 @@
             // 
             this.loginBtn.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.loginBtn.Font = new System.Drawing.Font("Montserrat SemiBold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loginBtn.Location = new System.Drawing.Point(257, 229);
+            this.loginBtn.Location = new System.Drawing.Point(257, 257);
             this.loginBtn.Name = "loginBtn";
-            this.loginBtn.Size = new System.Drawing.Size(110, 43);
+            this.loginBtn.Size = new System.Drawing.Size(110, 48);
             this.loginBtn.TabIndex = 4;
             this.loginBtn.Text = "Login";
             this.loginBtn.UseVisualStyleBackColor = true;
@@ -137,7 +142,7 @@
             this.forgotPass.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.forgotPass.AutoSize = true;
             this.forgotPass.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.forgotPass.Location = new System.Drawing.Point(207, 196);
+            this.forgotPass.Location = new System.Drawing.Point(207, 219);
             this.forgotPass.Name = "forgotPass";
             this.forgotPass.Size = new System.Drawing.Size(145, 21);
             this.forgotPass.TabIndex = 3;
@@ -148,11 +153,11 @@
             // 
             this.password.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.password.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.password.Location = new System.Drawing.Point(210, 141);
+            this.password.Location = new System.Drawing.Point(210, 158);
             this.password.Multiline = true;
             this.password.Name = "password";
             this.password.PasswordChar = '*';
-            this.password.Size = new System.Drawing.Size(210, 43);
+            this.password.Size = new System.Drawing.Size(210, 48);
             this.password.TabIndex = 2;
             this.password.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -160,10 +165,10 @@
             // 
             this.username.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.username.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.username.Location = new System.Drawing.Point(210, 82);
+            this.username.Location = new System.Drawing.Point(210, 91);
             this.username.Multiline = true;
             this.username.Name = "username";
-            this.username.Size = new System.Drawing.Size(210, 43);
+            this.username.Size = new System.Drawing.Size(210, 48);
             this.username.TabIndex = 1;
             this.username.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -172,7 +177,7 @@
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Montserrat", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(265, 26);
+            this.label1.Location = new System.Drawing.Point(265, 28);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(98, 46);
             this.label1.TabIndex = 0;
@@ -180,16 +185,18 @@
             // 
             // LoginForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1100, 675);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(253)))), ((int)(((byte)(249)))));
+            this.ClientSize = new System.Drawing.Size(1100, 759);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.loginPanel);
+            this.Font = new System.Drawing.Font("Montserrat", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "LoginForm";
-            this.Text = "LoginForm";
+            this.Text = "Login";
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.ResumeLayout(false);
