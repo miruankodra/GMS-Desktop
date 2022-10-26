@@ -46,11 +46,7 @@
             // 
             // TopPanelDash
             // 
-<<<<<<< HEAD
             this.TopPanelDash.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(253)))), ((int)(((byte)(249)))));
-=======
-            this.TopPanelDash.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(52)))), ((int)(((byte)(54)))));
->>>>>>> c578f2b809eac72f0f64d9b1b7851dd4abd803c2
             this.TopPanelDash.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TopPanelDash.Controls.Add(this.pictureBox1);
             this.TopPanelDash.Controls.Add(this.LogoGms);
@@ -75,11 +71,7 @@
             // 
             // sidebarPanel
             // 
-<<<<<<< HEAD
             this.sidebarPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(253)))), ((int)(((byte)(249)))));
-=======
-            this.sidebarPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(52)))), ((int)(((byte)(54)))));
->>>>>>> c578f2b809eac72f0f64d9b1b7851dd4abd803c2
             this.sidebarPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.sidebarPanel.Controls.Add(this.ModalitetBtn);
             this.sidebarPanel.Controls.Add(this.ControlPanelBtn);
@@ -157,11 +149,7 @@
             // 
             // mainPanel
             // 
-<<<<<<< HEAD
             this.mainPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(253)))), ((int)(((byte)(249)))));
-=======
-            this.mainPanel.BackColor = System.Drawing.Color.DarkGray;
->>>>>>> c578f2b809eac72f0f64d9b1b7851dd4abd803c2
             this.mainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.mainPanel.Location = new System.Drawing.Point(0, 0);
             this.mainPanel.Name = "mainPanel";
@@ -169,7 +157,6 @@
             this.mainPanel.TabIndex = 0;
             this.mainPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.mainPanel_Paint);
             // 
-<<<<<<< HEAD
             // pictureBox1
             // 
             this.pictureBox1.Image = global::GMS.Properties.Resources.bitmap;
@@ -181,9 +168,6 @@
             this.pictureBox1.TabStop = false;
             // 
             // Dashboard
-=======
-            // DashboardForm
->>>>>>> c578f2b809eac72f0f64d9b1b7851dd4abd803c2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
