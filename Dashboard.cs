@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace GMS
 {
-    public partial class Dashboard : Form
+    public partial class DashboardForm : Form
     {
-        public Dashboard(string usr)
+        public DashboardForm(string usr)
         {
             InitializeComponent();
             

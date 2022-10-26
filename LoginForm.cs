@@ -60,7 +60,7 @@ namespace GMS
                     
                     this.Hide();
 
-                    Form Dashboard = new Dashboard(username.Text);
+                    Form Dashboard = new DashboardForm(username.Text);
                     Dashboard.ShowDialog();
 
 

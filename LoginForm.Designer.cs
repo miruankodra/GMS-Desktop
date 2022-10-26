@@ -113,6 +113,7 @@
             this.regLink.TabIndex = 5;
             this.regLink.TabStop = true;
             this.regLink.Text = "Register";
+            this.regLink.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.regLink_LinkClicked);
             // 
             // label2
             // 
@@ -144,7 +145,7 @@
             this.forgotPass.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.forgotPass.Location = new System.Drawing.Point(207, 219);
             this.forgotPass.Name = "forgotPass";
-            this.forgotPass.Size = new System.Drawing.Size(145, 21);
+            this.forgotPass.Size = new System.Drawing.Size(144, 21);
             this.forgotPass.TabIndex = 3;
             this.forgotPass.TabStop = true;
             this.forgotPass.Text = "Forgot Password?";

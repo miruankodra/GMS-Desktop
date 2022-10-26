@@ -137,6 +137,7 @@
             // 
             // bigLogo
             // 
+<<<<<<< HEAD
             this.bigLogo.Image = global::GMS.Properties.Resources.bitmap;
             this.bigLogo.Location = new System.Drawing.Point(36, 25);
             this.bigLogo.Name = "bigLogo";
@@ -144,6 +145,18 @@
             this.bigLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.bigLogo.TabIndex = 8;
             this.bigLogo.TabStop = false;
+=======
+            this.loginFormCaller.Anchor = System.Windows.Forms.AnchorStyles.Right;
+            this.loginFormCaller.Font = new System.Drawing.Font("Montserrat SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loginFormCaller.Location = new System.Drawing.Point(785, 134);
+            this.loginFormCaller.Name = "loginFormCaller";
+            this.loginFormCaller.Size = new System.Drawing.Size(220, 42);
+            this.loginFormCaller.TabIndex = 4;
+            this.loginFormCaller.Text = "LogIn";
+            this.loginFormCaller.UseVisualStyleBackColor = true;
+            this.loginFormCaller.Click += new System.EventHandler(this.loginFormCaller_Click);
+         
+>>>>>>> c578f2b809eac72f0f64d9b1b7851dd4abd803c2
             // 
             // GMS
             // 

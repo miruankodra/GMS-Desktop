@@ -36,6 +36,7 @@ namespace GMS
             this.Hide();
         }
 
+<<<<<<< HEAD
         private void panel4_Paint(object sender, PaintEventArgs e)
         {
 
@@ -45,5 +46,8 @@ namespace GMS
         {
 
         }
+=======
+      
+>>>>>>> c578f2b809eac72f0f64d9b1b7851dd4abd803c2
     }
 }
