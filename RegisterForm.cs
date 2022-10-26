@@ -51,11 +51,12 @@ namespace GMS
                 string message = "Successfully Inserted";
                 MessageBox.Show(message);
 
+               
 
             }
 
 
-            string messages = "Not added in database";
+            string messages = "Fill all fields";
             MessageBox.Show(messages);
 
 

@@ -137,6 +137,7 @@
             this.loginFormCaller.Text = "LogIn";
             this.loginFormCaller.UseVisualStyleBackColor = true;
             this.loginFormCaller.Click += new System.EventHandler(this.loginFormCaller_Click);
+         
             // 
             // pictureBox1
             // 

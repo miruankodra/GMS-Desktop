@@ -1,6 +1,6 @@
 ﻿namespace GMS
 {
-    partial class Dashboard
+    partial class DashboardForm
     {
         /// <summary>
         /// Required designer variable.
@@ -44,7 +44,7 @@
             // 
             // TopPanelDash
             // 
-            this.TopPanelDash.BackColor = System.Drawing.Color.White;
+            this.TopPanelDash.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(52)))), ((int)(((byte)(54)))));
             this.TopPanelDash.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.TopPanelDash.Controls.Add(this.LogoGms);
             this.TopPanelDash.Dock = System.Windows.Forms.DockStyle.Top;
@@ -59,6 +59,7 @@
             // 
             this.LogoGms.AutoSize = true;
             this.LogoGms.Font = new System.Drawing.Font("Montserrat", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LogoGms.ForeColor = System.Drawing.Color.Snow;
             this.LogoGms.Location = new System.Drawing.Point(94, 0);
             this.LogoGms.Name = "LogoGms";
             this.LogoGms.Size = new System.Drawing.Size(119, 55);
@@ -67,7 +68,7 @@
             // 
             // sidebarPanel
             // 
-            this.sidebarPanel.BackColor = System.Drawing.Color.White;
+            this.sidebarPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(52)))), ((int)(((byte)(54)))));
             this.sidebarPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.sidebarPanel.Controls.Add(this.ModalitetBtn);
             this.sidebarPanel.Controls.Add(this.ControlPanelBtn);
@@ -86,7 +87,7 @@
             this.ModalitetBtn.FlatAppearance.BorderSize = 0;
             this.ModalitetBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ModalitetBtn.Font = new System.Drawing.Font("Montserrat", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ModalitetBtn.Location = new System.Drawing.Point(0, 256);
+            this.ModalitetBtn.Location = new System.Drawing.Point(0, 260);
             this.ModalitetBtn.Name = "ModalitetBtn";
             this.ModalitetBtn.Size = new System.Drawing.Size(314, 75);
             this.ModalitetBtn.TabIndex = 3;
@@ -99,7 +100,7 @@
             this.ControlPanelBtn.FlatAppearance.BorderSize = 0;
             this.ControlPanelBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ControlPanelBtn.Font = new System.Drawing.Font("Montserrat", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ControlPanelBtn.Location = new System.Drawing.Point(0, 179);
+            this.ControlPanelBtn.Location = new System.Drawing.Point(-1, 179);
             this.ControlPanelBtn.Name = "ControlPanelBtn";
             this.ControlPanelBtn.Size = new System.Drawing.Size(314, 75);
             this.ControlPanelBtn.TabIndex = 2;
@@ -145,13 +146,15 @@
             // 
             // mainPanel
             // 
+            this.mainPanel.BackColor = System.Drawing.Color.DarkGray;
             this.mainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.mainPanel.Location = new System.Drawing.Point(0, 0);
             this.mainPanel.Name = "mainPanel";
             this.mainPanel.Size = new System.Drawing.Size(916, 595);
             this.mainPanel.TabIndex = 0;
+            this.mainPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.mainPanel_Paint);
             // 
-            // Dashboard
+            // DashboardForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -159,7 +162,7 @@
             this.Controls.Add(this.MiddelPanelDash);
             this.Controls.Add(this.sidebarPanel);
             this.Controls.Add(this.TopPanelDash);
-            this.Name = "Dashboard";
+            this.Name = "DashboardForm";
             this.Text = "Dashboard";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Dashboard_Load);
