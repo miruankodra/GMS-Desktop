@@ -79,5 +79,12 @@ namespace GMS
            
 
         }
+
+        private void regLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            RegisterForm Signup = new RegisterForm();
+            Signup.ShowDialog();
+            this.Hide();
+        }
     }
 }
