@@ -149,6 +149,7 @@
             this.DashBoardBtn.TabIndex = 0;
             this.DashBoardBtn.Text = "Dashboard";
             this.DashBoardBtn.UseVisualStyleBackColor = false;
+            this.DashBoardBtn.Click += new System.EventHandler(this.DashBoardBtn_Click);
             this.DashBoardBtn.MouseHover += new System.EventHandler(this.DashBoardBtn_MouseHover);
             // 
             // MiddelPanelDash
