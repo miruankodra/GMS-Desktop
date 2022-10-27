@@ -64,7 +64,7 @@ namespace GMS
 
         private void loginLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            F
+            
         }
     }
 }
