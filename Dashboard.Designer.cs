@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.TopPanelDash = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.LogoGms = new System.Windows.Forms.Label();
             this.sidebarPanel = new System.Windows.Forms.Panel();
             this.ModalitetBtn = new System.Windows.Forms.Button();
@@ -37,11 +38,10 @@
             this.DashBoardBtn = new System.Windows.Forms.Button();
             this.MiddelPanelDash = new System.Windows.Forms.Panel();
             this.mainPanel = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.TopPanelDash.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.sidebarPanel.SuspendLayout();
             this.MiddelPanelDash.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // TopPanelDash
@@ -57,6 +57,16 @@
             this.TopPanelDash.Size = new System.Drawing.Size(1230, 58);
             this.TopPanelDash.TabIndex = 0;
             this.TopPanelDash.Paint += new System.Windows.Forms.PaintEventHandler(this.TopPanelDash_Paint);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::GMS.Properties.Resources.bitmap;
+            this.pictureBox1.Location = new System.Drawing.Point(35, 4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(53, 50);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
             // 
             // LogoGms
             // 
@@ -88,6 +98,7 @@
             // 
             this.ModalitetBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(253)))), ((int)(((byte)(249)))));
             this.ModalitetBtn.FlatAppearance.BorderSize = 0;
+            this.ModalitetBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(184)))), ((int)(((byte)(92)))));
             this.ModalitetBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ModalitetBtn.Font = new System.Drawing.Font("Montserrat", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ModalitetBtn.Location = new System.Drawing.Point(0, 260);
@@ -101,6 +112,7 @@
             // 
             this.ControlPanelBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(253)))), ((int)(((byte)(249)))));
             this.ControlPanelBtn.FlatAppearance.BorderSize = 0;
+            this.ControlPanelBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(184)))), ((int)(((byte)(92)))));
             this.ControlPanelBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ControlPanelBtn.Font = new System.Drawing.Font("Montserrat", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ControlPanelBtn.Location = new System.Drawing.Point(-1, 179);
@@ -114,6 +126,7 @@
             // 
             this.ClimateBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(253)))), ((int)(((byte)(249)))));
             this.ClimateBtn.FlatAppearance.BorderSize = 0;
+            this.ClimateBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(184)))), ((int)(((byte)(92)))));
             this.ClimateBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ClimateBtn.Font = new System.Drawing.Font("Montserrat", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ClimateBtn.Location = new System.Drawing.Point(0, 101);
@@ -127,6 +140,7 @@
             // 
             this.DashBoardBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(253)))), ((int)(((byte)(249)))));
             this.DashBoardBtn.FlatAppearance.BorderSize = 0;
+            this.DashBoardBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(184)))), ((int)(((byte)(92)))));
             this.DashBoardBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.DashBoardBtn.Font = new System.Drawing.Font("Montserrat", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DashBoardBtn.Location = new System.Drawing.Point(0, 23);
@@ -135,6 +149,7 @@
             this.DashBoardBtn.TabIndex = 0;
             this.DashBoardBtn.Text = "Dashboard";
             this.DashBoardBtn.UseVisualStyleBackColor = false;
+            this.DashBoardBtn.MouseHover += new System.EventHandler(this.DashBoardBtn_MouseHover);
             // 
             // MiddelPanelDash
             // 
@@ -157,17 +172,7 @@
             this.mainPanel.TabIndex = 0;
             this.mainPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.mainPanel_Paint);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::GMS.Properties.Resources.bitmap;
-            this.pictureBox1.Location = new System.Drawing.Point(35, 4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(53, 50);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
-            // 
-            // Dashboard
+            // DashboardForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -182,9 +187,9 @@
             this.Load += new System.EventHandler(this.Dashboard_Load);
             this.TopPanelDash.ResumeLayout(false);
             this.TopPanelDash.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.sidebarPanel.ResumeLayout(false);
             this.MiddelPanelDash.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
