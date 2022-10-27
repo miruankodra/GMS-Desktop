@@ -211,11 +211,11 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
+
     <None Include="Resources\bitmap.png" />
-=======
+
     <WCFMetadata Include="Connected Services\" />
->>>>>>> c578f2b809eac72f0f64d9b1b7851dd4abd803c2
+
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
