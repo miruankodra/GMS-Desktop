@@ -55,5 +55,20 @@ namespace GMS
             loadform(new Charts());
             
         }
+
+        private void ClimateBtn_Click(object sender, EventArgs e)
+        {
+            loadform(new Climate());
+        }
+
+        private void ControlPanelBtn_Click(object sender, EventArgs e)
+        {
+            loadform(new ControlPanel());
+        }
+
+        private void ModalitetBtn_Click(object sender, EventArgs e)
+        {
+            loadform(new Modalities());
+        }
     }
 }

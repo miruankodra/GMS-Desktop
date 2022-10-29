@@ -155,17 +155,35 @@
     <Compile Include="Charts.Designer.cs">
       <DependentUpon>Charts.cs</DependentUpon>
     </Compile>
+    <Compile Include="Climate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Climate.Designer.cs">
+      <DependentUpon>Climate.cs</DependentUpon>
+    </Compile>
     <Compile Include="Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Dashboard.Designer.cs">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="Control Panel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Control Panel.Designer.cs">
+      <DependentUpon>Control Panel.cs</DependentUpon>
+    </Compile>
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Modalities.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Modalities.Designer.cs">
+      <DependentUpon>Modalities.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -184,11 +202,20 @@
     <EmbeddedResource Include="Charts.resx">
       <DependentUpon>Charts.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Climate.resx">
+      <DependentUpon>Climate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Control Panel.resx">
+      <DependentUpon>Control Panel.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Modalities.resx">
+      <DependentUpon>Modalities.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

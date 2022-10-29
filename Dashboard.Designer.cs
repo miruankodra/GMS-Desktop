@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.TopPanelDash = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.LogoGms = new System.Windows.Forms.Label();
             this.sidebarPanel = new System.Windows.Forms.Panel();
             this.ModalitetBtn = new System.Windows.Forms.Button();
@@ -38,10 +37,11 @@
             this.DashBoardBtn = new System.Windows.Forms.Button();
             this.MiddelPanelDash = new System.Windows.Forms.Panel();
             this.mainPanel = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.TopPanelDash.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.sidebarPanel.SuspendLayout();
             this.MiddelPanelDash.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // TopPanelDash
@@ -57,16 +57,6 @@
             this.TopPanelDash.Size = new System.Drawing.Size(1230, 58);
             this.TopPanelDash.TabIndex = 0;
             this.TopPanelDash.Paint += new System.Windows.Forms.PaintEventHandler(this.TopPanelDash_Paint);
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::GMS.Properties.Resources.bitmap;
-            this.pictureBox1.Location = new System.Drawing.Point(35, 4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(53, 50);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
             // 
             // LogoGms
             // 
@@ -107,6 +97,7 @@
             this.ModalitetBtn.TabIndex = 3;
             this.ModalitetBtn.Text = "Modalities";
             this.ModalitetBtn.UseVisualStyleBackColor = false;
+            this.ModalitetBtn.Click += new System.EventHandler(this.ModalitetBtn_Click);
             // 
             // ControlPanelBtn
             // 
@@ -121,6 +112,7 @@
             this.ControlPanelBtn.TabIndex = 2;
             this.ControlPanelBtn.Text = "Control Panel";
             this.ControlPanelBtn.UseVisualStyleBackColor = false;
+            this.ControlPanelBtn.Click += new System.EventHandler(this.ControlPanelBtn_Click);
             // 
             // ClimateBtn
             // 
@@ -135,6 +127,7 @@
             this.ClimateBtn.TabIndex = 1;
             this.ClimateBtn.Text = "Climate";
             this.ClimateBtn.UseVisualStyleBackColor = false;
+            this.ClimateBtn.Click += new System.EventHandler(this.ClimateBtn_Click);
             // 
             // DashBoardBtn
             // 
@@ -173,6 +166,16 @@
             this.mainPanel.TabIndex = 0;
             this.mainPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.mainPanel_Paint);
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::GMS.Properties.Resources.bitmap;
+            this.pictureBox1.Location = new System.Drawing.Point(35, 4);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(53, 50);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
+            // 
             // DashboardForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -188,9 +191,9 @@
             this.Load += new System.EventHandler(this.Dashboard_Load);
             this.TopPanelDash.ResumeLayout(false);
             this.TopPanelDash.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.sidebarPanel.ResumeLayout(false);
             this.MiddelPanelDash.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
