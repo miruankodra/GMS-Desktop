@@ -17,6 +17,8 @@ namespace GMS
     {
         MySqlConnection con;
         public string conString = "SERVER=127.0.0.1;PORT=3306;DATABASE=gms;UID=root;PASSWORD=";
+        public DataGridView udgv = new DataGridView();
+
         
         public LoginForm()
         {
@@ -55,7 +57,9 @@ namespace GMS
 
                 if (dt.Rows.Count == 1)
                 {
-
+                    udgv.DataSource = dt;
+                    string id = (string)udgv[1, 1].Value;
+                    MessageBox.Show(id);
 
                     
                     this.Hide();
