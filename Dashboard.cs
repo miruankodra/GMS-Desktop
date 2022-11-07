@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,9 +13,15 @@ namespace GMS
 {
     public partial class DashboardForm : Form
     {
+        MySqlConnection con;
+        public string conString = "SERVER=127.0.0.1;PORT=3306;DATABASE=gms;UID=root;PASSWORD=";
+
+        string username;
+        string id;
         public DashboardForm(string usr)
         {
             InitializeComponent();
+            username = usr;
             
         }
 
@@ -52,7 +59,26 @@ namespace GMS
         }
         private void DashBoardBtn_Click(object sender, EventArgs e)
         {
+            con = new MySqlConnection();
+            con.ConnectionString = conString;
+
+
+            string query = "SELECT gh_id * from greenhouses WHERE username = '" + username + "'";
+            con.Open();
+            MySqlDataAdapter da = new MySqlDataAdapter();
+            da.SelectCommand = new MySqlCommand(query, con);
+
+            DataTable dt = new DataTable();
+
+            da.Fill(dt);
+            foreach(DataRow dr in dt.Rows)
+            {
+             //   id = dt.row["gh_id"];
+            }
+
             loadform(new Charts());
+
+
             
         }
 
