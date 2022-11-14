@@ -57,9 +57,9 @@ namespace GMS
 
                 if (dt.Rows.Count == 1)
                 {
-                    udgv.DataSource = dt;
-                    string id = (string)udgv[1, 1].Value;
-                    MessageBox.Show(id);
+                   // udgv.DataSource = dt;
+                  //  string id = (string)udgv[1, 1].Value;
+                  //  MessageBox.Show(id);
 
                     
                     this.Hide();
