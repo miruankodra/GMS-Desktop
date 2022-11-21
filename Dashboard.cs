@@ -63,7 +63,7 @@ namespace GMS
             con.ConnectionString = conString;
 
 
-           string query = "SELECT gh_id * from greenhouses WHERE username = '" + username + "'";
+           string query = "SELECT gh_id * from greenhouses WHERE user_id = '" + id + "'";
            con.Open();
            MySqlDataAdapter da = new MySqlDataAdapter();
            da.SelectCommand = new MySqlCommand(query, con);
