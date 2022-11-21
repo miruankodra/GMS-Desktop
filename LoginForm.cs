@@ -43,7 +43,7 @@ namespace GMS
                 con = new MySqlConnection();
                 con.ConnectionString = conString;
                 
-                string query = "SELECT * FROM GMS_USERS WHERE username = '" + username.Text + "' AND passkey = '" + password.Text + "'";
+                string query = "SELECT * FROM users WHERE username = '" + username.Text + "' AND password = '" + password.Text + "'";
        
                 con.Open();
                 MySqlDataAdapter da = new MySqlDataAdapter();

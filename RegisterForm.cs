@@ -43,7 +43,7 @@ namespace GMS
                 con.ConnectionString = conString;
                 con.Open();
                 string phoneNumber = prefix.Text + phone.Text;
-                string query = $"INSERT INTO `gms_users` (`firstname`, `lastname`, `email`, `username`, `passkey`, `phone`, `country`, `city`, `birthday`, `active`) VALUES('" + firstname.Text + "','" + lastname.Text + "','" + email.Text + "','" + newUsername.Text + "','" + newPass.Text + "','" + phoneNumber + "','" + country.Text + "','" + city.Text + "','" + Birthday.Text + "',0)";
+                string query = $"INSERT INTO `users` (`firstname`, `lastname`, `email`, `username`, `password`, `phone`, `country`, `city`, `active`) VALUES('" + firstname.Text + "','" + lastname.Text + "','" + email.Text + "','" + newUsername.Text + "','" + newPass.Text + "','" + phoneNumber + "','" + country.Text + "','" + city.Text + "',0)";
                 MySqlCommand cmd = new MySqlCommand(query, con);
                 MySqlDataReader reader = cmd.ExecuteReader();
                 con.Close();

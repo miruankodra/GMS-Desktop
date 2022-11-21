@@ -31,7 +31,6 @@
             this.LeftPanel = new System.Windows.Forms.Panel();
             this.city = new System.Windows.Forms.ComboBox();
             this.country = new System.Windows.Forms.ComboBox();
-            this.Birthday = new System.Windows.Forms.DateTimePicker();
             this.newUsername = new System.Windows.Forms.TextBox();
             this.newUsernameLbl = new System.Windows.Forms.Label();
             this.signupTitle = new System.Windows.Forms.Label();
@@ -43,7 +42,6 @@
             this.agreement = new System.Windows.Forms.CheckBox();
             this.cityLbl = new System.Windows.Forms.Label();
             this.countryLbl = new System.Windows.Forms.Label();
-            this.birthdayLbl = new System.Windows.Forms.Label();
             this.prefix = new System.Windows.Forms.TextBox();
             this.phone = new System.Windows.Forms.TextBox();
             this.phoneLbl = new System.Windows.Forms.Label();
@@ -64,7 +62,6 @@
             // 
             this.LeftPanel.Controls.Add(this.city);
             this.LeftPanel.Controls.Add(this.country);
-            this.LeftPanel.Controls.Add(this.Birthday);
             this.LeftPanel.Controls.Add(this.newUsername);
             this.LeftPanel.Controls.Add(this.newUsernameLbl);
             this.LeftPanel.Controls.Add(this.signupTitle);
@@ -76,7 +73,6 @@
             this.LeftPanel.Controls.Add(this.agreement);
             this.LeftPanel.Controls.Add(this.cityLbl);
             this.LeftPanel.Controls.Add(this.countryLbl);
-            this.LeftPanel.Controls.Add(this.birthdayLbl);
             this.LeftPanel.Controls.Add(this.prefix);
             this.LeftPanel.Controls.Add(this.phone);
             this.LeftPanel.Controls.Add(this.phoneLbl);
@@ -539,14 +535,6 @@
             this.country.TabIndex = 64;
             this.country.Text = "Country";
             // 
-            // Birthday
-            // 
-            this.Birthday.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.Birthday.Location = new System.Drawing.Point(683, 240);
-            this.Birthday.Name = "Birthday";
-            this.Birthday.Size = new System.Drawing.Size(200, 22);
-            this.Birthday.TabIndex = 63;
-            // 
             // newUsername
             // 
             this.newUsername.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
@@ -585,7 +573,7 @@
             this.loginLink.Font = new System.Drawing.Font("Montserrat", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.loginLink.Location = new System.Drawing.Point(559, 506);
             this.loginLink.Name = "loginLink";
-            this.loginLink.Size = new System.Drawing.Size(64, 24);
+            this.loginLink.Size = new System.Drawing.Size(63, 24);
             this.loginLink.TabIndex = 59;
             this.loginLink.TabStop = true;
             this.loginLink.Text = "Log In";
@@ -644,7 +632,7 @@
             this.agreement.Font = new System.Drawing.Font("Montserrat", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.agreement.Location = new System.Drawing.Point(563, 369);
             this.agreement.Name = "agreement";
-            this.agreement.Size = new System.Drawing.Size(310, 28);
+            this.agreement.Size = new System.Drawing.Size(308, 28);
             this.agreement.TabIndex = 54;
             this.agreement.Text = "I Agree with the Terms of Service";
             this.agreement.UseVisualStyleBackColor = true;
@@ -670,17 +658,6 @@
             this.countryLbl.Size = new System.Drawing.Size(93, 27);
             this.countryLbl.TabIndex = 52;
             this.countryLbl.Text = "Country";
-            // 
-            // birthdayLbl
-            // 
-            this.birthdayLbl.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.birthdayLbl.AutoSize = true;
-            this.birthdayLbl.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.birthdayLbl.Location = new System.Drawing.Point(558, 236);
-            this.birthdayLbl.Name = "birthdayLbl";
-            this.birthdayLbl.Size = new System.Drawing.Size(99, 27);
-            this.birthdayLbl.TabIndex = 49;
-            this.birthdayLbl.Text = "Birthday";
             // 
             // prefix
             // 
@@ -729,7 +706,7 @@
             this.confirmPassLbl.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.confirmPassLbl.Location = new System.Drawing.Point(299, 331);
             this.confirmPassLbl.Name = "confirmPassLbl";
-            this.confirmPassLbl.Size = new System.Drawing.Size(96, 27);
+            this.confirmPassLbl.Size = new System.Drawing.Size(94, 27);
             this.confirmPassLbl.TabIndex = 44;
             this.confirmPassLbl.Text = "Confirm";
             // 
@@ -833,7 +810,6 @@
         private System.Windows.Forms.Panel LeftPanel;
         private System.Windows.Forms.ComboBox city;
         private System.Windows.Forms.ComboBox country;
-        private System.Windows.Forms.DateTimePicker Birthday;
         private System.Windows.Forms.TextBox newUsername;
         private System.Windows.Forms.Label newUsernameLbl;
         private System.Windows.Forms.Label signupTitle;
@@ -845,7 +821,6 @@
         private System.Windows.Forms.CheckBox agreement;
         private System.Windows.Forms.Label cityLbl;
         private System.Windows.Forms.Label countryLbl;
-        private System.Windows.Forms.Label birthdayLbl;
         private System.Windows.Forms.TextBox prefix;
         private System.Windows.Forms.TextBox phone;
         private System.Windows.Forms.Label phoneLbl;
