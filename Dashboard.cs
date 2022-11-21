@@ -14,7 +14,7 @@ namespace GMS
     public partial class DashboardForm : Form
     {
         MySqlConnection con;
-        public string conString = "SERVER=127.0.0.1;PORT=3306;DATABASE=gms;UID=root;PASSWORD=";
+        public string conString = "SERVER=185.146.22.249;PORT=3306;DATABASE=gmsal_gms;UID=gmsal_gms;PASSWORD=gms123al456!!!";
 
         string username;
        string id;
