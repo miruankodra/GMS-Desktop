@@ -90,5 +90,10 @@ namespace GMS
             Signup.ShowDialog();
             this.Hide();
         }
+
+        private void LoginForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

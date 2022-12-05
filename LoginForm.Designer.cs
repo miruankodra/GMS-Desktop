@@ -145,7 +145,7 @@
             this.forgotPass.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.forgotPass.Location = new System.Drawing.Point(207, 219);
             this.forgotPass.Name = "forgotPass";
-            this.forgotPass.Size = new System.Drawing.Size(144, 21);
+            this.forgotPass.Size = new System.Drawing.Size(145, 21);
             this.forgotPass.TabIndex = 3;
             this.forgotPass.TabStop = true;
             this.forgotPass.Text = "Forgot Password?";
@@ -198,6 +198,7 @@
             this.Font = new System.Drawing.Font("Montserrat", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Name = "LoginForm";
             this.Text = "Login";
+            this.Load += new System.EventHandler(this.LoginForm_Load);
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.ResumeLayout(false);

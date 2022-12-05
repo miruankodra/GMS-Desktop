@@ -15,12 +15,14 @@ namespace GMS
 {
     public partial class Charts : Form
     {
-        public Charts()
+        string gh_id;
+        public Charts(string gh)
         {
             InitializeComponent();
+            gh_id = gh;
         }
 
-        static string Myconnectionstring = "SERVER=127.0.0.1;PORT=3306;DATABASE=gms;UID=root;PASSWORD= ";
+        static string Myconnectionstring = "SERVER=185.146.22.249;PORT=3306;DATABASE=gmsal_gms;UID=gmsal_gms;PASSWORD=gms123al456!!!";
         MySqlConnection connection = new MySqlConnection(Myconnectionstring);
         private void Charts_Load(object sender, EventArgs e)
         {
@@ -35,7 +37,7 @@ namespace GMS
             connection.Open();
             try {
                 MySqlCommand cmd = connection.CreateCommand();
-               // cmd.CommandText = "Select * from daily_statistic where gh_id='" + gh_id.Text.ToString() + "'";
+                cmd.CommandText = "Select temp_avg, day from daily_stats where gh_id='" + gh_id + "'";
             }
             catch (Exception)
             {
@@ -46,6 +48,11 @@ namespace GMS
                 if (connection.State == ConnectionState.Open)
                     connection.Close();
             }
+        }
+
+        private void GrafikTemp_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -18,6 +18,7 @@ namespace GMS
 
         string username;
         string id;
+        string gh_id;
        public DashboardForm(string usr)
         {
           InitializeComponent();
@@ -32,6 +33,32 @@ namespace GMS
 
         private void Dashboard_Load(object sender, EventArgs e)
         {
+            con = new MySqlConnection();
+            con.ConnectionString = conString;
+
+            string query = "SELECT * FROM users WHERE username = '" + username + "'";
+
+            con.Open();
+            MySqlDataAdapter da = new MySqlDataAdapter();
+            da.SelectCommand = new MySqlCommand(query, con);
+
+            DataTable dt = new DataTable();
+
+            da.Fill(dt);
+
+            
+
+            con.Close();
+
+            foreach(DataRow row in dt.Rows)
+            {
+                id = row["id"].ToString();
+                
+            }
+
+            
+
+            
 
         }
 
@@ -63,7 +90,7 @@ namespace GMS
             con.ConnectionString = conString;
 
 
-           string query = "SELECT gh_id * from greenhouses WHERE user_id = '" + id + "'";
+           string query = "SELECT id from greenhouse WHERE user_id = '" + id + "'";
            con.Open();
            MySqlDataAdapter da = new MySqlDataAdapter();
            da.SelectCommand = new MySqlCommand(query, con);
@@ -71,12 +98,14 @@ namespace GMS
            DataTable dt = new DataTable();
 
             da.Fill(dt);
-           // foreach(DataRow dr in dt.Rows)
+           foreach(DataRow row in dt.Rows)
             {
-             //  id = dt.row["gh_id"];
+                gh_id = row["id"].ToString();
             }
 
-            loadform(new Charts());
+            MessageBox.Show(gh_id);
+
+            loadform(new Charts(gh_id));
 
 
             

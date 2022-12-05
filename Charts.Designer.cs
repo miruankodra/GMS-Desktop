@@ -59,6 +59,7 @@
             this.GrafikTemp.Size = new System.Drawing.Size(842, 223);
             this.GrafikTemp.TabIndex = 0;
             this.GrafikTemp.Text = "Grafik Temperature";
+            this.GrafikTemp.Click += new System.EventHandler(this.GrafikTemp_Click);
             // 
             // GrafikLageshtie
             // 
