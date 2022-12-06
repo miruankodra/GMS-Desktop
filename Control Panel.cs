@@ -12,9 +12,15 @@ namespace GMS
 {
     public partial class ControlPanel : Form
     {
+
         public ControlPanel()
         {
             InitializeComponent();
         }
+    
+        private void On_Of_Ventilation_Click(object sender, EventArgs e)
+        {
+         
+            }
+        }
     }
-}
