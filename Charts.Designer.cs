@@ -51,7 +51,7 @@
             this.GrafikTemp.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.GrafikTemp.Legends.Add(legend1);
-            this.GrafikTemp.Location = new System.Drawing.Point(23, 12);
+            this.GrafikTemp.Location = new System.Drawing.Point(23, 22);
             this.GrafikTemp.Name = "GrafikTemp";
             this.GrafikTemp.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
             series1.ChartArea = "ChartArea1";
@@ -59,7 +59,7 @@
             series1.Legend = "Legend1";
             series1.Name = "Temperatura";
             this.GrafikTemp.Series.Add(series1);
-            this.GrafikTemp.Size = new System.Drawing.Size(493, 223);
+            this.GrafikTemp.Size = new System.Drawing.Size(510, 223);
             this.GrafikTemp.TabIndex = 0;
             this.GrafikTemp.Text = "Grafik Temperature";
             this.GrafikTemp.Click += new System.EventHandler(this.GrafikTemp_Click);
@@ -70,7 +70,7 @@
             this.GrafikLageshtie.ChartAreas.Add(chartArea2);
             legend2.Name = "Legend1";
             this.GrafikLageshtie.Legends.Add(legend2);
-            this.GrafikLageshtie.Location = new System.Drawing.Point(23, 264);
+            this.GrafikLageshtie.Location = new System.Drawing.Point(23, 276);
             this.GrafikLageshtie.Name = "GrafikLageshtie";
             this.GrafikLageshtie.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
             series2.ChartArea = "ChartArea1";
@@ -83,14 +83,14 @@
             series3.Name = "Lageshtia e dheut";
             this.GrafikLageshtie.Series.Add(series2);
             this.GrafikLageshtie.Series.Add(series3);
-            this.GrafikLageshtie.Size = new System.Drawing.Size(493, 250);
+            this.GrafikLageshtie.Size = new System.Drawing.Size(510, 250);
             this.GrafikLageshtie.TabIndex = 1;
             this.GrafikLageshtie.Text = "Grafik Lageshtie ajri/dheu";
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(600, 133);
+            this.dataGridView1.Location = new System.Drawing.Point(577, 99);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
@@ -100,7 +100,7 @@
             // Loadbtn
             // 
             this.Loadbtn.Font = new System.Drawing.Font("Montserrat Medium", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Loadbtn.Location = new System.Drawing.Point(748, 447);
+            this.Loadbtn.Location = new System.Drawing.Point(725, 415);
             this.Loadbtn.Name = "Loadbtn";
             this.Loadbtn.Size = new System.Drawing.Size(124, 38);
             this.Loadbtn.TabIndex = 3;
