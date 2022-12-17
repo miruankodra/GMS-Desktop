@@ -54,5 +54,29 @@ namespace GMS
         {
 
         }
+
+        private void Loadbtn_Click(object sender, EventArgs e)
+        {
+            //Lidhja e butonit load me datagriedview
+            try
+            {
+                string conString = "SERVER=185.146.22.249;PORT=3306;DATABASE=gmsal_gms;UID=gmsal_gms;PASSWORD=gms123al456!!!";
+                string Query = "select *from gmsal_gms";
+                MySqlConnection conn = new MySqlConnection(conString);
+                MySqlCommand cmd = new MySqlCommand(Query, conn);
+                MySqlDataAdapter sda = new MySqlDataAdapter(); sda.SelectCommand = cmd;
+                DataTable dbtable = new DataTable();
+                sda.Fill(dbtable);
+                BindingSource bsource = new BindingSource();
+                bsource.DataSource = dbtable;
+                dataGridView1.DataSource = bsource;
+                sda.Update(dbtable);
+
+            }
+            catch(MySqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }
