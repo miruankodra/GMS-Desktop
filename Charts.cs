@@ -93,6 +93,8 @@ namespace GMS
                 x = double.Parse(dataGridView1.Rows[i].Cells[0].Value.ToString());
                 y = double.Parse(dataGridView1.Rows[i].Cells[0].Value.ToString());
                 GrafikTemp.Series[0].Points.AddXY(x, y);
+
+                GrafikLageshtie.Series[0].Points.AddXY(x, y);
             }
         }
     }
