@@ -78,5 +78,22 @@ namespace GMS
                 MessageBox.Show(ex.Message);
             }
         }
+
+        private void Graphbtn_Click(object sender, EventArgs e)
+        {
+            Console.WriteLine(dataGridView1.Rows.Count);
+            Console.WriteLine(dataGridView1.Rows[0].Cells[0].Value);
+            Console.WriteLine(dataGridView1.Rows[0].Cells[1].Value);
+            double x = 0;
+            double y = 0;
+
+
+        for(int i = 0; i < dataGridView1.Rows.Count - 1; i++)
+            {
+                x = double.Parse(dataGridView1.Rows[i].Cells[0].Value.ToString());
+                y = double.Parse(dataGridView1.Rows[i].Cells[0].Value.ToString());
+                GrafikTemp.Series[0].Points.AddXY(x, y);
+            }
+        }
     }
 }

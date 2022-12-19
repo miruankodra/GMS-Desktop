@@ -40,6 +40,7 @@
             this.GrafikLageshtie = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Loadbtn = new System.Windows.Forms.Button();
+            this.Graphbtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.GrafikTemp)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GrafikLageshtie)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -108,12 +109,24 @@
             this.Loadbtn.UseVisualStyleBackColor = true;
             this.Loadbtn.Click += new System.EventHandler(this.Loadbtn_Click);
             // 
+            // Graphbtn
+            // 
+            this.Graphbtn.Font = new System.Drawing.Font("Montserrat Medium", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Graphbtn.Location = new System.Drawing.Point(577, 415);
+            this.Graphbtn.Name = "Graphbtn";
+            this.Graphbtn.Size = new System.Drawing.Size(117, 40);
+            this.Graphbtn.TabIndex = 4;
+            this.Graphbtn.Text = "Graph";
+            this.Graphbtn.UseVisualStyleBackColor = true;
+            this.Graphbtn.Click += new System.EventHandler(this.Graphbtn_Click);
+            // 
             // Charts
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(253)))), ((int)(((byte)(249)))));
             this.ClientSize = new System.Drawing.Size(898, 548);
+            this.Controls.Add(this.Graphbtn);
             this.Controls.Add(this.Loadbtn);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.GrafikLageshtie);
@@ -136,5 +149,6 @@
         private System.Windows.Forms.DataVisualization.Charting.Chart GrafikLageshtie;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button Loadbtn;
+        private System.Windows.Forms.Button Graphbtn;
     }
 }
