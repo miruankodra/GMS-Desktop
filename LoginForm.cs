@@ -17,7 +17,6 @@ namespace GMS
     {
         MySqlConnection con;
         public string conString = "SERVER=185.146.22.249;PORT=3306;DATABASE=gmsal_gms;UID=gmsal_gms;PASSWORD=gms123al456!!!";
-        public DataGridView udgv = new DataGridView();
 
         
         public LoginForm()

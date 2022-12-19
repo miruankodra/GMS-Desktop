@@ -32,23 +32,23 @@ namespace GMS
 
       
 
-        public void Chart()
-        {
-            connection.Open();
-            try {
-                MySqlCommand cmd = connection.CreateCommand();
-                cmd.CommandText = "Select temp_avg, day from daily_stats where gh_id='" + gh_id + "'";
-            }
-            catch (Exception)
-            {
-                throw;
-            }
-            finally
-            {
-                if (connection.State == ConnectionState.Open)
-                    connection.Close();
-            }
-        }
+        //public void Chart()
+        //{
+        //    connection.Open();
+        //    try {
+        //        MySqlCommand cmd = connection.CreateCommand();
+        //        cmd.CommandText = "Select temp_avg, day from statistics where gh_id='" + gh_id + "'";
+        //    }
+        //    catch (Exception)
+        //    {
+        //        throw;
+        //    }
+        //    finally
+        //    {
+        //        if (connection.State == ConnectionState.Open)
+        //            connection.Close();
+        //    }
+        //}
 
         private void GrafikTemp_Click(object sender, EventArgs e)
         {
@@ -61,7 +61,7 @@ namespace GMS
             try
             {
                 string conString = "SERVER=185.146.22.249;PORT=3306;DATABASE=gmsal_gms;UID=gmsal_gms;PASSWORD=gms123al456!!!";
-                string Query = "select *from gmsal_gms";
+                string Query = "select * from statistics  where greenhosue_id='" + gh_id + "'";
                 MySqlConnection conn = new MySqlConnection(conString);
                 MySqlCommand cmd = new MySqlCommand(Query, conn);
                 MySqlDataAdapter sda = new MySqlDataAdapter(); sda.SelectCommand = cmd;
