@@ -18,6 +18,9 @@ namespace GMS
         MySqlConnection con;
         public string conString = "SERVER=185.146.22.249;PORT=3306;DATABASE=gmsal_gms;UID=gmsal_gms;PASSWORD=gms123al456!!!";
         public string gh;
+        public string temp;
+        public string air_hum;
+        public string soil_hum;
         public Climate(string gh)
         {
             InitializeComponent();
@@ -51,8 +54,17 @@ namespace GMS
             da.Fill(dt);
             foreach (DataRow row in dt.Rows)
             {
-                
+                temp = row["temp"].ToString();
+                air_hum = row["air_humid"].ToString(); 
+                soil_hum = row["soil_humid"].ToString();
             }
+
+            MessageBox.Show(temp);
+
+            TempLbl.Text = temp;
+            ahLbl.Text = air_hum;
+            shLbl.Text = soil_hum;
+
 
         }
     }

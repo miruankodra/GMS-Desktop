@@ -17,15 +17,17 @@ namespace GMS
         MySqlConnection con;
         public string conString = "SERVER=185.146.22.249;PORT=3306;DATABASE=gmsal_gms;UID=gmsal_gms;PASSWORD=gms123al456!!!";
 
-        string username;
+        
         string id;
         string gh_id;
-       public DashboardForm(string usr)
+       public DashboardForm(string usr_id)
         {
           InitializeComponent();
-          username = usr;
+          id = usr_id;
             
         }
+
+
 
         private void TopPanelDash_Paint(object sender, PaintEventArgs e)
         {
@@ -41,8 +43,8 @@ namespace GMS
             con = new MySqlConnection();
             con.ConnectionString = conString;
 
-            string query = "SELECT * FROM users WHERE username = '" + username + "'";
 
+            string query = "SELECT id from greenhouses WHERE user_id = '" + id + "'";
             con.Open();
             MySqlDataAdapter da = new MySqlDataAdapter();
             da.SelectCommand = new MySqlCommand(query, con);
@@ -50,20 +52,15 @@ namespace GMS
             DataTable dt = new DataTable();
 
             da.Fill(dt);
-
-            
-
-            con.Close();
-
-            foreach(DataRow row in dt.Rows)
+            foreach (DataRow row in dt.Rows)
             {
-                id = row["id"].ToString();
-                
+                gh_id = row["id"].ToString();
             }
 
-            
+            MessageBox.Show(gh_id);
 
-            
+
+
 
         }
 
@@ -91,22 +88,22 @@ namespace GMS
         }
         private void DashBoardBtn_Click(object sender, EventArgs e)
         {
-            con = new MySqlConnection();
-            con.ConnectionString = conString;
+            //con = new MySqlConnection();
+            //con.ConnectionString = conString;
 
 
-           string query = "SELECT id from greenhouses WHERE user_id = '" + id + "'";
-           con.Open();
-           MySqlDataAdapter da = new MySqlDataAdapter();
-           da.SelectCommand = new MySqlCommand(query, con);
+           //string query = "SELECT id from greenhouses WHERE user_id = '" + id + "'";
+           //con.Open();
+           //MySqlDataAdapter da = new MySqlDataAdapter();
+           //da.SelectCommand = new MySqlCommand(query, con);
 
-           DataTable dt = new DataTable();
+           //DataTable dt = new DataTable();
 
-            da.Fill(dt);
-           foreach(DataRow row in dt.Rows)
-            {
-                gh_id = row["id"].ToString();
-            }
+           // da.Fill(dt);
+           //foreach(DataRow row in dt.Rows)
+           // {
+           //     gh_id = row["id"].ToString();
+            //}
 
 
             loadform(new Charts(gh_id));
@@ -117,26 +114,8 @@ namespace GMS
 
         private void ClimateBtn_Click(object sender, EventArgs e)
         {
-            con = new MySqlConnection();
-            con.ConnectionString = conString;
-
-
-            string query = "SELECT id from greenhouses WHERE user_id = '" + id + "'";
-            con.Open();
-            MySqlDataAdapter da = new MySqlDataAdapter();
-            da.SelectCommand = new MySqlCommand(query, con);
-
-            DataTable dt = new DataTable();
-
-            da.Fill(dt);
-            foreach (DataRow row in dt.Rows)
-            {
-                gh_id = row["id"].ToString();
-            }
-
-
-            loadform(new Charts(gh_id));
-            loadform(new Climate());
+           
+            loadform(new Climate(gh_id));
         }
 
         private void ControlPanelBtn_Click(object sender, EventArgs e)

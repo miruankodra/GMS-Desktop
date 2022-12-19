@@ -30,9 +30,11 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Climate));
             this.TempPanel = new System.Windows.Forms.Panel();
+            this.TempLbl = new System.Windows.Forms.Label();
             this.TempGrade = new System.Windows.Forms.Label();
             this.TempParameters = new System.Windows.Forms.Label();
             this.AirHumidityPanel = new System.Windows.Forms.Panel();
+            this.ahLbl = new System.Windows.Forms.Label();
             this.AirHumiditypercent = new System.Windows.Forms.Label();
             this.AirHumidity = new System.Windows.Forms.Label();
             this.LiveParameterslbl = new System.Windows.Forms.Label();
@@ -40,9 +42,7 @@
             this.LiveIcon = new System.Windows.Forms.PictureBox();
             this.SoilHumiditypercent = new System.Windows.Forms.Label();
             this.SoilHumidityPanel = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.shLbl = new System.Windows.Forms.Label();
             this.TempPanel.SuspendLayout();
             this.AirHumidityPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.LiveIcon)).BeginInit();
@@ -51,14 +51,24 @@
             // 
             // TempPanel
             // 
-            this.TempPanel.Controls.Add(this.label1);
+            this.TempPanel.Controls.Add(this.TempLbl);
             this.TempPanel.Controls.Add(this.TempGrade);
             this.TempPanel.Controls.Add(this.TempParameters);
             this.TempPanel.Location = new System.Drawing.Point(49, 84);
-            this.TempPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TempPanel.Margin = new System.Windows.Forms.Padding(2);
             this.TempPanel.Name = "TempPanel";
             this.TempPanel.Size = new System.Drawing.Size(262, 119);
             this.TempPanel.TabIndex = 0;
+            // 
+            // TempLbl
+            // 
+            this.TempLbl.AutoSize = true;
+            this.TempLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.TempLbl.Location = new System.Drawing.Point(139, 23);
+            this.TempLbl.Name = "TempLbl";
+            this.TempLbl.Size = new System.Drawing.Size(46, 18);
+            this.TempLbl.TabIndex = 3;
+            this.TempLbl.Text = "label1";
             // 
             // TempGrade
             // 
@@ -84,14 +94,24 @@
             // 
             // AirHumidityPanel
             // 
-            this.AirHumidityPanel.Controls.Add(this.label4);
+            this.AirHumidityPanel.Controls.Add(this.ahLbl);
             this.AirHumidityPanel.Controls.Add(this.AirHumiditypercent);
             this.AirHumidityPanel.Controls.Add(this.AirHumidity);
             this.AirHumidityPanel.Location = new System.Drawing.Point(346, 84);
-            this.AirHumidityPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.AirHumidityPanel.Margin = new System.Windows.Forms.Padding(2);
             this.AirHumidityPanel.Name = "AirHumidityPanel";
             this.AirHumidityPanel.Size = new System.Drawing.Size(261, 119);
             this.AirHumidityPanel.TabIndex = 1;
+            // 
+            // ahLbl
+            // 
+            this.ahLbl.AutoSize = true;
+            this.ahLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.ahLbl.Location = new System.Drawing.Point(141, 23);
+            this.ahLbl.Name = "ahLbl";
+            this.ahLbl.Size = new System.Drawing.Size(46, 18);
+            this.ahLbl.TabIndex = 5;
+            this.ahLbl.Text = "label4";
             // 
             // AirHumiditypercent
             // 
@@ -143,7 +163,7 @@
             // 
             this.LiveIcon.Image = ((System.Drawing.Image)(resources.GetObject("LiveIcon.Image")));
             this.LiveIcon.Location = new System.Drawing.Point(181, 45);
-            this.LiveIcon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.LiveIcon.Margin = new System.Windows.Forms.Padding(2);
             this.LiveIcon.Name = "LiveIcon";
             this.LiveIcon.Size = new System.Drawing.Size(40, 24);
             this.LiveIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -163,44 +183,24 @@
             // 
             // SoilHumidityPanel
             // 
-            this.SoilHumidityPanel.Controls.Add(this.label2);
+            this.SoilHumidityPanel.Controls.Add(this.shLbl);
             this.SoilHumidityPanel.Controls.Add(this.SoilHumiditypercent);
             this.SoilHumidityPanel.Controls.Add(this.SoilHumidity);
             this.SoilHumidityPanel.Location = new System.Drawing.Point(201, 279);
-            this.SoilHumidityPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.SoilHumidityPanel.Margin = new System.Windows.Forms.Padding(2);
             this.SoilHumidityPanel.Name = "SoilHumidityPanel";
             this.SoilHumidityPanel.Size = new System.Drawing.Size(260, 109);
             this.SoilHumidityPanel.TabIndex = 4;
             // 
-            // label1
+            // shLbl
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.label1.Location = new System.Drawing.Point(139, 23);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 18);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "label1";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.label4.Location = new System.Drawing.Point(141, 23);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(46, 18);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "label4";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
-            this.label2.Location = new System.Drawing.Point(142, 20);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(46, 18);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "label2";
+            this.shLbl.AutoSize = true;
+            this.shLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F);
+            this.shLbl.Location = new System.Drawing.Point(142, 20);
+            this.shLbl.Name = "shLbl";
+            this.shLbl.Size = new System.Drawing.Size(46, 18);
+            this.shLbl.TabIndex = 5;
+            this.shLbl.Text = "label2";
             // 
             // Climate
             // 
@@ -213,7 +213,7 @@
             this.Controls.Add(this.AirHumidityPanel);
             this.Controls.Add(this.TempPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Climate";
             this.Text = "Climate";
             this.Load += new System.EventHandler(this.Climate_Load);
@@ -242,8 +242,8 @@
         private System.Windows.Forms.PictureBox LiveIcon;
         private System.Windows.Forms.Label SoilHumiditypercent;
         private System.Windows.Forms.Panel SoilHumidityPanel;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label TempLbl;
+        private System.Windows.Forms.Label ahLbl;
+        private System.Windows.Forms.Label shLbl;
     }
 }

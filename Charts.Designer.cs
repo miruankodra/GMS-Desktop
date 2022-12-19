@@ -39,8 +39,6 @@
             this.customInstaller1 = new MySql.Data.MySqlClient.CustomInstaller();
             this.GrafikLageshtie = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Loadbtn = new System.Windows.Forms.Button();
-            this.Graphbtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.GrafikTemp)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GrafikLageshtie)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -52,7 +50,8 @@
             this.GrafikTemp.ChartAreas.Add(chartArea1);
             legend1.Name = "Legend1";
             this.GrafikTemp.Legends.Add(legend1);
-            this.GrafikTemp.Location = new System.Drawing.Point(23, 22);
+            this.GrafikTemp.Location = new System.Drawing.Point(17, 18);
+            this.GrafikTemp.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.GrafikTemp.Name = "GrafikTemp";
             this.GrafikTemp.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
             series1.ChartArea = "ChartArea1";
@@ -60,7 +59,7 @@
             series1.Legend = "Legend1";
             series1.Name = "Temperatura";
             this.GrafikTemp.Series.Add(series1);
-            this.GrafikTemp.Size = new System.Drawing.Size(510, 223);
+            this.GrafikTemp.Size = new System.Drawing.Size(646, 181);
             this.GrafikTemp.TabIndex = 0;
             this.GrafikTemp.Text = "Grafik Temperature";
             this.GrafikTemp.Click += new System.EventHandler(this.GrafikTemp_Click);
@@ -71,7 +70,8 @@
             this.GrafikLageshtie.ChartAreas.Add(chartArea2);
             legend2.Name = "Legend1";
             this.GrafikLageshtie.Legends.Add(legend2);
-            this.GrafikLageshtie.Location = new System.Drawing.Point(23, 276);
+            this.GrafikLageshtie.Location = new System.Drawing.Point(17, 224);
+            this.GrafikLageshtie.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.GrafikLageshtie.Name = "GrafikLageshtie";
             this.GrafikLageshtie.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
             series2.ChartArea = "ChartArea1";
@@ -84,54 +84,34 @@
             series3.Name = "Lageshtia e dheut";
             this.GrafikLageshtie.Series.Add(series2);
             this.GrafikLageshtie.Series.Add(series3);
-            this.GrafikLageshtie.Size = new System.Drawing.Size(510, 250);
+            this.GrafikLageshtie.Size = new System.Drawing.Size(646, 203);
             this.GrafikLageshtie.TabIndex = 1;
             this.GrafikLageshtie.Text = "Grafik Lageshtie ajri/dheu";
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(577, 99);
+            this.dataGridView1.Location = new System.Drawing.Point(382, 431);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(272, 291);
+            this.dataGridView1.Size = new System.Drawing.Size(204, 10);
             this.dataGridView1.TabIndex = 2;
-            // 
-            // Loadbtn
-            // 
-            this.Loadbtn.Font = new System.Drawing.Font("Montserrat Medium", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Loadbtn.Location = new System.Drawing.Point(725, 415);
-            this.Loadbtn.Name = "Loadbtn";
-            this.Loadbtn.Size = new System.Drawing.Size(124, 38);
-            this.Loadbtn.TabIndex = 3;
-            this.Loadbtn.Text = "Load";
-            this.Loadbtn.UseVisualStyleBackColor = true;
-            this.Loadbtn.Click += new System.EventHandler(this.Loadbtn_Click);
-            // 
-            // Graphbtn
-            // 
-            this.Graphbtn.Font = new System.Drawing.Font("Montserrat Medium", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Graphbtn.Location = new System.Drawing.Point(577, 415);
-            this.Graphbtn.Name = "Graphbtn";
-            this.Graphbtn.Size = new System.Drawing.Size(117, 40);
-            this.Graphbtn.TabIndex = 4;
-            this.Graphbtn.Text = "Graph";
-            this.Graphbtn.UseVisualStyleBackColor = true;
-            this.Graphbtn.Click += new System.EventHandler(this.Graphbtn_Click);
+            this.dataGridView1.Visible = false;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // Charts
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(253)))), ((int)(((byte)(249)))));
-            this.ClientSize = new System.Drawing.Size(898, 548);
-            this.Controls.Add(this.Graphbtn);
-            this.Controls.Add(this.Loadbtn);
+            this.ClientSize = new System.Drawing.Size(674, 445);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.GrafikLageshtie);
             this.Controls.Add(this.GrafikTemp);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Charts";
             this.Text = "Charts";
             this.Load += new System.EventHandler(this.Charts_Load);
@@ -148,7 +128,5 @@
         private MySql.Data.MySqlClient.CustomInstaller customInstaller1;
         private System.Windows.Forms.DataVisualization.Charting.Chart GrafikLageshtie;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.Button Loadbtn;
-        private System.Windows.Forms.Button Graphbtn;
     }
 }

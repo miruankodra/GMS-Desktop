@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using MySql.Data.MySqlClient;
+using System.Windows.Forms.DataVisualization.Charting;
 
 
 namespace GMS
@@ -17,6 +18,7 @@ namespace GMS
     {
         MySqlConnection con;
         public string conString = "SERVER=185.146.22.249;PORT=3306;DATABASE=gmsal_gms;UID=gmsal_gms;PASSWORD=gms123al456!!!";
+        public string usr_id;
 
         
         public LoginForm()
@@ -56,14 +58,19 @@ namespace GMS
 
                 if (dt.Rows.Count == 1)
                 {
-                   // udgv.DataSource = dt;
-                  //  string id = (string)udgv[1, 1].Value;
-                  //  MessageBox.Show(id);
+                    // udgv.DataSource = dt;
+                    //  string id = (string)udgv[1, 1].Value;
+                    //  MessageBox.Show(id);
 
-                    
-                    this.Hide();
+                    foreach (DataRow row in dt.Rows)
+                    {
+                        usr_id = row["id"].ToString();
+                    }
 
-                    Form Dashboard = new DashboardForm(username.Text);
+
+                    this.Close();
+
+                    Form Dashboard = new DashboardForm(usr_id);
                     Dashboard.ShowDialog();
 
 
