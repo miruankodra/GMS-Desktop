@@ -61,7 +61,7 @@ namespace GMS
             try
             {
                 string conString = "SERVER=185.146.22.249;PORT=3306;DATABASE=gmsal_gms;UID=gmsal_gms;PASSWORD=gms123al456!!!";
-                string Query = "select * from statistics  where greenhosue_id='" + gh_id + "'";
+                string Query = "SELECT * FROM statistics WHERE greenhouse_id='" + gh_id + "'";
                 MySqlConnection conn = new MySqlConnection(conString);
                 MySqlCommand cmd = new MySqlCommand(Query, conn);
                 MySqlDataAdapter sda = new MySqlDataAdapter(); sda.SelectCommand = cmd;

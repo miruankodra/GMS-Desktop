@@ -90,7 +90,7 @@ namespace GMS
             con.ConnectionString = conString;
 
 
-           string query = "SELECT id from greenhouse WHERE user_id = '" + id + "'";
+           string query = "SELECT id from greenhouses WHERE user_id = '" + id + "'";
            con.Open();
            MySqlDataAdapter da = new MySqlDataAdapter();
            da.SelectCommand = new MySqlCommand(query, con);
@@ -103,7 +103,6 @@ namespace GMS
                 gh_id = row["id"].ToString();
             }
 
-            MessageBox.Show(gh_id);
 
             loadform(new Charts(gh_id));
 
