@@ -56,11 +56,22 @@ namespace GMS
 
             for (int i = 0; i < dataGridView1.Rows.Count - 1; i++)
             {
-                x = double.Parse(dataGridView1.Rows[i].Cells[0].Value.ToString());
-                y = double.Parse(dataGridView1.Rows[i].Cells[0].Value.ToString());
+                x = double.Parse(dataGridView1.Rows[i].Cells[5].Value.ToString());
+                y = double.Parse(dataGridView1.Rows[i].Cells[2].Value.ToString());
+               
                 GrafikTemp.Series[0].Points.AddXY(x, y);
+            }
+
+            for (int i = 0; i < dataGridView1.Rows.Count - 1; i++)
+            {
+                x = double.Parse(dataGridView1.Rows[i].Cells[5].Value.ToString());
+                y = double.Parse(dataGridView1.Rows[i].Cells[3].Value.ToString());
+
+
 
                 GrafikLageshtie.Series[0].Points.AddXY(x, y);
+             
+
             }
 
         }
@@ -101,6 +112,11 @@ namespace GMS
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void GrafikLageshtieDheu_Click(object sender, EventArgs e)
         {
 
         }

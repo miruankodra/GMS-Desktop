@@ -56,12 +56,6 @@ namespace GMS
             {
                 gh_id = row["id"].ToString();
             }
-
-            MessageBox.Show(gh_id);
-
-
-
-
         }
 
         private void mainPanel_Paint(object sender, PaintEventArgs e)
@@ -88,28 +82,7 @@ namespace GMS
         }
         private void DashBoardBtn_Click(object sender, EventArgs e)
         {
-            //con = new MySqlConnection();
-            //con.ConnectionString = conString;
-
-
-           //string query = "SELECT id from greenhouses WHERE user_id = '" + id + "'";
-           //con.Open();
-           //MySqlDataAdapter da = new MySqlDataAdapter();
-           //da.SelectCommand = new MySqlCommand(query, con);
-
-           //DataTable dt = new DataTable();
-
-           // da.Fill(dt);
-           //foreach(DataRow row in dt.Rows)
-           // {
-           //     gh_id = row["id"].ToString();
-            //}
-
-
-            loadform(new Charts(gh_id));
-
-
-            
+            loadform(new Charts(gh_id));  
         }
 
         private void ClimateBtn_Click(object sender, EventArgs e)
