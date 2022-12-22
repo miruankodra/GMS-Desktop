@@ -22,16 +22,48 @@ namespace GMS
 
         string id;
         string gh_id;
-        public Charts(string gh, string uid)
+        string firstname;
+        string lastname;
+        string area;
+        string location;
+
+        public Charts(string gh, string uid, string area, string location)
         {
+
             InitializeComponent();
             gh_id = gh;
-            id= uid;
+            id = uid;
+            this.area = area;
+            this.location = location;
         }
 
         MySqlConnection connection = new MySqlConnection(conString);
         private void Charts_Load(object sender, EventArgs e)
         {
+
+            con = new MySqlConnection();
+            con.ConnectionString = conString;
+
+
+            string query = "SELECT firstname, lastname from users WHERE id = '" + id + "'";
+            con.Open();
+            MySqlDataAdapter da = new MySqlDataAdapter();
+            da.SelectCommand = new MySqlCommand(query, con);
+
+            DataTable dt = new DataTable();
+
+            da.Fill(dt);
+           
+            foreach (DataRow row in dt.Rows)
+            {
+                firstname = row["firstname"].ToString();
+                lastname = row["lastname"].ToString();
+            }
+            Owner.Text = firstname + " " + lastname;
+            Area.Text = area;
+            Location.Text = location;
+
+
             //Lidhja e butonit load me datagriedview
             try
             {
@@ -76,6 +108,17 @@ namespace GMS
 
                 GrafikLageshtie.Series[0].Points.AddXY(x, y);
              
+
+            }
+            for (int i = 0; i < dataGridView1.Rows.Count - 1; i++)
+            {
+                x = double.Parse(dataGridView1.Rows[i].Cells[5].Value.ToString());
+                y = double.Parse(dataGridView1.Rows[i].Cells[3].Value.ToString());
+
+
+
+                GrafikLageshtieDheu.Series[0].Points.AddXY(x, y);
+
 
             }
 
@@ -128,21 +171,10 @@ namespace GMS
 
         private void Owner_Click(object sender, EventArgs e)
         {
-            con = new MySqlConnection();
-            con.ConnectionString = conString;
-
-
-            string query = "SELECT firstname from users WHERE firtsname = '" + firstname + "'";
-            con.Open();
-            MySqlDataAdapter da = new MySqlDataAdapter();
-            da.SelectCommand = new MySqlCommand(query, con);
-
-            DataTable dt = new DataTable();
-
-            da.Fill(dt);
          
         }
 
+       
     }
 }
 
