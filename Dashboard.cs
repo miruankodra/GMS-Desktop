@@ -82,7 +82,7 @@ namespace GMS
         }
         private void DashBoardBtn_Click(object sender, EventArgs e)
         {
-            loadform(new Charts(gh_id));  
+            loadform(new Charts(gh_id, id));  
         }
 
         private void ClimateBtn_Click(object sender, EventArgs e)
@@ -99,6 +99,11 @@ namespace GMS
         private void ModalitetBtn_Click(object sender, EventArgs e)
         {
             loadform(new Modalities());
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

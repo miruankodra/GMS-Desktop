@@ -59,8 +59,6 @@ namespace GMS
                 soil_hum = row["soil_humid"].ToString();
             }
 
-            MessageBox.Show(temp);
-
             TempLbl.Text = temp;
             ahLbl.Text = air_hum;
             shLbl.Text = soil_hum;
