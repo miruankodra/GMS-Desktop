@@ -28,20 +28,49 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.AddModBtn = new System.Windows.Forms.Button();
+            this.AddLbl = new System.Windows.Forms.Label();
             this.SuspendLayout();
+            // 
+            // AddModBtn
+            // 
+            this.AddModBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddModBtn.Location = new System.Drawing.Point(110, 108);
+            this.AddModBtn.Name = "AddModBtn";
+            this.AddModBtn.Size = new System.Drawing.Size(110, 110);
+            this.AddModBtn.TabIndex = 0;
+            this.AddModBtn.Text = "+\r\n";
+            this.AddModBtn.UseVisualStyleBackColor = true;
+            // 
+            // AddLbl
+            // 
+            this.AddLbl.AutoSize = true;
+            this.AddLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddLbl.Location = new System.Drawing.Point(89, 234);
+            this.AddLbl.Name = "AddLbl";
+            this.AddLbl.Size = new System.Drawing.Size(149, 25);
+            this.AddLbl.TabIndex = 1;
+            this.AddLbl.Text = "Add Modality";
             // 
             // Modalities
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(898, 548);
+            this.ClientSize = new System.Drawing.Size(1089, 661);
+            this.Controls.Add(this.AddLbl);
+            this.Controls.Add(this.AddModBtn);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Modalities";
             this.Text = "Modalities";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Button AddModBtn;
+        private System.Windows.Forms.Label AddLbl;
     }
 }
