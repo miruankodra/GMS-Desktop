@@ -15,6 +15,12 @@ namespace GMS
 {
     public partial class Charts : Form
     {
+
+        MySqlConnection con;
+        public string conString = "SERVER=185.146.22.249;PORT=3306;DATABASE=gmsal_gms;UID=gmsal_gms;PASSWORD=gms123al456!!!";
+
+
+        string id;
         string gh_id;
         public Charts(string gh)
         {
@@ -120,5 +126,24 @@ namespace GMS
         {
 
         }
+
+        private void Owner_Click(object sender, EventArgs e)
+        {
+            con = new MySqlConnection();
+            con.ConnectionString = conString;
+
+
+            string query = "SELECT firstname from users WHERE user_firsname = '" + firstname + "'";
+            con.Open();
+            MySqlDataAdapter da = new MySqlDataAdapter();
+            da.SelectCommand = new MySqlCommand(query, con);
+
+            DataTable dt = new DataTable();
+
+            da.Fill(dt);
+         
+        }
+
     }
 }
+
