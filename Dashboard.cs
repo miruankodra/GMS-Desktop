@@ -20,6 +20,8 @@ namespace GMS
         
         string id;
         string gh_id;
+        string area;
+        string location;
        public DashboardForm(string usr_id)
         {
           InitializeComponent();
@@ -44,7 +46,7 @@ namespace GMS
             con.ConnectionString = conString;
 
 
-            string query = "SELECT id from greenhouses WHERE user_id = '" + id + "'";
+            string query = "SELECT * from greenhouses WHERE user_id = '" + id + "'";
             con.Open();
             MySqlDataAdapter da = new MySqlDataAdapter();
             da.SelectCommand = new MySqlCommand(query, con);
@@ -55,6 +57,9 @@ namespace GMS
             foreach (DataRow row in dt.Rows)
             {
                 gh_id = row["id"].ToString();
+                area = row["area"].ToString();
+                location = row["location"].ToString();
+
             }
         }
 
@@ -82,7 +87,7 @@ namespace GMS
         }
         private void DashBoardBtn_Click(object sender, EventArgs e)
         {
-            loadform(new Charts(gh_id, id));  
+            loadform(new Charts(gh_id, id, area, location));  
         }
 
         private void ClimateBtn_Click(object sender, EventArgs e)
