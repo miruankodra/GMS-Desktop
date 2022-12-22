@@ -17,7 +17,7 @@ namespace GMS
     {
 
         MySqlConnection con;
-        public string conString = "SERVER=185.146.22.249;PORT=3306;DATABASE=gmsal_gms;UID=gmsal_gms;PASSWORD=gms123al456!!!";
+        static string conString = "SERVER=185.146.22.249;PORT=3306;DATABASE=gmsal_gms;UID=gmsal_gms;PASSWORD=gms123al456!!!";
 
 
         string id;
@@ -27,16 +27,15 @@ namespace GMS
         {
             InitializeComponent();
             gh_id = gh;
+            id= uid;
         }
 
-        static string Myconnectionstring = "SERVER=185.146.22.249;PORT=3306;DATABASE=gmsal_gms;UID=gmsal_gms;PASSWORD=gms123al456!!!";
-        MySqlConnection connection = new MySqlConnection(Myconnectionstring);
+        MySqlConnection connection = new MySqlConnection(conString);
         private void Charts_Load(object sender, EventArgs e)
         {
             //Lidhja e butonit load me datagriedview
             try
             {
-                string conString = "SERVER=185.146.22.249;PORT=3306;DATABASE=gmsal_gms;UID=gmsal_gms;PASSWORD=gms123al456!!!";
                 string Query = "SELECT * FROM statistics WHERE greenhouse_id='" + gh_id + "'";
                 MySqlConnection conn = new MySqlConnection(conString);
                 MySqlCommand cmd = new MySqlCommand(Query, conn);
@@ -134,7 +133,7 @@ namespace GMS
             con.ConnectionString = conString;
 
 
-            string query = "SELECT firstname from users WHERE user_firsname = '" + firstname + "'";
+            string query = "SELECT firstname from users WHERE firtsname = '" + firstname + "'";
             con.Open();
             MySqlDataAdapter da = new MySqlDataAdapter();
             da.SelectCommand = new MySqlCommand(query, con);
