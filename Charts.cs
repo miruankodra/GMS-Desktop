@@ -22,6 +22,7 @@ namespace GMS
 
         string id;
         string gh_id;
+      
         public Charts(string gh)
         {
             InitializeComponent();
