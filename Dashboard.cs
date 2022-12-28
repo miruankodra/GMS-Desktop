@@ -103,7 +103,7 @@ namespace GMS
 
         private void ModalitetBtn_Click(object sender, EventArgs e)
         {
-            loadform(new Modalities());
+            loadform(new Modalities(gh_id));
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)

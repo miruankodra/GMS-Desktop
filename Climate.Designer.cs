@@ -57,6 +57,7 @@
             // 
             // TempPanel
             // 
+            this.TempPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(253)))), ((int)(((byte)(249)))));
             this.TempPanel.Controls.Add(this.TempLbl);
             this.TempPanel.Controls.Add(this.TempGrade);
             this.TempPanel.Controls.Add(this.TempParameters);
@@ -100,6 +101,7 @@
             // 
             // AirHumidityPanel
             // 
+            this.AirHumidityPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(253)))), ((int)(((byte)(249)))));
             this.AirHumidityPanel.Controls.Add(this.ahLbl);
             this.AirHumidityPanel.Controls.Add(this.AirHumiditypercent);
             this.AirHumidityPanel.Controls.Add(this.AirHumidity);
@@ -188,6 +190,7 @@
             // 
             // SoilHumidityPanel
             // 
+            this.SoilHumidityPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(253)))), ((int)(((byte)(249)))));
             this.SoilHumidityPanel.Controls.Add(this.shLbl);
             this.SoilHumidityPanel.Controls.Add(this.SoilHumiditypercent);
             this.SoilHumidityPanel.Controls.Add(this.SoilHumidity);
@@ -208,6 +211,7 @@
             // 
             // panel1
             // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(253)))), ((int)(((byte)(249)))));
             this.panel1.Controls.Add(this.LiveParameterslbl);
             this.panel1.Controls.Add(this.SoilHumidityPanel);
             this.panel1.Controls.Add(this.TempPanel);
@@ -221,6 +225,7 @@
             // 
             // panel2
             // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(253)))), ((int)(((byte)(249)))));
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
@@ -229,6 +234,7 @@
             // 
             // panel3
             // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(253)))), ((int)(((byte)(249)))));
             this.panel3.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel3.Location = new System.Drawing.Point(0, 582);
             this.panel3.Name = "panel3";
@@ -237,6 +243,7 @@
             // 
             // panel4
             // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(253)))), ((int)(((byte)(249)))));
             this.panel4.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel4.Location = new System.Drawing.Point(1022, 79);
             this.panel4.Name = "panel4";
@@ -245,6 +252,7 @@
             // 
             // panel5
             // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(253)))), ((int)(((byte)(249)))));
             this.panel5.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel5.Location = new System.Drawing.Point(0, 79);
             this.panel5.Name = "panel5";
@@ -265,6 +273,7 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Climate";
             this.Text = "Climate";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Climate_Load);
             this.TempPanel.ResumeLayout(false);
             this.TempPanel.PerformLayout();

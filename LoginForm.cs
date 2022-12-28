@@ -58,9 +58,6 @@ namespace GMS
 
                 if (dt.Rows.Count == 1)
                 {
-                    // udgv.DataSource = dt;
-                    //  string id = (string)udgv[1, 1].Value;
-                    //  MessageBox.Show(id);
 
                     foreach (DataRow row in dt.Rows)
                     {
@@ -68,7 +65,7 @@ namespace GMS
                     }
 
 
-                    this.Close();
+                    this.Hide();
 
                     Form Dashboard = new DashboardForm(usr_id);
                     Dashboard.ShowDialog();
@@ -93,8 +90,9 @@ namespace GMS
         private void regLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
             RegisterForm Signup = new RegisterForm();
-            Signup.ShowDialog();
             this.Hide();
+            Signup.ShowDialog();
+            
         }
 
         private void LoginForm_Load(object sender, EventArgs e)

@@ -30,6 +30,8 @@
         {
             this.AddModBtn = new System.Windows.Forms.Button();
             this.AddLbl = new System.Windows.Forms.Label();
+            this.dataGridViewModalities = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewModalities)).BeginInit();
             this.SuspendLayout();
             // 
             // AddModBtn
@@ -52,17 +54,31 @@
             this.AddLbl.TabIndex = 1;
             this.AddLbl.Text = "Add Modality";
             // 
+            // dataGridViewModalities
+            // 
+            this.dataGridViewModalities.AllowUserToAddRows = false;
+            this.dataGridViewModalities.AllowUserToDeleteRows = false;
+            this.dataGridViewModalities.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridViewModalities.Location = new System.Drawing.Point(412, 68);
+            this.dataGridViewModalities.Name = "dataGridViewModalities";
+            this.dataGridViewModalities.Size = new System.Drawing.Size(638, 475);
+            this.dataGridViewModalities.TabIndex = 2;
+            this.dataGridViewModalities.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewModalities_CellContentClick);
+            // 
             // Modalities
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1089, 661);
+            this.Controls.Add(this.dataGridViewModalities);
             this.Controls.Add(this.AddLbl);
             this.Controls.Add(this.AddModBtn);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Modalities";
             this.Text = "Modalities";
+            this.Load += new System.EventHandler(this.Modalities_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewModalities)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -72,5 +88,6 @@
 
         private System.Windows.Forms.Button AddModBtn;
         private System.Windows.Forms.Label AddLbl;
+        private System.Windows.Forms.DataGridView dataGridViewModalities;
     }
 }

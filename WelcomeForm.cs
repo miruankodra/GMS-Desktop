@@ -25,15 +25,16 @@ namespace GMS
         private void loginFormCaller_Click(object sender, EventArgs e)
         {
             LoginForm Login = new LoginForm();
-            Login.ShowDialog();
             this.Hide();
+            Login.ShowDialog();
+            
         }
 
         private void signupCaller_Click(object sender, EventArgs e)
         {
             RegisterForm Signup = new RegisterForm();
-            Signup.ShowDialog();
             this.Hide();
+            Signup.ShowDialog();
         }
 
 
