@@ -54,6 +54,7 @@
             this.Owner = new System.Windows.Forms.Label();
             this.Location = new System.Windows.Forms.Label();
             this.Area = new System.Windows.Forms.Label();
+            this.pdfExp = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.GrafikTemp)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.GrafikLageshtie)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -245,12 +246,23 @@
             this.Area.TabIndex = 15;
             this.Area.Text = "label1";
             // 
+            // pdfExp
+            // 
+            this.pdfExp.Location = new System.Drawing.Point(173, 462);
+            this.pdfExp.Name = "pdfExp";
+            this.pdfExp.Size = new System.Drawing.Size(129, 42);
+            this.pdfExp.TabIndex = 16;
+            this.pdfExp.Text = "Export to PDF";
+            this.pdfExp.UseVisualStyleBackColor = true;
+            this.pdfExp.Click += new System.EventHandler(this.pdfExp_Click);
+            // 
             // Charts
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(253)))), ((int)(((byte)(249)))));
             this.ClientSize = new System.Drawing.Size(1452, 814);
+            this.Controls.Add(this.pdfExp);
             this.Controls.Add(this.Area);
             this.Controls.Add(this.Location);
             this.Controls.Add(this.Owner);
@@ -301,5 +313,6 @@
         private System.Windows.Forms.Label Owner;
         private System.Windows.Forms.Label Location;
         private System.Windows.Forms.Label Area;
+        private System.Windows.Forms.Button pdfExp;
     }
 }
