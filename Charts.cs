@@ -113,7 +113,7 @@ namespace GMS
             for (int i = 0; i < dataGridView1.Rows.Count - 1; i++)
             {
                 x = double.Parse(dataGridView1.Rows[i].Cells[5].Value.ToString());
-                y = double.Parse(dataGridView1.Rows[i].Cells[3].Value.ToString());
+                y = double.Parse(dataGridView1.Rows[i].Cells[4].Value.ToString());
 
 
 
