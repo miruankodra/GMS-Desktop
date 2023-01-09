@@ -151,7 +151,7 @@
             // 
             this.ControlParametreslabel.AutoSize = true;
             this.ControlParametreslabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ControlParametreslabel.Location = new System.Drawing.Point(167, 48);
+            this.ControlParametreslabel.Location = new System.Drawing.Point(152, 47);
             this.ControlParametreslabel.Name = "ControlParametreslabel";
             this.ControlParametreslabel.Size = new System.Drawing.Size(341, 36);
             this.ControlParametreslabel.TabIndex = 10;
@@ -197,7 +197,7 @@
             // 
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(899, 76);
             this.panel2.TabIndex = 18;
@@ -207,7 +207,7 @@
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(253)))), ((int)(((byte)(249)))));
             this.panel5.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel5.Location = new System.Drawing.Point(0, 472);
-            this.panel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel5.Margin = new System.Windows.Forms.Padding(4);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(899, 76);
             this.panel5.TabIndex = 19;
@@ -216,7 +216,7 @@
             // 
             this.panel6.Dock = System.Windows.Forms.DockStyle.Right;
             this.panel6.Location = new System.Drawing.Point(786, 76);
-            this.panel6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel6.Margin = new System.Windows.Forms.Padding(4);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(113, 396);
             this.panel6.TabIndex = 20;
@@ -225,7 +225,7 @@
             // 
             this.panel7.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel7.Location = new System.Drawing.Point(0, 76);
-            this.panel7.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel7.Margin = new System.Windows.Forms.Padding(4);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(113, 396);
             this.panel7.TabIndex = 21;
@@ -243,7 +243,7 @@
             this.panel8.Controls.Add(this.water_system);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel8.Location = new System.Drawing.Point(113, 76);
-            this.panel8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel8.Margin = new System.Windows.Forms.Padding(4);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(673, 396);
             this.panel8.TabIndex = 22;
