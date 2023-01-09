@@ -28,15 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Charts));
             this.GrafikTemp = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.customInstaller1 = new MySql.Data.MySqlClient.CustomInstaller();
@@ -67,20 +67,20 @@
             // 
             // GrafikTemp
             // 
-            chartArea1.Name = "ChartArea1";
-            this.GrafikTemp.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.GrafikTemp.Legends.Add(legend1);
+            chartArea4.Name = "ChartArea1";
+            this.GrafikTemp.ChartAreas.Add(chartArea4);
+            legend4.Name = "Legend1";
+            this.GrafikTemp.Legends.Add(legend4);
             this.GrafikTemp.Location = new System.Drawing.Point(564, 14);
             this.GrafikTemp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.GrafikTemp.Name = "GrafikTemp";
             this.GrafikTemp.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
-            series1.BorderWidth = 2;
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series1.Legend = "Legend1";
-            series1.Name = "Temperatura";
-            this.GrafikTemp.Series.Add(series1);
+            series4.BorderWidth = 2;
+            series4.ChartArea = "ChartArea1";
+            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series4.Legend = "Legend1";
+            series4.Name = "Temperatura";
+            this.GrafikTemp.Series.Add(series4);
             this.GrafikTemp.Size = new System.Drawing.Size(861, 223);
             this.GrafikTemp.TabIndex = 0;
             this.GrafikTemp.Text = "Grafik Temperature";
@@ -88,21 +88,21 @@
             // 
             // GrafikLageshtie
             // 
-            chartArea2.Name = "ChartArea1";
-            this.GrafikLageshtie.ChartAreas.Add(chartArea2);
-            legend2.BorderWidth = 10;
-            legend2.Name = "Legend1";
-            this.GrafikLageshtie.Legends.Add(legend2);
+            chartArea5.Name = "ChartArea1";
+            this.GrafikLageshtie.ChartAreas.Add(chartArea5);
+            legend5.BorderWidth = 10;
+            legend5.Name = "Legend1";
+            this.GrafikLageshtie.Legends.Add(legend5);
             this.GrafikLageshtie.Location = new System.Drawing.Point(564, 271);
             this.GrafikLageshtie.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.GrafikLageshtie.Name = "GrafikLageshtie";
             this.GrafikLageshtie.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
-            series2.BorderWidth = 2;
-            series2.ChartArea = "ChartArea1";
-            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series2.Legend = "Legend1";
-            series2.Name = "Lageshtia e ajrit";
-            this.GrafikLageshtie.Series.Add(series2);
+            series5.BorderWidth = 2;
+            series5.ChartArea = "ChartArea1";
+            series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series5.Legend = "Legend1";
+            series5.Name = "Lageshtia e ajrit";
+            this.GrafikLageshtie.Series.Add(series5);
             this.GrafikLageshtie.Size = new System.Drawing.Size(873, 250);
             this.GrafikLageshtie.TabIndex = 1;
             this.GrafikLageshtie.Text = "Grafik Lageshtie ajri/dheu";
@@ -122,20 +122,20 @@
             // 
             // GrafikLageshtieDheu
             // 
-            chartArea3.Name = "ChartArea1";
-            this.GrafikLageshtieDheu.ChartAreas.Add(chartArea3);
-            legend3.Name = "Legend1";
-            this.GrafikLageshtieDheu.Legends.Add(legend3);
+            chartArea6.Name = "ChartArea1";
+            this.GrafikLageshtieDheu.ChartAreas.Add(chartArea6);
+            legend6.Name = "Legend1";
+            this.GrafikLageshtieDheu.Legends.Add(legend6);
             this.GrafikLageshtieDheu.Location = new System.Drawing.Point(564, 548);
             this.GrafikLageshtieDheu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.GrafikLageshtieDheu.Name = "GrafikLageshtieDheu";
             this.GrafikLageshtieDheu.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
-            series3.BorderWidth = 2;
-            series3.ChartArea = "ChartArea1";
-            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series3.Legend = "Legend1";
-            series3.Name = "Lageshtia e dheut";
-            this.GrafikLageshtieDheu.Series.Add(series3);
+            series6.BorderWidth = 2;
+            series6.ChartArea = "ChartArea1";
+            series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series6.Legend = "Legend1";
+            series6.Name = "Lageshtia e dheut";
+            this.GrafikLageshtieDheu.Series.Add(series6);
             this.GrafikLageshtieDheu.Size = new System.Drawing.Size(873, 250);
             this.GrafikLageshtieDheu.TabIndex = 3;
             this.GrafikLageshtieDheu.Text = "Grafik Lageshtie së Dheut";
