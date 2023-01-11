@@ -121,6 +121,17 @@ namespace GMS
 
 
             }
+            //GrafikTemp.ChartAreas[0].AxisX.MajorGrid.LineColor = Color.Red;
+            //Chart.ChartAreas[0].AxisY.MajorGrid.LineColor = Color.Red;
+            GrafikTemp.ChartAreas[0].AxisX.LabelStyle.ForeColor = Color.White;
+            GrafikLageshtie.ChartAreas[0].AxisX.LabelStyle.ForeColor = Color.White;
+            GrafikLageshtieDheu.ChartAreas[0].AxisX.LabelStyle.ForeColor = Color.White;
+
+            GrafikTemp.ChartAreas[0].AxisY.LabelStyle.ForeColor = Color.White;
+            GrafikLageshtie.ChartAreas[0].AxisY.LabelStyle.ForeColor = Color.White;
+            GrafikLageshtieDheu.ChartAreas[0].AxisY.LabelStyle.ForeColor = Color.White;
+
+            
 
         }
 
@@ -175,6 +186,11 @@ namespace GMS
         }
 
         private void pdfExp_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Areapic_Click(object sender, EventArgs e)
         {
 
         }

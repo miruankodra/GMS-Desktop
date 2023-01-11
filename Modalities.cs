@@ -37,11 +37,16 @@ namespace GMS
 
             da.Fill(dt);
 
-            dataGridViewModalities.DataSource = dt;
+            
 
         }
 
         private void dataGridViewModalities_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void AddModBtn_Click(object sender, EventArgs e)
         {
 
         }

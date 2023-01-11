@@ -39,61 +39,66 @@ namespace GMS
 
         }
 
-        private void On_Of_Ventilation_Click_1(object sender, EventArgs e)
+        private void ControlParametreslabel_Click(object sender, EventArgs e)
         {
-            if (on)
-            {
-                On_Of_Ventilation.BackColor = Color.LightGreen;
-                on = false;
-            }
-            else
-            {
-                On_Of_Ventilation.BackColor = Color.LightGray;
-                on = true;
-            }
-            
+
         }
 
-        private void Activate_water_Click(object sender, EventArgs e)
-        {
-            if (on)
-            {
-               Activate_water.BackColor = Color.LightGreen;
-                on = false;
-            }
-            else
-            {
-                Activate_water.BackColor = Color.LightGray;
-                on = true;
-            }
-        }
+        // private void On_Of_Ventilation_Click_1(object sender, EventArgs e)
+        //{
+        // if (on)
+        //{//
+        // On_Of_Ventilation.BackColor = Color.LightGreen;
+        //on = false;
+        //}
+        //else
+        //{
+        //  On_Of_Ventilation.BackColor = Color.LightGray;
+        //on = true;
+        //}
 
-        private void Open_close_windows_Click(object sender, EventArgs e)
-        {
-            if (on)
-            {
-                Open_close_windows.BackColor = Color.LightGreen;
-                on = false;
-            }
-            else
-            {
-                Open_close_windows.BackColor = Color.LightGray;
-                on = true;
-            }
-        }
+        //}
 
-        private void Heating_Click(object sender, EventArgs e)
-        {
-            if (on)
-            {
-               Heating.BackColor = Color.LightGreen;
-                on = false;
-            }
-            else
-            {
-               Heating.BackColor = Color.LightGray;
-                on = true;
-            }
-        }
+        // private void Activate_water_Click(object sender, EventArgs e)
+        // {
+        // if (on)
+        //{
+        // Activate_water.BackColor = Color.LightGreen;
+        //on = false;
+        //  }
+        //else
+        //{
+        //   Activate_water.BackColor = Color.LightGray;
+        //  on = true;
+        // }
+        //}
+
+        //private void Open_close_windows_Click(object sender, EventArgs e)
+        ///{
+        // if (on)
+        // {
+        //   Open_close_windows.BackColor = Color.LightGreen;
+        // on = false;
+        //}
+        //else
+        //{
+        //  Open_close_windows.BackColor = Color.LightGray;
+        //on = true;
+        //}
+        // }
+
+        // private void Heating_Click(object sender, EventArgs e)
+        //{
+        //  if (on)
+        //{
+        //   Heating.BackColor = Color.LightGreen;
+        //  on = false;
+        //}
+        //else
+        //{
+        // Heating.BackColor = Color.LightGray;
+        // on = true;
+        //}
+        // }
     }
     }

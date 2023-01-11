@@ -30,19 +30,19 @@
         {
             this.AddModBtn = new System.Windows.Forms.Button();
             this.AddLbl = new System.Windows.Forms.Label();
-            this.dataGridViewModalities = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewModalities)).BeginInit();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // AddModBtn
             // 
             this.AddModBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.AddModBtn.Location = new System.Drawing.Point(110, 108);
+            this.AddModBtn.Location = new System.Drawing.Point(111, 107);
             this.AddModBtn.Name = "AddModBtn";
             this.AddModBtn.Size = new System.Drawing.Size(110, 110);
             this.AddModBtn.TabIndex = 0;
             this.AddModBtn.Text = "+\r\n";
             this.AddModBtn.UseVisualStyleBackColor = true;
+            this.AddModBtn.Click += new System.EventHandler(this.AddModBtn_Click);
             // 
             // AddLbl
             // 
@@ -54,23 +54,30 @@
             this.AddLbl.TabIndex = 1;
             this.AddLbl.Text = "Add Modality";
             // 
-            // dataGridViewModalities
+            // comboBox1
             // 
-            this.dataGridViewModalities.AllowUserToAddRows = false;
-            this.dataGridViewModalities.AllowUserToDeleteRows = false;
-            this.dataGridViewModalities.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewModalities.Location = new System.Drawing.Point(412, 68);
-            this.dataGridViewModalities.Name = "dataGridViewModalities";
-            this.dataGridViewModalities.Size = new System.Drawing.Size(638, 475);
-            this.dataGridViewModalities.TabIndex = 2;
-            this.dataGridViewModalities.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridViewModalities_CellContentClick);
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Items.AddRange(new object[] {
+            "Default",
+            "Pranvere",
+            "Vere",
+            "Vjeshte ",
+            "Dimer",
+            "Patate",
+            "Domate",
+            "Barishtore"});
+            this.comboBox1.Location = new System.Drawing.Point(363, 107);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(583, 21);
+            this.comboBox1.TabIndex = 2;
             // 
             // Modalities
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
             this.ClientSize = new System.Drawing.Size(1089, 661);
-            this.Controls.Add(this.dataGridViewModalities);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.AddLbl);
             this.Controls.Add(this.AddModBtn);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -78,7 +85,6 @@
             this.Name = "Modalities";
             this.Text = "Modalities";
             this.Load += new System.EventHandler(this.Modalities_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewModalities)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -88,6 +94,6 @@
 
         private System.Windows.Forms.Button AddModBtn;
         private System.Windows.Forms.Label AddLbl;
-        private System.Windows.Forms.DataGridView dataGridViewModalities;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

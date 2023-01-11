@@ -20,6 +20,7 @@ namespace GMS
         
         string id;
         string gh_id;
+        string gh_name;
         string area;
         string location;
        public DashboardForm(string usr_id)
@@ -59,8 +60,10 @@ namespace GMS
                 gh_id = row["id"].ToString();
                 area = row["area"].ToString();
                 location = row["location"].ToString();
+                gh_name = row["name"].ToString();
 
             }
+            gmsName.Text = gh_name;
         }
 
         private void mainPanel_Paint(object sender, PaintEventArgs e)
@@ -107,6 +110,16 @@ namespace GMS
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void sidebarPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void gmsName_Click(object sender, EventArgs e)
         {
 
         }

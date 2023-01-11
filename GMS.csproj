@@ -161,6 +161,9 @@
     <Compile Include="Climate.Designer.cs">
       <DependentUpon>Climate.cs</DependentUpon>
     </Compile>
+    <Compile Include="CustomControls\ToggleSwitch.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>
