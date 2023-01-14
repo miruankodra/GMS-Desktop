@@ -1,20 +1,22 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Windows.Forms.DataVisualization.Charting;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
+using Syncfusion.Pdf;
+using System.IO;
+using Syncfusion.Pdf.Parsing;
+using Syncfusion.GridHelperClasses;
+using Syncfusion.Pdf.Graphics;
+using Syncfusion.Windows.Forms.Grid;
+using Syncfusion.Windows.Forms.Chart;
 
 namespace GMS
 {
     public partial class Charts : Form
     {
+       
+
 
         MySqlConnection con;
         static string conString = "SERVER=185.146.22.249;PORT=3306;DATABASE=gmsal_gms;UID=gmsal_gms;PASSWORD=gms123al456!!!";
@@ -38,6 +40,8 @@ namespace GMS
         }
 
         MySqlConnection connection = new MySqlConnection(conString);
+        private GridControlBase gridControl1;
+
         private void Charts_Load(object sender, EventArgs e)
         {
 
@@ -185,10 +189,7 @@ namespace GMS
          
         }
 
-        private void pdfExp_Click(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void Areapic_Click(object sender, EventArgs e)
         {
