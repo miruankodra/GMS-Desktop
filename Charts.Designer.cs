@@ -279,7 +279,7 @@
             this.pdfExp.TabIndex = 16;
             this.pdfExp.Text = "Export All To PDF";
             this.pdfExp.UseVisualStyleBackColor = false;
-            
+            this.pdfExp.Click += new System.EventHandler(this.pdfExp_Click);
             // 
             // lablm2
             // 

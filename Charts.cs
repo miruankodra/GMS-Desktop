@@ -3,13 +3,10 @@ using System;
 using System.Data;
 using System.Drawing;
 using System.Windows.Forms;
-using Syncfusion.Pdf;
+using iTextSharp.text;
+using iTextSharp.text.pdf;
 using System.IO;
-using Syncfusion.Pdf.Parsing;
-using Syncfusion.GridHelperClasses;
-using Syncfusion.Pdf.Graphics;
-using Syncfusion.Windows.Forms.Grid;
-using Syncfusion.Windows.Forms.Chart;
+using System.Linq;
 
 namespace GMS
 {
@@ -40,7 +37,7 @@ namespace GMS
         }
 
         MySqlConnection connection = new MySqlConnection(conString);
-        private GridControlBase gridControl1;
+       
 
         private void Charts_Load(object sender, EventArgs e)
         {
@@ -135,7 +132,7 @@ namespace GMS
             GrafikLageshtie.ChartAreas[0].AxisY.LabelStyle.ForeColor = Color.White;
             GrafikLageshtieDheu.ChartAreas[0].AxisY.LabelStyle.ForeColor = Color.White;
 
-            
+
 
         }
 
@@ -194,6 +191,20 @@ namespace GMS
         private void Areapic_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void pdfExp_Click(object sender, EventArgs e)
+        {
+            Document doc = new Document();
+            PdfWriter.GetInstance(doc, new FileStream("C:\\Users\\user\\Desktop\\Diploma\\Mirigay.pdf", FileMode.Create));
+            doc.Open();
+            Paragraph p1 = new Paragraph("Miri gay");
+            var bmp = new Bitmap(GrafikLageshtie.Width,GrafikLageshtie.Height);
+            // doc.Add(GrafikLageshtie.DrawToBitmap(bmp, new Rectangle(0, 0, GrafikLageshtie.Width, GrafikLageshtie.Height)));
+            //iTextSharp.text.Image img = new iTextSharp.text.Image(GrafikLageshtie.DrawToBitmap(bmp, new System.Drawing.Rectangle(0, 0, GrafikLageshtie.Width, GrafikLageshtie.Height)));
+            doc.Add(p1);
+            //doc.Add();
+            doc.Close();
         }
     }
 }
