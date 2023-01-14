@@ -31,6 +31,7 @@
             this.AddModBtn = new System.Windows.Forms.Button();
             this.AddLbl = new System.Windows.Forms.Label();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // AddModBtn
@@ -48,6 +49,7 @@
             // 
             this.AddLbl.AutoSize = true;
             this.AddLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AddLbl.ForeColor = System.Drawing.Color.White;
             this.AddLbl.Location = new System.Drawing.Point(89, 234);
             this.AddLbl.Name = "AddLbl";
             this.AddLbl.Size = new System.Drawing.Size(149, 25);
@@ -56,6 +58,7 @@
             // 
             // comboBox1
             // 
+            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "Default",
@@ -66,10 +69,21 @@
             "Patate",
             "Domate",
             "Barishtore"});
-            this.comboBox1.Location = new System.Drawing.Point(363, 107);
+            this.comboBox1.Location = new System.Drawing.Point(358, 147);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(583, 21);
+            this.comboBox1.Size = new System.Drawing.Size(583, 39);
             this.comboBox1.TabIndex = 2;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(353, 107);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(187, 25);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Choose modality";
             // 
             // Modalities
             // 
@@ -77,6 +91,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
             this.ClientSize = new System.Drawing.Size(1089, 661);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.AddLbl);
             this.Controls.Add(this.AddModBtn);
@@ -95,5 +110,6 @@
         private System.Windows.Forms.Button AddModBtn;
         private System.Windows.Forms.Label AddLbl;
         private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.Label label1;
     }
 }
