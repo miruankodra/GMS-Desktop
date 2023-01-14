@@ -1,20 +1,19 @@
 ﻿using MySql.Data.MySqlClient;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Windows.Forms.DataVisualization.Charting;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
+using iTextSharp.text;
+using iTextSharp.text.pdf;
+using System.IO;
+using System.Linq;
 
 namespace GMS
 {
     public partial class Charts : Form
     {
+       
+
 
         MySqlConnection con;
         static string conString = "SERVER=185.146.22.249;PORT=3306;DATABASE=gmsal_gms;UID=gmsal_gms;PASSWORD=gms123al456!!!";
@@ -38,6 +37,8 @@ namespace GMS
         }
 
         MySqlConnection connection = new MySqlConnection(conString);
+       
+
         private void Charts_Load(object sender, EventArgs e)
         {
 
@@ -131,7 +132,7 @@ namespace GMS
             GrafikLageshtie.ChartAreas[0].AxisY.LabelStyle.ForeColor = Color.White;
             GrafikLageshtieDheu.ChartAreas[0].AxisY.LabelStyle.ForeColor = Color.White;
 
-            
+
 
         }
 
@@ -185,14 +186,25 @@ namespace GMS
          
         }
 
-        private void pdfExp_Click(object sender, EventArgs e)
-        {
-
-        }
+       
 
         private void Areapic_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void pdfExp_Click(object sender, EventArgs e)
+        {
+            Document doc = new Document();
+            PdfWriter.GetInstance(doc, new FileStream("C:\\Users\\user\\Desktop\\Diploma\\Mirigay.pdf", FileMode.Create));
+            doc.Open();
+            Paragraph p1 = new Paragraph("Miri gay");
+            var bmp = new Bitmap(GrafikLageshtie.Width,GrafikLageshtie.Height);
+            // doc.Add(GrafikLageshtie.DrawToBitmap(bmp, new Rectangle(0, 0, GrafikLageshtie.Width, GrafikLageshtie.Height)));
+            //iTextSharp.text.Image img = new iTextSharp.text.Image(GrafikLageshtie.DrawToBitmap(bmp, new System.Drawing.Rectangle(0, 0, GrafikLageshtie.Width, GrafikLageshtie.Height)));
+            doc.Add(p1);
+            //doc.Add();
+            doc.Close();
         }
     }
 }
