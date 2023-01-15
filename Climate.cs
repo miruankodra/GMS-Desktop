@@ -65,5 +65,10 @@ namespace GMS
 
 
         }
+
+        private void TempParameters_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
