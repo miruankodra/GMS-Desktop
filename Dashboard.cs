@@ -64,6 +64,8 @@ namespace GMS
 
             }
             gmsName.Text = gh_name;
+
+            loadform(new Charts(gh_id, id, area, location));
         }
 
         private void mainPanel_Paint(object sender, PaintEventArgs e)

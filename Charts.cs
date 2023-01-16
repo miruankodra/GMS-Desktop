@@ -7,6 +7,7 @@ using iTextSharp.text;
 using iTextSharp.text.pdf;
 using System.IO;
 using System.Linq;
+using System.Windows.Forms.DataVisualization.Charting;
 
 namespace GMS
 {
@@ -196,13 +197,30 @@ namespace GMS
         private void pdfExp_Click(object sender, EventArgs e)
         {
             Document doc = new Document();
-            PdfWriter.GetInstance(doc, new FileStream("C:\\Users\\user\\Desktop\\Diploma\\Mirigay.pdf", FileMode.Create));
+            PdfWriter.GetInstance(doc, new FileStream("C:\\Users\\user\\Desktop\\Diploma\\" + firstname + lastname +".pdf", FileMode.Create));
             doc.Open();
-            Paragraph p1 = new Paragraph("Miri gay");
-            var bmp = new Bitmap(GrafikLageshtie.Width,GrafikLageshtie.Height);
-            // doc.Add(GrafikLageshtie.DrawToBitmap(bmp, new Rectangle(0, 0, GrafikLageshtie.Width, GrafikLageshtie.Height)));
-            //iTextSharp.text.Image img = new iTextSharp.text.Image(GrafikLageshtie.DrawToBitmap(bmp, new System.Drawing.Rectangle(0, 0, GrafikLageshtie.Width, GrafikLageshtie.Height)));
+            Paragraph p1 = new Paragraph("Greenhouse information for " + firstname + " " + lastname + " greenhouse");
+            //Saving chart images
+            var tempChartImage = new MemoryStream();
+            var airHumidityChartImage = new MemoryStream();
+            var soilHumidityChartImage = new MemoryStream();
+
+            //Temperature Chart Image
+            GrafikLageshtie.SaveImage(tempChartImage, ChartImageFormat.Png);
+            iTextSharp.text.Image temp_chart_image = iTextSharp.text.Image.GetInstance(tempChartImage.GetBuffer());
+
+            //Air Humidity Chart Image
+            GrafikLageshtie.SaveImage(airHumidityChartImage, ChartImageFormat.Png);
+            iTextSharp.text.Image air_humidity_chart_image = iTextSharp.text.Image.GetInstance(airHumidityChartImage.GetBuffer());
+
+            //Air Humidity Chart Image
+            GrafikLageshtie.SaveImage(soilHumidityChartImage, ChartImageFormat.Png);
+            iTextSharp.text.Image soil_humidity_chart_image = iTextSharp.text.Image.GetInstance(soilHumidityChartImage.GetBuffer());
+
             doc.Add(p1);
+            doc.Add(temp_chart_image);
+            doc.Add(air_humidity_chart_image);
+            doc.Add(soil_humidity_chart_image);
             //doc.Add();
             doc.Close();
         }
