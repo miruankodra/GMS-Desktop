@@ -60,6 +60,7 @@
             // 
             // LeftPanel
             // 
+            this.LeftPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
             this.LeftPanel.Controls.Add(this.city);
             this.LeftPanel.Controls.Add(this.country);
             this.LeftPanel.Controls.Add(this.newUsername);
@@ -88,14 +89,15 @@
             this.LeftPanel.Controls.Add(this.firstnameLbl);
             this.LeftPanel.Dock = System.Windows.Forms.DockStyle.Top;
             this.LeftPanel.Location = new System.Drawing.Point(0, 0);
+            this.LeftPanel.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.LeftPanel.Name = "LeftPanel";
-            this.LeftPanel.Size = new System.Drawing.Size(1100, 672);
+            this.LeftPanel.Size = new System.Drawing.Size(825, 546);
             this.LeftPanel.TabIndex = 1;
             // 
             // city
             // 
             this.city.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.city.Font = new System.Drawing.Font("Montserrat", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.city.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.city.FormattingEnabled = true;
             this.city.Items.AddRange(new object[] {
             "Abu Dhabi",
@@ -298,16 +300,17 @@
             "Yaounde",
             "Yerevan",
             "Zagreb"});
-            this.city.Location = new System.Drawing.Point(768, 148);
+            this.city.Location = new System.Drawing.Point(576, 120);
+            this.city.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.city.Name = "city";
-            this.city.Size = new System.Drawing.Size(148, 32);
+            this.city.Size = new System.Drawing.Size(112, 25);
             this.city.TabIndex = 65;
             this.city.Text = "City";
             // 
             // country
             // 
             this.country.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.country.Font = new System.Drawing.Font("Montserrat", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.country.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.country.FormattingEnabled = true;
             this.country.Items.AddRange(new object[] {
             "Afghanistan",
@@ -529,29 +532,33 @@
             "",
             "Zambia",
             "Zimbabwe"});
-            this.country.Location = new System.Drawing.Point(563, 151);
+            this.country.Location = new System.Drawing.Point(422, 123);
+            this.country.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.country.Name = "country";
-            this.country.Size = new System.Drawing.Size(148, 32);
+            this.country.Size = new System.Drawing.Size(112, 25);
             this.country.TabIndex = 64;
             this.country.Text = "Country";
             // 
             // newUsername
             // 
             this.newUsername.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.newUsername.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.newUsername.Location = new System.Drawing.Point(302, 265);
+            this.newUsername.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.newUsername.Location = new System.Drawing.Point(226, 215);
+            this.newUsername.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.newUsername.Name = "newUsername";
-            this.newUsername.Size = new System.Drawing.Size(148, 26);
+            this.newUsername.Size = new System.Drawing.Size(112, 21);
             this.newUsername.TabIndex = 62;
             // 
             // newUsernameLbl
             // 
             this.newUsernameLbl.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.newUsernameLbl.AutoSize = true;
-            this.newUsernameLbl.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.newUsernameLbl.Location = new System.Drawing.Point(298, 235);
+            this.newUsernameLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.newUsernameLbl.ForeColor = System.Drawing.Color.White;
+            this.newUsernameLbl.Location = new System.Drawing.Point(224, 191);
+            this.newUsernameLbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.newUsernameLbl.Name = "newUsernameLbl";
-            this.newUsernameLbl.Size = new System.Drawing.Size(117, 27);
+            this.newUsernameLbl.Size = new System.Drawing.Size(83, 20);
             this.newUsernameLbl.TabIndex = 61;
             this.newUsernameLbl.Text = "Username";
             // 
@@ -559,10 +566,12 @@
             // 
             this.signupTitle.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.signupTitle.AutoSize = true;
-            this.signupTitle.Font = new System.Drawing.Font("Montserrat SemiBold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.signupTitle.Location = new System.Drawing.Point(86, 63);
+            this.signupTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.signupTitle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(187)))), ((int)(((byte)(92)))));
+            this.signupTitle.Location = new System.Drawing.Point(64, 33);
+            this.signupTitle.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.signupTitle.Name = "signupTitle";
-            this.signupTitle.Size = new System.Drawing.Size(198, 32);
+            this.signupTitle.Size = new System.Drawing.Size(262, 37);
             this.signupTitle.TabIndex = 60;
             this.signupTitle.Text = "Sign Up to GMS";
             // 
@@ -570,10 +579,11 @@
             // 
             this.loginLink.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.loginLink.AutoSize = true;
-            this.loginLink.Font = new System.Drawing.Font("Montserrat", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loginLink.Location = new System.Drawing.Point(559, 506);
+            this.loginLink.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loginLink.Location = new System.Drawing.Point(419, 411);
+            this.loginLink.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.loginLink.Name = "loginLink";
-            this.loginLink.Size = new System.Drawing.Size(63, 24);
+            this.loginLink.Size = new System.Drawing.Size(47, 17);
             this.loginLink.TabIndex = 59;
             this.loginLink.TabStop = true;
             this.loginLink.Text = "Log In";
@@ -582,22 +592,27 @@
             // loginSuggestion
             // 
             this.loginSuggestion.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.loginSuggestion.Font = new System.Drawing.Font("Montserrat", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.loginSuggestion.Location = new System.Drawing.Point(559, 479);
+            this.loginSuggestion.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.loginSuggestion.ForeColor = System.Drawing.Color.White;
+            this.loginSuggestion.Location = new System.Drawing.Point(419, 389);
+            this.loginSuggestion.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.loginSuggestion.Name = "loginSuggestion";
-            this.loginSuggestion.Size = new System.Drawing.Size(460, 59);
+            this.loginSuggestion.Size = new System.Drawing.Size(345, 48);
             this.loginSuggestion.TabIndex = 58;
             this.loginSuggestion.Text = "If you already have an account, please ";
             // 
             // signupBtn
             // 
             this.signupBtn.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.signupBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(117)))), ((int)(((byte)(216)))));
+            this.signupBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(187)))), ((int)(((byte)(92)))));
+            this.signupBtn.FlatAppearance.BorderSize = 0;
+            this.signupBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.signupBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold);
             this.signupBtn.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.signupBtn.Location = new System.Drawing.Point(563, 428);
+            this.signupBtn.Location = new System.Drawing.Point(422, 348);
+            this.signupBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.signupBtn.Name = "signupBtn";
-            this.signupBtn.Size = new System.Drawing.Size(179, 36);
+            this.signupBtn.Size = new System.Drawing.Size(134, 29);
             this.signupBtn.TabIndex = 57;
             this.signupBtn.Text = "Sign Up";
             this.signupBtn.UseVisualStyleBackColor = false;
@@ -607,10 +622,11 @@
             // 
             this.termsOfServiceLink.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.termsOfServiceLink.AutoSize = true;
-            this.termsOfServiceLink.Font = new System.Drawing.Font("Montserrat", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.termsOfServiceLink.Location = new System.Drawing.Point(621, 310);
+            this.termsOfServiceLink.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.termsOfServiceLink.Location = new System.Drawing.Point(466, 252);
+            this.termsOfServiceLink.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.termsOfServiceLink.Name = "termsOfServiceLink";
-            this.termsOfServiceLink.Size = new System.Drawing.Size(148, 24);
+            this.termsOfServiceLink.Size = new System.Drawing.Size(115, 17);
             this.termsOfServiceLink.TabIndex = 56;
             this.termsOfServiceLink.TabStop = true;
             this.termsOfServiceLink.Text = "Terms of Service";
@@ -618,10 +634,12 @@
             // readTermsOfService
             // 
             this.readTermsOfService.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.readTermsOfService.Font = new System.Drawing.Font("Montserrat", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.readTermsOfService.Location = new System.Drawing.Point(559, 286);
+            this.readTermsOfService.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.readTermsOfService.ForeColor = System.Drawing.Color.White;
+            this.readTermsOfService.Location = new System.Drawing.Point(419, 232);
+            this.readTermsOfService.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.readTermsOfService.Name = "readTermsOfService";
-            this.readTermsOfService.Size = new System.Drawing.Size(460, 59);
+            this.readTermsOfService.Size = new System.Drawing.Size(345, 48);
             this.readTermsOfService.TabIndex = 55;
             this.readTermsOfService.Text = "To create a GMS account, you’ll need to agree \r\nto the ";
             // 
@@ -629,10 +647,12 @@
             // 
             this.agreement.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.agreement.AutoSize = true;
-            this.agreement.Font = new System.Drawing.Font("Montserrat", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.agreement.Location = new System.Drawing.Point(563, 369);
+            this.agreement.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.agreement.ForeColor = System.Drawing.Color.White;
+            this.agreement.Location = new System.Drawing.Point(422, 302);
+            this.agreement.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.agreement.Name = "agreement";
-            this.agreement.Size = new System.Drawing.Size(308, 28);
+            this.agreement.Size = new System.Drawing.Size(235, 21);
             this.agreement.TabIndex = 54;
             this.agreement.Text = "I Agree with the Terms of Service";
             this.agreement.UseVisualStyleBackColor = true;
@@ -641,10 +661,12 @@
             // 
             this.cityLbl.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.cityLbl.AutoSize = true;
-            this.cityLbl.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cityLbl.Location = new System.Drawing.Point(763, 121);
+            this.cityLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cityLbl.ForeColor = System.Drawing.Color.White;
+            this.cityLbl.Location = new System.Drawing.Point(572, 98);
+            this.cityLbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.cityLbl.Name = "cityLbl";
-            this.cityLbl.Size = new System.Drawing.Size(50, 27);
+            this.cityLbl.Size = new System.Drawing.Size(35, 20);
             this.cityLbl.TabIndex = 53;
             this.cityLbl.Text = "City";
             // 
@@ -652,154 +674,176 @@
             // 
             this.countryLbl.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.countryLbl.AutoSize = true;
-            this.countryLbl.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.countryLbl.Location = new System.Drawing.Point(558, 121);
+            this.countryLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.countryLbl.ForeColor = System.Drawing.Color.White;
+            this.countryLbl.Location = new System.Drawing.Point(418, 98);
+            this.countryLbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.countryLbl.Name = "countryLbl";
-            this.countryLbl.Size = new System.Drawing.Size(93, 27);
+            this.countryLbl.Size = new System.Drawing.Size(64, 20);
             this.countryLbl.TabIndex = 52;
             this.countryLbl.Text = "Country";
             // 
             // prefix
             // 
             this.prefix.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.prefix.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.prefix.Location = new System.Drawing.Point(92, 458);
+            this.prefix.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.prefix.Location = new System.Drawing.Point(69, 372);
+            this.prefix.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.prefix.Name = "prefix";
-            this.prefix.Size = new System.Drawing.Size(80, 26);
+            this.prefix.Size = new System.Drawing.Size(61, 21);
             this.prefix.TabIndex = 48;
             this.prefix.Text = "+";
             // 
             // phone
             // 
             this.phone.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.phone.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.phone.Location = new System.Drawing.Point(178, 458);
+            this.phone.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.phone.Location = new System.Drawing.Point(134, 372);
+            this.phone.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.phone.Name = "phone";
-            this.phone.Size = new System.Drawing.Size(267, 26);
+            this.phone.Size = new System.Drawing.Size(201, 21);
             this.phone.TabIndex = 47;
             // 
             // phoneLbl
             // 
             this.phoneLbl.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.phoneLbl.AutoSize = true;
-            this.phoneLbl.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.phoneLbl.Location = new System.Drawing.Point(85, 428);
+            this.phoneLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.phoneLbl.ForeColor = System.Drawing.Color.White;
+            this.phoneLbl.Location = new System.Drawing.Point(64, 348);
+            this.phoneLbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.phoneLbl.Name = "phoneLbl";
-            this.phoneLbl.Size = new System.Drawing.Size(166, 27);
+            this.phoneLbl.Size = new System.Drawing.Size(113, 20);
             this.phoneLbl.TabIndex = 46;
             this.phoneLbl.Text = "Phone number";
             // 
             // confirmPass
             // 
             this.confirmPass.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.confirmPass.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.confirmPass.Location = new System.Drawing.Point(303, 361);
+            this.confirmPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.confirmPass.Location = new System.Drawing.Point(227, 293);
+            this.confirmPass.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.confirmPass.Name = "confirmPass";
             this.confirmPass.PasswordChar = '*';
-            this.confirmPass.Size = new System.Drawing.Size(148, 26);
+            this.confirmPass.Size = new System.Drawing.Size(112, 21);
             this.confirmPass.TabIndex = 45;
             // 
             // confirmPassLbl
             // 
             this.confirmPassLbl.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.confirmPassLbl.AutoSize = true;
-            this.confirmPassLbl.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.confirmPassLbl.Location = new System.Drawing.Point(299, 331);
+            this.confirmPassLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.confirmPassLbl.ForeColor = System.Drawing.Color.White;
+            this.confirmPassLbl.Location = new System.Drawing.Point(224, 269);
+            this.confirmPassLbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.confirmPassLbl.Name = "confirmPassLbl";
-            this.confirmPassLbl.Size = new System.Drawing.Size(94, 27);
+            this.confirmPassLbl.Size = new System.Drawing.Size(64, 20);
             this.confirmPassLbl.TabIndex = 44;
             this.confirmPassLbl.Text = "Confirm";
             // 
             // newPass
             // 
             this.newPass.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.newPass.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.newPass.Location = new System.Drawing.Point(90, 361);
+            this.newPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.newPass.Location = new System.Drawing.Point(68, 293);
+            this.newPass.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.newPass.Name = "newPass";
             this.newPass.PasswordChar = '*';
-            this.newPass.Size = new System.Drawing.Size(148, 26);
+            this.newPass.Size = new System.Drawing.Size(112, 21);
             this.newPass.TabIndex = 43;
             // 
             // newPassLbl
             // 
             this.newPassLbl.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.newPassLbl.AutoSize = true;
-            this.newPassLbl.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.newPassLbl.Location = new System.Drawing.Point(85, 331);
+            this.newPassLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.newPassLbl.ForeColor = System.Drawing.Color.White;
+            this.newPassLbl.Location = new System.Drawing.Point(64, 269);
+            this.newPassLbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.newPassLbl.Name = "newPassLbl";
-            this.newPassLbl.Size = new System.Drawing.Size(111, 27);
+            this.newPassLbl.Size = new System.Drawing.Size(78, 20);
             this.newPassLbl.TabIndex = 42;
             this.newPassLbl.Text = "Password";
             // 
             // email
             // 
             this.email.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.email.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.email.Location = new System.Drawing.Point(90, 265);
+            this.email.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.email.Location = new System.Drawing.Point(68, 215);
+            this.email.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.email.Name = "email";
-            this.email.Size = new System.Drawing.Size(202, 26);
+            this.email.Size = new System.Drawing.Size(152, 21);
             this.email.TabIndex = 41;
             // 
             // emailLbl
             // 
             this.emailLbl.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.emailLbl.AutoSize = true;
-            this.emailLbl.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.emailLbl.Location = new System.Drawing.Point(85, 235);
+            this.emailLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.emailLbl.ForeColor = System.Drawing.Color.White;
+            this.emailLbl.Location = new System.Drawing.Point(64, 191);
+            this.emailLbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.emailLbl.Name = "emailLbl";
-            this.emailLbl.Size = new System.Drawing.Size(68, 27);
+            this.emailLbl.Size = new System.Drawing.Size(48, 20);
             this.emailLbl.TabIndex = 40;
             this.emailLbl.Text = "Email";
             // 
             // lastname
             // 
             this.lastname.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.lastname.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lastname.Location = new System.Drawing.Point(303, 151);
+            this.lastname.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lastname.Location = new System.Drawing.Point(227, 123);
+            this.lastname.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.lastname.Name = "lastname";
-            this.lastname.Size = new System.Drawing.Size(148, 26);
+            this.lastname.Size = new System.Drawing.Size(112, 21);
             this.lastname.TabIndex = 39;
             // 
             // lastnameLbl
             // 
             this.lastnameLbl.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.lastnameLbl.AutoSize = true;
-            this.lastnameLbl.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lastnameLbl.Location = new System.Drawing.Point(299, 121);
+            this.lastnameLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lastnameLbl.ForeColor = System.Drawing.Color.White;
+            this.lastnameLbl.Location = new System.Drawing.Point(224, 98);
+            this.lastnameLbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lastnameLbl.Name = "lastnameLbl";
-            this.lastnameLbl.Size = new System.Drawing.Size(113, 27);
+            this.lastnameLbl.Size = new System.Drawing.Size(80, 20);
             this.lastnameLbl.TabIndex = 38;
             this.lastnameLbl.Text = "Lastname";
             // 
             // firstname
             // 
             this.firstname.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.firstname.Font = new System.Drawing.Font("Montserrat", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.firstname.Location = new System.Drawing.Point(90, 151);
+            this.firstname.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.firstname.Location = new System.Drawing.Point(68, 123);
+            this.firstname.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.firstname.Name = "firstname";
-            this.firstname.Size = new System.Drawing.Size(148, 26);
+            this.firstname.Size = new System.Drawing.Size(112, 21);
             this.firstname.TabIndex = 37;
             // 
             // firstnameLbl
             // 
             this.firstnameLbl.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.firstnameLbl.AutoSize = true;
-            this.firstnameLbl.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.firstnameLbl.Location = new System.Drawing.Point(85, 121);
+            this.firstnameLbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.firstnameLbl.ForeColor = System.Drawing.Color.White;
+            this.firstnameLbl.Location = new System.Drawing.Point(64, 98);
+            this.firstnameLbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.firstnameLbl.Name = "firstnameLbl";
-            this.firstnameLbl.Size = new System.Drawing.Size(115, 27);
+            this.firstnameLbl.Size = new System.Drawing.Size(80, 20);
             this.firstnameLbl.TabIndex = 36;
             this.firstnameLbl.Text = "Firstname";
             // 
             // RegisterForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(253)))), ((int)(((byte)(249)))));
-            this.ClientSize = new System.Drawing.Size(1100, 675);
+            this.ClientSize = new System.Drawing.Size(825, 548);
             this.Controls.Add(this.LeftPanel);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "RegisterForm";
-            this.Text = "RegisterForm";
+            this.Text = "Register";
             this.LeftPanel.ResumeLayout(false);
             this.LeftPanel.PerformLayout();
             this.ResumeLayout(false);

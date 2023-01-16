@@ -24,18 +24,16 @@ namespace GMS
 
         private void Modalities_Load(object sender, EventArgs e)
         {
-            con = new MySqlConnection();
-            con.ConnectionString = conString;
+           // con = new MySqlConnection();
+            //con.ConnectionString = conString;
 
 
-            string query = "SELECT name, description, temperature, air_humidity, soil_humidity, enabled FROM modalities WHERE greenhouse_id = '" + gh_id + "'";
-            con.Open();
-            MySqlDataAdapter da = new MySqlDataAdapter();
-            da.SelectCommand = new MySqlCommand(query, con);
+            //string query = "SELECT name, description, temperature, air_humidity, soil_humidity, enabled FROM modalities WHERE greenhouse_id = '" + gh_id + "'";
+            //con.Open();
+            //MySqlDataAdapter da = new MySqlDataAdapter();
+            //da.SelectCommand = new MySqlCommand(query, con);
 
-            DataTable dt = new DataTable();
-
-            da.Fill(dt);
+      
 
             
 
