@@ -160,7 +160,7 @@
             this.password.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.password.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.password.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.password.Location = new System.Drawing.Point(173, 253);
+            this.password.Location = new System.Drawing.Point(173, 264);
             this.password.Margin = new System.Windows.Forms.Padding(4);
             this.password.Name = "password";
             this.password.PasswordChar = '*';
@@ -173,8 +173,8 @@
             this.username.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.username.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.username.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.username.ForeColor = System.Drawing.SystemColors.ScrollBar;
-            this.username.Location = new System.Drawing.Point(173, 141);
+            this.username.ForeColor = System.Drawing.Color.Black;
+            this.username.Location = new System.Drawing.Point(173, 150);
             this.username.Margin = new System.Windows.Forms.Padding(4);
             this.username.Name = "username";
             this.username.Size = new System.Drawing.Size(280, 42);
@@ -186,7 +186,7 @@
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(248, 38);
+            this.label1.Location = new System.Drawing.Point(248, 62);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(95, 38);
@@ -197,22 +197,22 @@
             // Usernamelbl
             // 
             this.Usernamelbl.AutoSize = true;
-            this.Usernamelbl.Font = new System.Drawing.Font("Montserrat", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Usernamelbl.Location = new System.Drawing.Point(170, 100);
+            this.Usernamelbl.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Usernamelbl.Location = new System.Drawing.Point(168, 75);
             this.Usernamelbl.Name = "Usernamelbl";
-            this.Usernamelbl.Size = new System.Drawing.Size(108, 25);
+            this.Usernamelbl.Size = new System.Drawing.Size(126, 27);
             this.Usernamelbl.TabIndex = 6;
-            this.Usernamelbl.Text = "Username";
+            this.Usernamelbl.Text = "Username:";
             // 
             // Passwordlbl
             // 
             this.Passwordlbl.AutoSize = true;
-            this.Passwordlbl.Font = new System.Drawing.Font("Montserrat", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Passwordlbl.Location = new System.Drawing.Point(170, 213);
+            this.Passwordlbl.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Passwordlbl.Location = new System.Drawing.Point(168, 187);
             this.Passwordlbl.Name = "Passwordlbl";
-            this.Passwordlbl.Size = new System.Drawing.Size(105, 25);
+            this.Passwordlbl.Size = new System.Drawing.Size(121, 27);
             this.Passwordlbl.TabIndex = 7;
-            this.Passwordlbl.Text = "Password";
+            this.Passwordlbl.Text = "Password:";
             // 
             // LoginForm
             // 
