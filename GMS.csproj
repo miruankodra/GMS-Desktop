@@ -298,6 +298,9 @@
     <Compile Include="WelcomeForm.Designer.cs">
       <DependentUpon>WelcomeForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AddModalityForm.resx">
+      <DependentUpon>AddModalityForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Charts.resx">
       <DependentUpon>Charts.cs</DependentUpon>
     </EmbeddedResource>
