@@ -239,6 +239,12 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AddModalityForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddModalityForm.Designer.cs">
+      <DependentUpon>AddModalityForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Charts.cs">
       <SubType>Form</SubType>
     </Compile>
