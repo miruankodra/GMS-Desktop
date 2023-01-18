@@ -34,6 +34,17 @@
             this.descriptionlbl = new System.Windows.Forms.Label();
             this.descriptiontextlbl = new System.Windows.Forms.TextBox();
             this.mintemplbl = new System.Windows.Forms.Label();
+            this.mintemptxt = new System.Windows.Forms.TextBox();
+            this.maxtemplbl = new System.Windows.Forms.Label();
+            this.maxtemptxt = new System.Windows.Forms.TextBox();
+            this.Minairhumlbl = new System.Windows.Forms.Label();
+            this.minairhumtxt = new System.Windows.Forms.TextBox();
+            this.maxairhumlbl = new System.Windows.Forms.Label();
+            this.maxairhumtxt = new System.Windows.Forms.TextBox();
+            this.minsoilhumlbl = new System.Windows.Forms.Label();
+            this.minsoilhumtxt = new System.Windows.Forms.TextBox();
+            this.maxsoilhumlbl = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // modalitytitle
@@ -52,7 +63,7 @@
             this.modalityNames.AutoSize = true;
             this.modalityNames.Font = new System.Drawing.Font("Montserrat", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.modalityNames.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.modalityNames.Location = new System.Drawing.Point(110, 157);
+            this.modalityNames.Location = new System.Drawing.Point(85, 157);
             this.modalityNames.Name = "modalityNames";
             this.modalityNames.Size = new System.Drawing.Size(204, 32);
             this.modalityNames.TabIndex = 1;
@@ -71,7 +82,7 @@
             this.descriptionlbl.AutoSize = true;
             this.descriptionlbl.Font = new System.Drawing.Font("Montserrat", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.descriptionlbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.descriptionlbl.Location = new System.Drawing.Point(110, 277);
+            this.descriptionlbl.Location = new System.Drawing.Point(85, 277);
             this.descriptionlbl.Name = "descriptionlbl";
             this.descriptionlbl.Size = new System.Drawing.Size(161, 32);
             this.descriptionlbl.TabIndex = 3;
@@ -90,11 +101,114 @@
             this.mintemplbl.AutoSize = true;
             this.mintemplbl.Font = new System.Drawing.Font("Montserrat", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.mintemplbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.mintemplbl.Location = new System.Drawing.Point(110, 384);
+            this.mintemplbl.Location = new System.Drawing.Point(85, 383);
             this.mintemplbl.Name = "mintemplbl";
             this.mintemplbl.Size = new System.Drawing.Size(229, 32);
             this.mintemplbl.TabIndex = 5;
             this.mintemplbl.Text = "Min Temperature:";
+            // 
+            // mintemptxt
+            // 
+            this.mintemptxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mintemptxt.Location = new System.Drawing.Point(336, 386);
+            this.mintemptxt.Name = "mintemptxt";
+            this.mintemptxt.Size = new System.Drawing.Size(185, 30);
+            this.mintemptxt.TabIndex = 6;
+            // 
+            // maxtemplbl
+            // 
+            this.maxtemplbl.AutoSize = true;
+            this.maxtemplbl.Font = new System.Drawing.Font("Montserrat", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.maxtemplbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.maxtemplbl.Location = new System.Drawing.Point(85, 484);
+            this.maxtemplbl.Name = "maxtemplbl";
+            this.maxtemplbl.Size = new System.Drawing.Size(234, 32);
+            this.maxtemplbl.TabIndex = 7;
+            this.maxtemplbl.Text = "Max Temperature:";
+            // 
+            // maxtemptxt
+            // 
+            this.maxtemptxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.maxtemptxt.Location = new System.Drawing.Point(336, 487);
+            this.maxtemptxt.Name = "maxtemptxt";
+            this.maxtemptxt.Size = new System.Drawing.Size(185, 30);
+            this.maxtemptxt.TabIndex = 8;
+            // 
+            // Minairhumlbl
+            // 
+            this.Minairhumlbl.AutoSize = true;
+            this.Minairhumlbl.Font = new System.Drawing.Font("Montserrat", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Minairhumlbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.Minairhumlbl.Location = new System.Drawing.Point(897, 157);
+            this.Minairhumlbl.Name = "Minairhumlbl";
+            this.Minairhumlbl.Size = new System.Drawing.Size(227, 32);
+            this.Minairhumlbl.TabIndex = 9;
+            this.Minairhumlbl.Text = "Min Air Humidity:";
+            // 
+            // minairhumtxt
+            // 
+            this.minairhumtxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.minairhumtxt.Location = new System.Drawing.Point(1176, 160);
+            this.minairhumtxt.Name = "minairhumtxt";
+            this.minairhumtxt.Size = new System.Drawing.Size(185, 30);
+            this.minairhumtxt.TabIndex = 10;
+            // 
+            // maxairhumlbl
+            // 
+            this.maxairhumlbl.AutoSize = true;
+            this.maxairhumlbl.Font = new System.Drawing.Font("Montserrat", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.maxairhumlbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.maxairhumlbl.Location = new System.Drawing.Point(897, 277);
+            this.maxairhumlbl.Name = "maxairhumlbl";
+            this.maxairhumlbl.Size = new System.Drawing.Size(232, 32);
+            this.maxairhumlbl.TabIndex = 11;
+            this.maxairhumlbl.Text = "Max Air Humidity:";
+            // 
+            // maxairhumtxt
+            // 
+            this.maxairhumtxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.maxairhumtxt.Location = new System.Drawing.Point(1176, 280);
+            this.maxairhumtxt.Name = "maxairhumtxt";
+            this.maxairhumtxt.Size = new System.Drawing.Size(185, 30);
+            this.maxairhumtxt.TabIndex = 12;
+            // 
+            // minsoilhumlbl
+            // 
+            this.minsoilhumlbl.AutoSize = true;
+            this.minsoilhumlbl.Font = new System.Drawing.Font("Montserrat", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.minsoilhumlbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.minsoilhumlbl.Location = new System.Drawing.Point(897, 383);
+            this.minsoilhumlbl.Name = "minsoilhumlbl";
+            this.minsoilhumlbl.Size = new System.Drawing.Size(236, 32);
+            this.minsoilhumlbl.TabIndex = 13;
+            this.minsoilhumlbl.Text = "Min Soil Humidity:";
+            // 
+            // minsoilhumtxt
+            // 
+            this.minsoilhumtxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.minsoilhumtxt.Location = new System.Drawing.Point(1176, 386);
+            this.minsoilhumtxt.Name = "minsoilhumtxt";
+            this.minsoilhumtxt.Size = new System.Drawing.Size(185, 30);
+            this.minsoilhumtxt.TabIndex = 14;
+            // 
+            // maxsoilhumlbl
+            // 
+            this.maxsoilhumlbl.AutoSize = true;
+            this.maxsoilhumlbl.Font = new System.Drawing.Font("Montserrat", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.maxsoilhumlbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.maxsoilhumlbl.Location = new System.Drawing.Point(897, 484);
+            this.maxsoilhumlbl.Name = "maxsoilhumlbl";
+            this.maxsoilhumlbl.Size = new System.Drawing.Size(241, 32);
+            this.maxsoilhumlbl.TabIndex = 15;
+            this.maxsoilhumlbl.Text = "Max Soil Humidity:";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(1176, 487);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(185, 30);
+            this.textBox1.TabIndex = 16;
             // 
             // AddModalityForm
             // 
@@ -102,6 +216,17 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
             this.ClientSize = new System.Drawing.Size(1434, 767);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.maxsoilhumlbl);
+            this.Controls.Add(this.minsoilhumtxt);
+            this.Controls.Add(this.minsoilhumlbl);
+            this.Controls.Add(this.maxairhumtxt);
+            this.Controls.Add(this.maxairhumlbl);
+            this.Controls.Add(this.minairhumtxt);
+            this.Controls.Add(this.Minairhumlbl);
+            this.Controls.Add(this.maxtemptxt);
+            this.Controls.Add(this.maxtemplbl);
+            this.Controls.Add(this.mintemptxt);
             this.Controls.Add(this.mintemplbl);
             this.Controls.Add(this.descriptiontextlbl);
             this.Controls.Add(this.descriptionlbl);
@@ -124,5 +249,16 @@
         private System.Windows.Forms.Label descriptionlbl;
         private System.Windows.Forms.TextBox descriptiontextlbl;
         private System.Windows.Forms.Label mintemplbl;
+        private System.Windows.Forms.TextBox mintemptxt;
+        private System.Windows.Forms.Label maxtemplbl;
+        private System.Windows.Forms.TextBox maxtemptxt;
+        private System.Windows.Forms.Label Minairhumlbl;
+        private System.Windows.Forms.TextBox minairhumtxt;
+        private System.Windows.Forms.Label maxairhumlbl;
+        private System.Windows.Forms.TextBox maxairhumtxt;
+        private System.Windows.Forms.Label minsoilhumlbl;
+        private System.Windows.Forms.TextBox minsoilhumtxt;
+        private System.Windows.Forms.Label maxsoilhumlbl;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
