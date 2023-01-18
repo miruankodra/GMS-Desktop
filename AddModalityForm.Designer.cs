@@ -45,6 +45,7 @@
             this.minsoilhumtxt = new System.Windows.Forms.TextBox();
             this.maxsoilhumlbl = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.Submitbtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // modalitytitle
@@ -52,11 +53,12 @@
             this.modalitytitle.AutoSize = true;
             this.modalitytitle.Font = new System.Drawing.Font("Montserrat SemiBold", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.modalitytitle.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.modalitytitle.Location = new System.Drawing.Point(497, 33);
+            this.modalitytitle.Location = new System.Drawing.Point(552, 35);
             this.modalitytitle.Name = "modalitytitle";
             this.modalitytitle.Size = new System.Drawing.Size(307, 51);
             this.modalitytitle.TabIndex = 0;
             this.modalitytitle.Text = "Add Modalities";
+            this.modalitytitle.Click += new System.EventHandler(this.modalitytitle_Click);
             // 
             // modalityNames
             // 
@@ -72,7 +74,7 @@
             // modalitytextlbl
             // 
             this.modalitytextlbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.modalitytextlbl.Location = new System.Drawing.Point(336, 160);
+            this.modalitytextlbl.Location = new System.Drawing.Point(349, 157);
             this.modalitytextlbl.Name = "modalitytextlbl";
             this.modalitytextlbl.Size = new System.Drawing.Size(185, 30);
             this.modalitytextlbl.TabIndex = 2;
@@ -82,7 +84,7 @@
             this.descriptionlbl.AutoSize = true;
             this.descriptionlbl.Font = new System.Drawing.Font("Montserrat", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.descriptionlbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.descriptionlbl.Location = new System.Drawing.Point(85, 277);
+            this.descriptionlbl.Location = new System.Drawing.Point(85, 278);
             this.descriptionlbl.Name = "descriptionlbl";
             this.descriptionlbl.Size = new System.Drawing.Size(161, 32);
             this.descriptionlbl.TabIndex = 3;
@@ -91,7 +93,7 @@
             // descriptiontextlbl
             // 
             this.descriptiontextlbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.descriptiontextlbl.Location = new System.Drawing.Point(336, 280);
+            this.descriptiontextlbl.Location = new System.Drawing.Point(349, 280);
             this.descriptiontextlbl.Name = "descriptiontextlbl";
             this.descriptiontextlbl.Size = new System.Drawing.Size(185, 30);
             this.descriptiontextlbl.TabIndex = 4;
@@ -106,11 +108,12 @@
             this.mintemplbl.Size = new System.Drawing.Size(229, 32);
             this.mintemplbl.TabIndex = 5;
             this.mintemplbl.Text = "Min Temperature:";
+            this.mintemplbl.Click += new System.EventHandler(this.mintemplbl_Click);
             // 
             // mintemptxt
             // 
             this.mintemptxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.mintemptxt.Location = new System.Drawing.Point(336, 386);
+            this.mintemptxt.Location = new System.Drawing.Point(349, 388);
             this.mintemptxt.Name = "mintemptxt";
             this.mintemptxt.Size = new System.Drawing.Size(185, 30);
             this.mintemptxt.TabIndex = 6;
@@ -129,7 +132,7 @@
             // maxtemptxt
             // 
             this.maxtemptxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maxtemptxt.Location = new System.Drawing.Point(336, 487);
+            this.maxtemptxt.Location = new System.Drawing.Point(349, 487);
             this.maxtemptxt.Name = "maxtemptxt";
             this.maxtemptxt.Size = new System.Drawing.Size(185, 30);
             this.maxtemptxt.TabIndex = 8;
@@ -139,7 +142,7 @@
             this.Minairhumlbl.AutoSize = true;
             this.Minairhumlbl.Font = new System.Drawing.Font("Montserrat", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Minairhumlbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Minairhumlbl.Location = new System.Drawing.Point(897, 157);
+            this.Minairhumlbl.Location = new System.Drawing.Point(809, 157);
             this.Minairhumlbl.Name = "Minairhumlbl";
             this.Minairhumlbl.Size = new System.Drawing.Size(227, 32);
             this.Minairhumlbl.TabIndex = 9;
@@ -148,7 +151,7 @@
             // minairhumtxt
             // 
             this.minairhumtxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.minairhumtxt.Location = new System.Drawing.Point(1176, 160);
+            this.minairhumtxt.Location = new System.Drawing.Point(1102, 157);
             this.minairhumtxt.Name = "minairhumtxt";
             this.minairhumtxt.Size = new System.Drawing.Size(185, 30);
             this.minairhumtxt.TabIndex = 10;
@@ -158,7 +161,7 @@
             this.maxairhumlbl.AutoSize = true;
             this.maxairhumlbl.Font = new System.Drawing.Font("Montserrat", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.maxairhumlbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.maxairhumlbl.Location = new System.Drawing.Point(897, 277);
+            this.maxairhumlbl.Location = new System.Drawing.Point(805, 278);
             this.maxairhumlbl.Name = "maxairhumlbl";
             this.maxairhumlbl.Size = new System.Drawing.Size(232, 32);
             this.maxairhumlbl.TabIndex = 11;
@@ -167,7 +170,7 @@
             // maxairhumtxt
             // 
             this.maxairhumtxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.maxairhumtxt.Location = new System.Drawing.Point(1176, 280);
+            this.maxairhumtxt.Location = new System.Drawing.Point(1102, 276);
             this.maxairhumtxt.Name = "maxairhumtxt";
             this.maxairhumtxt.Size = new System.Drawing.Size(185, 30);
             this.maxairhumtxt.TabIndex = 12;
@@ -177,7 +180,7 @@
             this.minsoilhumlbl.AutoSize = true;
             this.minsoilhumlbl.Font = new System.Drawing.Font("Montserrat", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.minsoilhumlbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.minsoilhumlbl.Location = new System.Drawing.Point(897, 383);
+            this.minsoilhumlbl.Location = new System.Drawing.Point(801, 385);
             this.minsoilhumlbl.Name = "minsoilhumlbl";
             this.minsoilhumlbl.Size = new System.Drawing.Size(236, 32);
             this.minsoilhumlbl.TabIndex = 13;
@@ -186,17 +189,18 @@
             // minsoilhumtxt
             // 
             this.minsoilhumtxt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.minsoilhumtxt.Location = new System.Drawing.Point(1176, 386);
+            this.minsoilhumtxt.Location = new System.Drawing.Point(1102, 381);
             this.minsoilhumtxt.Name = "minsoilhumtxt";
             this.minsoilhumtxt.Size = new System.Drawing.Size(185, 30);
             this.minsoilhumtxt.TabIndex = 14;
+            this.minsoilhumtxt.TextChanged += new System.EventHandler(this.minsoilhumtxt_TextChanged);
             // 
             // maxsoilhumlbl
             // 
             this.maxsoilhumlbl.AutoSize = true;
             this.maxsoilhumlbl.Font = new System.Drawing.Font("Montserrat", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.maxsoilhumlbl.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.maxsoilhumlbl.Location = new System.Drawing.Point(897, 484);
+            this.maxsoilhumlbl.Location = new System.Drawing.Point(797, 484);
             this.maxsoilhumlbl.Name = "maxsoilhumlbl";
             this.maxsoilhumlbl.Size = new System.Drawing.Size(241, 32);
             this.maxsoilhumlbl.TabIndex = 15;
@@ -205,17 +209,30 @@
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(1176, 487);
+            this.textBox1.Location = new System.Drawing.Point(1102, 480);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(185, 30);
             this.textBox1.TabIndex = 16;
+            // 
+            // Submitbtn
+            // 
+            this.Submitbtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(187)))), ((int)(((byte)(92)))));
+            this.Submitbtn.Font = new System.Drawing.Font("Montserrat", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Submitbtn.ForeColor = System.Drawing.Color.White;
+            this.Submitbtn.Location = new System.Drawing.Point(1119, 710);
+            this.Submitbtn.Name = "Submitbtn";
+            this.Submitbtn.Size = new System.Drawing.Size(168, 49);
+            this.Submitbtn.TabIndex = 17;
+            this.Submitbtn.Text = "Submit";
+            this.Submitbtn.UseVisualStyleBackColor = false;
             // 
             // AddModalityForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
-            this.ClientSize = new System.Drawing.Size(1434, 767);
+            this.ClientSize = new System.Drawing.Size(1452, 814);
+            this.Controls.Add(this.Submitbtn);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.maxsoilhumlbl);
             this.Controls.Add(this.minsoilhumtxt);
@@ -260,5 +277,6 @@
         private System.Windows.Forms.TextBox minsoilhumtxt;
         private System.Windows.Forms.Label maxsoilhumlbl;
         private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button Submitbtn;
     }
 }

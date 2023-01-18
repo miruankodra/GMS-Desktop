@@ -51,7 +51,7 @@
             // 
             this.AddModBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 48F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AddModBtn.Location = new System.Drawing.Point(148, 132);
-            this.AddModBtn.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.AddModBtn.Margin = new System.Windows.Forms.Padding(4);
             this.AddModBtn.Name = "AddModBtn";
             this.AddModBtn.Size = new System.Drawing.Size(147, 135);
             this.AddModBtn.TabIndex = 0;
@@ -85,7 +85,7 @@
             "Domate",
             "Barishtore"});
             this.comboBox1.Location = new System.Drawing.Point(477, 181);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(776, 47);
             this.comboBox1.TabIndex = 2;

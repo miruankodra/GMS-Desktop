@@ -16,5 +16,20 @@ namespace GMS
         {
             InitializeComponent();
         }
+
+        private void mintemplbl_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void minsoilhumtxt_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void modalitytitle_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
