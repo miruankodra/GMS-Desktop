@@ -77,8 +77,8 @@
             legend1.ForeColor = System.Drawing.Color.White;
             legend1.Name = "Legend1";
             this.GrafikTemp.Legends.Add(legend1);
-            this.GrafikTemp.Location = new System.Drawing.Point(655, 12);
-            this.GrafikTemp.Margin = new System.Windows.Forms.Padding(13, 2, 0, 2);
+            this.GrafikTemp.Location = new System.Drawing.Point(491, 10);
+            this.GrafikTemp.Margin = new System.Windows.Forms.Padding(10, 2, 0, 2);
             this.GrafikTemp.Name = "GrafikTemp";
             this.GrafikTemp.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
             series1.BorderWidth = 2;
@@ -87,7 +87,7 @@
             series1.Legend = "Legend1";
             series1.Name = "Temperatura";
             this.GrafikTemp.Series.Add(series1);
-            this.GrafikTemp.Size = new System.Drawing.Size(880, 249);
+            this.GrafikTemp.Size = new System.Drawing.Size(660, 202);
             this.GrafikTemp.TabIndex = 0;
             this.GrafikTemp.Text = "Grafik Temperature";
             this.GrafikTemp.Click += new System.EventHandler(this.GrafikTemp_Click);
@@ -102,8 +102,8 @@
             legend2.ForeColor = System.Drawing.Color.White;
             legend2.Name = "Legend1";
             this.GrafikLageshtie.Legends.Add(legend2);
-            this.GrafikLageshtie.Location = new System.Drawing.Point(655, 270);
-            this.GrafikLageshtie.Margin = new System.Windows.Forms.Padding(13, 2, 0, 2);
+            this.GrafikLageshtie.Location = new System.Drawing.Point(491, 219);
+            this.GrafikLageshtie.Margin = new System.Windows.Forms.Padding(10, 2, 0, 2);
             this.GrafikLageshtie.Name = "GrafikLageshtie";
             this.GrafikLageshtie.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
             series2.BorderWidth = 2;
@@ -112,19 +112,19 @@
             series2.Legend = "Legend1";
             series2.Name = "Lageshtia e ajrit";
             this.GrafikLageshtie.Series.Add(series2);
-            this.GrafikLageshtie.Size = new System.Drawing.Size(899, 249);
+            this.GrafikLageshtie.Size = new System.Drawing.Size(674, 202);
             this.GrafikLageshtie.TabIndex = 1;
             this.GrafikLageshtie.Text = "Grafik Lageshtie ajri/dheu";
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(245, 636);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dataGridView1.Location = new System.Drawing.Point(184, 517);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(272, 12);
+            this.dataGridView1.Size = new System.Drawing.Size(204, 10);
             this.dataGridView1.TabIndex = 2;
             this.dataGridView1.Visible = false;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
@@ -139,8 +139,8 @@
             legend3.ForeColor = System.Drawing.Color.White;
             legend3.Name = "Legend1";
             this.GrafikLageshtieDheu.Legends.Add(legend3);
-            this.GrafikLageshtieDheu.Location = new System.Drawing.Point(655, 546);
-            this.GrafikLageshtieDheu.Margin = new System.Windows.Forms.Padding(13, 2, 0, 2);
+            this.GrafikLageshtieDheu.Location = new System.Drawing.Point(491, 444);
+            this.GrafikLageshtieDheu.Margin = new System.Windows.Forms.Padding(10, 2, 0, 2);
             this.GrafikLageshtieDheu.Name = "GrafikLageshtieDheu";
             this.GrafikLageshtieDheu.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
             series3.BorderWidth = 2;
@@ -149,7 +149,7 @@
             series3.Legend = "Legend1";
             series3.Name = "Lageshtia e dheut";
             this.GrafikLageshtieDheu.Series.Add(series3);
-            this.GrafikLageshtieDheu.Size = new System.Drawing.Size(899, 249);
+            this.GrafikLageshtieDheu.Size = new System.Drawing.Size(674, 202);
             this.GrafikLageshtieDheu.TabIndex = 3;
             this.GrafikLageshtieDheu.Text = "Grafik Lageshtie së Dheut";
             this.GrafikLageshtieDheu.Click += new System.EventHandler(this.GrafikLageshtieDheu_Click);
@@ -159,9 +159,10 @@
             this.GMSINFO.AutoSize = true;
             this.GMSINFO.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GMSINFO.ForeColor = System.Drawing.Color.White;
-            this.GMSINFO.Location = new System.Drawing.Point(37, 111);
+            this.GMSINFO.Location = new System.Drawing.Point(28, 90);
+            this.GMSINFO.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.GMSINFO.Name = "GMSINFO";
-            this.GMSINFO.Size = new System.Drawing.Size(405, 39);
+            this.GMSINFO.Size = new System.Drawing.Size(328, 31);
             this.GMSINFO.TabIndex = 4;
             this.GMSINFO.Text = "Greenhouse Information";
             // 
@@ -169,9 +170,10 @@
             // 
             this.Ownerlbl.AutoSize = true;
             this.Ownerlbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Ownerlbl.Location = new System.Drawing.Point(148, 225);
+            this.Ownerlbl.Location = new System.Drawing.Point(111, 183);
+            this.Ownerlbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Ownerlbl.Name = "Ownerlbl";
-            this.Ownerlbl.Size = new System.Drawing.Size(102, 31);
+            this.Ownerlbl.Size = new System.Drawing.Size(80, 25);
             this.Ownerlbl.TabIndex = 5;
             this.Ownerlbl.Text = "Owner:";
             // 
@@ -179,9 +181,10 @@
             // 
             this.Arealbl.AutoSize = true;
             this.Arealbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Arealbl.Location = new System.Drawing.Point(148, 306);
+            this.Arealbl.Location = new System.Drawing.Point(111, 249);
+            this.Arealbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Arealbl.Name = "Arealbl";
-            this.Arealbl.Size = new System.Drawing.Size(79, 31);
+            this.Arealbl.Size = new System.Drawing.Size(63, 25);
             this.Arealbl.TabIndex = 6;
             this.Arealbl.Text = "Area:";
             // 
@@ -189,17 +192,18 @@
             // 
             this.Locationlbl.AutoSize = true;
             this.Locationlbl.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Locationlbl.Location = new System.Drawing.Point(148, 393);
+            this.Locationlbl.Location = new System.Drawing.Point(111, 319);
+            this.Locationlbl.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Locationlbl.Name = "Locationlbl";
-            this.Locationlbl.Size = new System.Drawing.Size(125, 31);
+            this.Locationlbl.Size = new System.Drawing.Size(100, 25);
             this.Locationlbl.TabIndex = 7;
             this.Locationlbl.Text = "Location:";
             // 
             // Userpic
             // 
             this.Userpic.Image = ((System.Drawing.Image)(resources.GetObject("Userpic.Image")));
-            this.Userpic.Location = new System.Drawing.Point(39, 201);
-            this.Userpic.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Userpic.Location = new System.Drawing.Point(29, 163);
+            this.Userpic.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Userpic.Name = "Userpic";
             this.Userpic.Size = new System.Drawing.Size(64, 64);
             this.Userpic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -209,8 +213,8 @@
             // Areapic
             // 
             this.Areapic.Image = ((System.Drawing.Image)(resources.GetObject("Areapic.Image")));
-            this.Areapic.Location = new System.Drawing.Point(39, 284);
-            this.Areapic.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Areapic.Location = new System.Drawing.Point(29, 231);
+            this.Areapic.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Areapic.Name = "Areapic";
             this.Areapic.Size = new System.Drawing.Size(64, 64);
             this.Areapic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -221,8 +225,8 @@
             // Locationpic
             // 
             this.Locationpic.Image = ((System.Drawing.Image)(resources.GetObject("Locationpic.Image")));
-            this.Locationpic.Location = new System.Drawing.Point(40, 368);
-            this.Locationpic.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Locationpic.Location = new System.Drawing.Point(30, 299);
+            this.Locationpic.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Locationpic.Name = "Locationpic";
             this.Locationpic.Size = new System.Drawing.Size(64, 64);
             this.Locationpic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
@@ -233,18 +237,20 @@
             // 
             this.Ownername.AutoSize = true;
             this.Ownername.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Ownername.Location = new System.Drawing.Point(216, 228);
+            this.Ownername.Location = new System.Drawing.Point(162, 185);
+            this.Ownername.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Ownername.Name = "Ownername";
-            this.Ownername.Size = new System.Drawing.Size(0, 18);
+            this.Ownername.Size = new System.Drawing.Size(0, 15);
             this.Ownername.TabIndex = 11;
             // 
             // Owner
             // 
             this.Owner.AutoSize = true;
             this.Owner.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Owner.Location = new System.Drawing.Point(255, 228);
+            this.Owner.Location = new System.Drawing.Point(191, 185);
+            this.Owner.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Owner.Name = "Owner";
-            this.Owner.Size = new System.Drawing.Size(0, 31);
+            this.Owner.Size = new System.Drawing.Size(0, 25);
             this.Owner.TabIndex = 12;
             this.Owner.Click += new System.EventHandler(this.Owner_Click);
             // 
@@ -252,18 +258,20 @@
             // 
             this.Location.AutoSize = true;
             this.Location.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Location.Location = new System.Drawing.Point(281, 393);
+            this.Location.Location = new System.Drawing.Point(111, 359);
+            this.Location.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Location.Name = "Location";
-            this.Location.Size = new System.Drawing.Size(0, 31);
+            this.Location.Size = new System.Drawing.Size(0, 25);
             this.Location.TabIndex = 14;
             // 
             // Area
             // 
             this.Area.AutoSize = true;
             this.Area.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Area.Location = new System.Drawing.Point(237, 306);
+            this.Area.Location = new System.Drawing.Point(178, 249);
+            this.Area.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.Area.Name = "Area";
-            this.Area.Size = new System.Drawing.Size(0, 31);
+            this.Area.Size = new System.Drawing.Size(0, 25);
             this.Area.TabIndex = 15;
             // 
             // pdfExp
@@ -272,10 +280,10 @@
             this.pdfExp.FlatAppearance.BorderSize = 0;
             this.pdfExp.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.pdfExp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.pdfExp.Location = new System.Drawing.Point(44, 545);
-            this.pdfExp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pdfExp.Location = new System.Drawing.Point(33, 443);
+            this.pdfExp.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pdfExp.Name = "pdfExp";
-            this.pdfExp.Size = new System.Drawing.Size(237, 50);
+            this.pdfExp.Size = new System.Drawing.Size(178, 41);
             this.pdfExp.TabIndex = 16;
             this.pdfExp.Text = "Export All To PDF";
             this.pdfExp.UseVisualStyleBackColor = false;
@@ -285,18 +293,19 @@
             // 
             this.lablm2.AutoSize = true;
             this.lablm2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lablm2.Location = new System.Drawing.Point(304, 306);
+            this.lablm2.Location = new System.Drawing.Point(228, 249);
+            this.lablm2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.lablm2.Name = "lablm2";
-            this.lablm2.Size = new System.Drawing.Size(51, 31);
+            this.lablm2.Size = new System.Drawing.Size(41, 25);
             this.lablm2.TabIndex = 17;
             this.lablm2.Text = "m2";
             // 
             // Charts
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
-            this.ClientSize = new System.Drawing.Size(1452, 814);
+            this.ClientSize = new System.Drawing.Size(1089, 661);
             this.Controls.Add(this.lablm2);
             this.Controls.Add(this.pdfExp);
             this.Controls.Add(this.Area);
@@ -316,7 +325,7 @@
             this.Controls.Add(this.GrafikTemp);
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Charts";
             this.Text = "Charts";
             this.Load += new System.EventHandler(this.Charts_Load);

@@ -18,7 +18,8 @@ namespace GMS
     {
         MySqlConnection con;
         public string conString = "SERVER=185.146.22.249;PORT=3306;DATABASE=gmsal_gms;UID=gmsal_gms;PASSWORD=gms123al456!!!";
-        public string usr_id;
+        public string id;
+        public string greenhouse_id;
 
         
         public LoginForm()
@@ -61,13 +62,14 @@ namespace GMS
 
                     foreach (DataRow row in dt.Rows)
                     {
-                        usr_id = row["id"].ToString();
+                        id = row["id"].ToString();
+                        greenhouse_id = row["greenhouse_id"].ToString();
                     }
 
 
                     this.Hide();
 
-                    Form Dashboard = new DashboardForm(usr_id);
+                    Form Dashboard = new DashboardForm(greenhouse_id, id);
                     Dashboard.ShowDialog();
 
 

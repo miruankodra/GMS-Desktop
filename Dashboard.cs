@@ -18,16 +18,16 @@ namespace GMS
         public string conString = "SERVER=185.146.22.249;PORT=3306;DATABASE=gmsal_gms;UID=gmsal_gms;PASSWORD=gms123al456!!!";
 
         
-        string id;
-        string gh_id;
+        string user_id;
+        string greenhouse_id;
         string gh_name;
         string area;
         string location;
-       public DashboardForm(string usr_id)
+       public DashboardForm(string greenhouse_id, string user_id)
         {
-          InitializeComponent();
-          id = usr_id;
-            
+            InitializeComponent();
+            this.greenhouse_id = greenhouse_id;
+            this.user_id = user_id;
         }
 
 
@@ -47,7 +47,7 @@ namespace GMS
             con.ConnectionString = conString;
 
 
-            string query = "SELECT * from greenhouses WHERE user_id = '" + id + "'";
+            string query = "SELECT * from greenhouses WHERE id = '" + greenhouse_id + "'";
             con.Open();
             MySqlDataAdapter da = new MySqlDataAdapter();
             da.SelectCommand = new MySqlCommand(query, con);
@@ -57,7 +57,7 @@ namespace GMS
             da.Fill(dt);
             foreach (DataRow row in dt.Rows)
             {
-                gh_id = row["id"].ToString();
+                //greenhouse_id = row["id"].ToString();
                 area = row["area"].ToString();
                 location = row["location"].ToString();
                 gh_name = row["name"].ToString();
@@ -65,7 +65,7 @@ namespace GMS
             }
             gmsName.Text = gh_name;
 
-            loadform(new Charts(gh_id, id, area, location));
+            loadform(new Charts(greenhouse_id, user_id, area, location));
         }
 
         private void mainPanel_Paint(object sender, PaintEventArgs e)
@@ -92,13 +92,13 @@ namespace GMS
         }
         private void DashBoardBtn_Click(object sender, EventArgs e)
         {
-            loadform(new Charts(gh_id, id, area, location));  
+            loadform(new Charts(greenhouse_id, user_id, area, location));  
         }
 
         private void ClimateBtn_Click(object sender, EventArgs e)
         {
            
-            loadform(new Climate(gh_id));
+            loadform(new Climate(greenhouse_id));
         }
 
         private void ControlPanelBtn_Click(object sender, EventArgs e)
@@ -108,7 +108,7 @@ namespace GMS
 
         private void ModalitetBtn_Click(object sender, EventArgs e)
         {
-            loadform(new Modalities(gh_id));
+            loadform(new Modalities(greenhouse_id));
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
