@@ -51,7 +51,7 @@ namespace GMS
 
         private void AddModBtn_Click(object sender, EventArgs e)
         {
-            AddModalityForm openform = new AddModalityForm();
+            AddModalityForm openform = new AddModalityForm(gh_id);
             openform.Show();
         
         }
