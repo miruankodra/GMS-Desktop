@@ -42,7 +42,7 @@ namespace GMS
 
         private void Charts_Load(object sender, EventArgs e)
         {
-
+    
             con = new MySqlConnection();
             con.ConnectionString = conString;
 
@@ -92,13 +92,15 @@ namespace GMS
             double x = 0;
             double y = 0;
 
+            MessageBox.Show(Convert.ToString(dataGridView1.Rows.Count));
+
 
             for (int i = 0; i < dataGridView1.Rows.Count - 1; i++)
             {
                 x = double.Parse(dataGridView1.Rows[i].Cells[5].Value.ToString());
                 y = double.Parse(dataGridView1.Rows[i].Cells[2].Value.ToString());
                
-                GrafikTemp.Series[0].Points.AddXY(x, y);
+                GrafikTemp.Series[0].Points.AddXY(x, y)
             }
 
             for (int i = 0; i < dataGridView1.Rows.Count - 1; i++)
@@ -123,8 +125,7 @@ namespace GMS
 
 
             }
-            //GrafikTemp.ChartAreas[0].AxisX.MajorGrid.LineColor = Color.Red;
-            //Chart.ChartAreas[0].AxisY.MajorGrid.LineColor = Color.Red;
+            
             GrafikTemp.ChartAreas[0].AxisX.LabelStyle.ForeColor = Color.White;
             GrafikLageshtie.ChartAreas[0].AxisX.LabelStyle.ForeColor = Color.White;
             GrafikLageshtieDheu.ChartAreas[0].AxisX.LabelStyle.ForeColor = Color.White;
