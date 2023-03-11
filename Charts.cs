@@ -92,7 +92,7 @@ namespace GMS
             double x = 0;
             double y = 0;
 
-            MessageBox.Show(Convert.ToString(dataGridView1.Rows.Count));
+            
 
 
             for (int i = 0; i < dataGridView1.Rows.Count - 1; i++)

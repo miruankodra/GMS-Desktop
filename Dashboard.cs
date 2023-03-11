@@ -150,5 +150,10 @@ namespace GMS
         {
 
         }
+
+        private void Botbtn_Click(object sender, EventArgs e)
+        {
+            loadform(new Form1());
+        }
     }
 }

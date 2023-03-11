@@ -42,6 +42,7 @@ namespace GMS
             con = new MySqlConnection();
             con.ConnectionString = conString;
 
+            
 
             string query = "SELECT * FROM modalities WHERE id = '" + modalityId + "'";
             con.Open();
