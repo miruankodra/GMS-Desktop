@@ -45,7 +45,7 @@
             this.textdescrption.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.textdescrption.Font = new System.Drawing.Font("Montserrat SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textdescrption.ForeColor = System.Drawing.Color.Gainsboro;
-            this.textdescrption.Location = new System.Drawing.Point(337, 461);
+            this.textdescrption.Location = new System.Drawing.Point(328, 487);
             this.textdescrption.Name = "textdescrption";
             this.textdescrption.Size = new System.Drawing.Size(250, 25);
             this.textdescrption.TabIndex = 17;
@@ -55,7 +55,7 @@
             // 
             this.activecheck.AutoSize = true;
             this.activecheck.Font = new System.Drawing.Font("Montserrat", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.activecheck.Location = new System.Drawing.Point(306, 350);
+            this.activecheck.Location = new System.Drawing.Point(306, 374);
             this.activecheck.Margin = new System.Windows.Forms.Padding(4);
             this.activecheck.Name = "activecheck";
             this.activecheck.Size = new System.Drawing.Size(176, 87);
@@ -90,7 +90,7 @@
             this.Descriptionlbl.AutoSize = true;
             this.Descriptionlbl.Font = new System.Drawing.Font("Montserrat SemiBold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Descriptionlbl.ForeColor = System.Drawing.Color.White;
-            this.Descriptionlbl.Location = new System.Drawing.Point(157, 457);
+            this.Descriptionlbl.Location = new System.Drawing.Point(148, 483);
             this.Descriptionlbl.Name = "Descriptionlbl";
             this.Descriptionlbl.Size = new System.Drawing.Size(159, 32);
             this.Descriptionlbl.TabIndex = 13;
@@ -101,7 +101,7 @@
             this.activelbl.AutoSize = true;
             this.activelbl.Font = new System.Drawing.Font("Montserrat SemiBold", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.activelbl.ForeColor = System.Drawing.Color.White;
-            this.activelbl.Location = new System.Drawing.Point(157, 378);
+            this.activelbl.Location = new System.Drawing.Point(148, 397);
             this.activelbl.Name = "activelbl";
             this.activelbl.Size = new System.Drawing.Size(94, 32);
             this.activelbl.TabIndex = 12;
