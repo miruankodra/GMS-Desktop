@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static Google.Protobuf.Reflection.SourceCodeInfo.Types;
 
 namespace GMS
 {
@@ -51,9 +52,10 @@ namespace GMS
 
         private void AddModBtn_Click(object sender, EventArgs e)
         {
-            AddModalityForm openform = new AddModalityForm();
+            AddModalityForm openform = new AddModalityForm(gh_id);
             openform.Show();
-        
+
+          
         }
     }
 }

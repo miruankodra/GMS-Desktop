@@ -41,6 +41,11 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.Namelbl = new System.Windows.Forms.Label();
+            this.Templbl = new System.Windows.Forms.Label();
+            this.Airlbl = new System.Windows.Forms.Label();
+            this.Soillbl = new System.Windows.Forms.Label();
+            this._lbl = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -186,12 +191,72 @@
             this.pictureBox4.TabIndex = 11;
             this.pictureBox4.TabStop = false;
             // 
+            // Namelbl
+            // 
+            this.Namelbl.AutoSize = true;
+            this.Namelbl.Font = new System.Drawing.Font("Montserrat", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Namelbl.ForeColor = System.Drawing.Color.Transparent;
+            this.Namelbl.Location = new System.Drawing.Point(381, 431);
+            this.Namelbl.Name = "Namelbl";
+            this.Namelbl.Size = new System.Drawing.Size(63, 24);
+            this.Namelbl.TabIndex = 12;
+            this.Namelbl.Text = "Name";
+            // 
+            // Templbl
+            // 
+            this.Templbl.AutoSize = true;
+            this.Templbl.Font = new System.Drawing.Font("Montserrat", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Templbl.ForeColor = System.Drawing.Color.Transparent;
+            this.Templbl.Location = new System.Drawing.Point(381, 487);
+            this.Templbl.Name = "Templbl";
+            this.Templbl.Size = new System.Drawing.Size(125, 24);
+            this.Templbl.TabIndex = 13;
+            this.Templbl.Text = "Temperature";
+            // 
+            // Airlbl
+            // 
+            this.Airlbl.AutoSize = true;
+            this.Airlbl.Font = new System.Drawing.Font("Montserrat", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Airlbl.ForeColor = System.Drawing.Color.Transparent;
+            this.Airlbl.Location = new System.Drawing.Point(381, 542);
+            this.Airlbl.Name = "Airlbl";
+            this.Airlbl.Size = new System.Drawing.Size(123, 24);
+            this.Airlbl.TabIndex = 14;
+            this.Airlbl.Text = "Air Humidity";
+            // 
+            // Soillbl
+            // 
+            this.Soillbl.AutoSize = true;
+            this.Soillbl.Font = new System.Drawing.Font("Montserrat", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Soillbl.ForeColor = System.Drawing.Color.Transparent;
+            this.Soillbl.Location = new System.Drawing.Point(381, 593);
+            this.Soillbl.Name = "Soillbl";
+            this.Soillbl.Size = new System.Drawing.Size(130, 24);
+            this.Soillbl.TabIndex = 15;
+            this.Soillbl.Text = "Soil Humidity";
+            // 
+            // _lbl
+            // 
+            this._lbl.AutoSize = true;
+            this._lbl.Font = new System.Drawing.Font("Montserrat", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._lbl.ForeColor = System.Drawing.Color.Transparent;
+            this._lbl.Location = new System.Drawing.Point(512, 487);
+            this._lbl.Name = "_lbl";
+            this._lbl.Size = new System.Drawing.Size(17, 24);
+            this._lbl.TabIndex = 16;
+            this._lbl.Text = "-";
+            // 
             // Modalities
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
             this.ClientSize = new System.Drawing.Size(1452, 814);
+            this.Controls.Add(this._lbl);
+            this.Controls.Add(this.Soillbl);
+            this.Controls.Add(this.Airlbl);
+            this.Controls.Add(this.Templbl);
+            this.Controls.Add(this.Namelbl);
             this.Controls.Add(this.pictureBox4);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox2);
@@ -232,5 +297,10 @@
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Label Namelbl;
+        private System.Windows.Forms.Label Templbl;
+        private System.Windows.Forms.Label Airlbl;
+        private System.Windows.Forms.Label Soillbl;
+        private System.Windows.Forms.Label _lbl;
     }
 }
