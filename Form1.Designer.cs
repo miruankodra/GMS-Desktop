@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.textdescrption = new System.Windows.Forms.TextBox();
-            this.activecheck = new System.Windows.Forms.CheckBox();
             this.ip1lbl = new System.Windows.Forms.Label();
             this.name1lbl = new System.Windows.Forms.Label();
             this.Descriptionlbl = new System.Windows.Forms.Label();
@@ -37,6 +36,7 @@
             this.Iplbl = new System.Windows.Forms.Label();
             this.Namebotlbl = new System.Windows.Forms.Label();
             this.Botsettinglbl = new System.Windows.Forms.Label();
+            this.toggleSwitch5 = new GMS.CustomControls.ToggleSwitch();
             this.SuspendLayout();
             // 
             // textdescrption
@@ -51,24 +51,12 @@
             this.textdescrption.TabIndex = 17;
             this.textdescrption.Text = "_________________________";
             // 
-            // activecheck
-            // 
-            this.activecheck.AutoSize = true;
-            this.activecheck.Font = new System.Drawing.Font("Montserrat", 36F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.activecheck.Location = new System.Drawing.Point(306, 374);
-            this.activecheck.Margin = new System.Windows.Forms.Padding(4);
-            this.activecheck.Name = "activecheck";
-            this.activecheck.Size = new System.Drawing.Size(176, 87);
-            this.activecheck.TabIndex = 16;
-            this.activecheck.Text = "       ";
-            this.activecheck.UseVisualStyleBackColor = true;
-            // 
             // ip1lbl
             // 
             this.ip1lbl.AutoSize = true;
             this.ip1lbl.Font = new System.Drawing.Font("Montserrat SemiBold", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ip1lbl.ForeColor = System.Drawing.Color.White;
-            this.ip1lbl.Location = new System.Drawing.Point(300, 297);
+            this.ip1lbl.Location = new System.Drawing.Point(322, 297);
             this.ip1lbl.Name = "ip1lbl";
             this.ip1lbl.Size = new System.Drawing.Size(38, 32);
             this.ip1lbl.TabIndex = 15;
@@ -79,7 +67,7 @@
             this.name1lbl.AutoSize = true;
             this.name1lbl.Font = new System.Drawing.Font("Montserrat SemiBold", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.name1lbl.ForeColor = System.Drawing.Color.White;
-            this.name1lbl.Location = new System.Drawing.Point(300, 202);
+            this.name1lbl.Location = new System.Drawing.Point(322, 202);
             this.name1lbl.Name = "name1lbl";
             this.name1lbl.Size = new System.Drawing.Size(87, 32);
             this.name1lbl.TabIndex = 14;
@@ -141,14 +129,29 @@
             this.Botsettinglbl.TabIndex = 9;
             this.Botsettinglbl.Text = "Bot Settings";
             // 
+            // toggleSwitch5
+            // 
+            this.toggleSwitch5.AutoSize = true;
+            this.toggleSwitch5.Location = new System.Drawing.Point(328, 406);
+            this.toggleSwitch5.MinimumSize = new System.Drawing.Size(67, 27);
+            this.toggleSwitch5.Name = "toggleSwitch5";
+            this.toggleSwitch5.OffBackColor = System.Drawing.Color.Gray;
+            this.toggleSwitch5.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.toggleSwitch5.OnBackColor = System.Drawing.Color.MediumSlateBlue;
+            this.toggleSwitch5.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.toggleSwitch5.Size = new System.Drawing.Size(112, 27);
+            this.toggleSwitch5.TabIndex = 29;
+            this.toggleSwitch5.Text = "toggleSwitch5";
+            this.toggleSwitch5.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
             this.ClientSize = new System.Drawing.Size(1434, 767);
+            this.Controls.Add(this.toggleSwitch5);
             this.Controls.Add(this.textdescrption);
-            this.Controls.Add(this.activecheck);
             this.Controls.Add(this.ip1lbl);
             this.Controls.Add(this.name1lbl);
             this.Controls.Add(this.Descriptionlbl);
@@ -168,7 +171,6 @@
         #endregion
 
         private System.Windows.Forms.TextBox textdescrption;
-        private System.Windows.Forms.CheckBox activecheck;
         private System.Windows.Forms.Label ip1lbl;
         private System.Windows.Forms.Label name1lbl;
         private System.Windows.Forms.Label Descriptionlbl;
@@ -176,5 +178,6 @@
         private System.Windows.Forms.Label Iplbl;
         private System.Windows.Forms.Label Namebotlbl;
         private System.Windows.Forms.Label Botsettinglbl;
+        private CustomControls.ToggleSwitch toggleSwitch5;
     }
 }
