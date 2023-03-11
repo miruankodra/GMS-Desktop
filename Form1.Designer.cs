@@ -36,7 +36,7 @@
             this.Iplbl = new System.Windows.Forms.Label();
             this.Namebotlbl = new System.Windows.Forms.Label();
             this.Botsettinglbl = new System.Windows.Forms.Label();
-            this.toggleSwitch5 = new GMS.CustomControls.ToggleSwitch();
+            this.toggleSwitch2 = new GMS.CustomControls.ToggleSwitch();
             this.SuspendLayout();
             // 
             // textdescrption
@@ -46,8 +46,9 @@
             this.textdescrption.Font = new System.Drawing.Font("Montserrat SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textdescrption.ForeColor = System.Drawing.Color.Gainsboro;
             this.textdescrption.Location = new System.Drawing.Point(328, 487);
+            this.textdescrption.Multiline = true;
             this.textdescrption.Name = "textdescrption";
-            this.textdescrption.Size = new System.Drawing.Size(250, 25);
+            this.textdescrption.Size = new System.Drawing.Size(250, 22);
             this.textdescrption.TabIndex = 17;
             this.textdescrption.Text = "_________________________";
             // 
@@ -129,20 +130,20 @@
             this.Botsettinglbl.TabIndex = 9;
             this.Botsettinglbl.Text = "Bot Settings";
             // 
-            // toggleSwitch5
+            // toggleSwitch2
             // 
-            this.toggleSwitch5.AutoSize = true;
-            this.toggleSwitch5.Location = new System.Drawing.Point(328, 406);
-            this.toggleSwitch5.MinimumSize = new System.Drawing.Size(67, 27);
-            this.toggleSwitch5.Name = "toggleSwitch5";
-            this.toggleSwitch5.OffBackColor = System.Drawing.Color.Gray;
-            this.toggleSwitch5.OffToggleColor = System.Drawing.Color.Gainsboro;
-            this.toggleSwitch5.OnBackColor = System.Drawing.Color.MediumSlateBlue;
-            this.toggleSwitch5.OnToggleColor = System.Drawing.Color.WhiteSmoke;
-            this.toggleSwitch5.Size = new System.Drawing.Size(112, 27);
-            this.toggleSwitch5.TabIndex = 29;
-            this.toggleSwitch5.Text = "toggleSwitch5";
-            this.toggleSwitch5.UseVisualStyleBackColor = true;
+            this.toggleSwitch2.Location = new System.Drawing.Point(328, 402);
+            this.toggleSwitch2.Margin = new System.Windows.Forms.Padding(4);
+            this.toggleSwitch2.MinimumSize = new System.Drawing.Size(60, 27);
+            this.toggleSwitch2.Name = "toggleSwitch2";
+            this.toggleSwitch2.OffBackColor = System.Drawing.Color.Gray;
+            this.toggleSwitch2.OffToggleColor = System.Drawing.Color.Gainsboro;
+            this.toggleSwitch2.OnBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(2)))), ((int)(((byte)(117)))), ((int)(((byte)(216)))));
+            this.toggleSwitch2.OnToggleColor = System.Drawing.Color.WhiteSmoke;
+            this.toggleSwitch2.Size = new System.Drawing.Size(67, 27);
+            this.toggleSwitch2.TabIndex = 30;
+            this.toggleSwitch2.Text = "toggleSwitch2";
+            this.toggleSwitch2.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -150,7 +151,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
             this.ClientSize = new System.Drawing.Size(1434, 767);
-            this.Controls.Add(this.toggleSwitch5);
+            this.Controls.Add(this.toggleSwitch2);
             this.Controls.Add(this.textdescrption);
             this.Controls.Add(this.ip1lbl);
             this.Controls.Add(this.name1lbl);
@@ -178,6 +179,6 @@
         private System.Windows.Forms.Label Iplbl;
         private System.Windows.Forms.Label Namebotlbl;
         private System.Windows.Forms.Label Botsettinglbl;
-        private CustomControls.ToggleSwitch toggleSwitch5;
+        private CustomControls.ToggleSwitch toggleSwitch2;
     }
 }
