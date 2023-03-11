@@ -9,6 +9,7 @@ using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Windows.Forms.DataVisualization.Charting;
 
 namespace GMS
 {
@@ -20,6 +21,7 @@ namespace GMS
         
         string user_id;
         string greenhouse_id;
+        string modalityId;
         string gh_name;
         string area;
         string location;
@@ -108,7 +110,25 @@ namespace GMS
 
         private void ModalitetBtn_Click(object sender, EventArgs e)
         {
-            loadform(new Modalities(greenhouse_id));
+            con = new MySqlConnection();
+            con.ConnectionString = conString;
+
+
+            string modlaity_id_query = "SELECT modality_id FROM bots WHERE greenhouse_id = '" + greenhouse_id + "'";
+            con.Open();
+            MySqlDataAdapter da = new MySqlDataAdapter();
+            da.SelectCommand = new MySqlCommand(modlaity_id_query, con);
+
+            DataTable dt = new DataTable();
+
+            da.Fill(dt);
+
+            foreach (DataRow row in dt.Rows)
+            {
+                modalityId = row["modality_id"].ToString();
+            }
+
+            loadform(new Modalities(greenhouse_id, modalityId));
         }
 
         private void panel2_Paint(object sender, PaintEventArgs e)
