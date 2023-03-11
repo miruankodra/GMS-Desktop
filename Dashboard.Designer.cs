@@ -32,6 +32,8 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.LogoGms = new System.Windows.Forms.Label();
             this.sidebarPanel = new System.Windows.Forms.Panel();
+            this.Botbtn = new System.Windows.Forms.Button();
+            this.Botpic = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -46,6 +48,7 @@
             this.mainPanel = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.sidebarPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Botpic)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -80,6 +83,8 @@
             // 
             this.sidebarPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
             this.sidebarPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.sidebarPanel.Controls.Add(this.Botbtn);
+            this.sidebarPanel.Controls.Add(this.Botpic);
             this.sidebarPanel.Controls.Add(this.pictureBox5);
             this.sidebarPanel.Controls.Add(this.pictureBox4);
             this.sidebarPanel.Controls.Add(this.pictureBox3);
@@ -99,12 +104,42 @@
             this.sidebarPanel.TabIndex = 1;
             this.sidebarPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.sidebarPanel_Paint);
             // 
+            // Botbtn
+            // 
+            this.Botbtn.BackColor = System.Drawing.Color.Transparent;
+            this.Botbtn.FlatAppearance.BorderSize = 0;
+            this.Botbtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(184)))), ((int)(((byte)(92)))));
+            this.Botbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.Botbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Botbtn.ForeColor = System.Drawing.Color.White;
+            this.Botbtn.Location = new System.Drawing.Point(95, 425);
+            this.Botbtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Botbtn.Name = "Botbtn";
+            this.Botbtn.Size = new System.Drawing.Size(345, 75);
+            this.Botbtn.TabIndex = 8;
+            this.Botbtn.Text = "Bot Settings";
+            this.Botbtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Botbtn.UseVisualStyleBackColor = false;
+            this.Botbtn.Click += new System.EventHandler(this.Botbtn_Click);
+            // 
+            // Botpic
+            // 
+            this.Botpic.Cursor = System.Windows.Forms.Cursors.No;
+            this.Botpic.Image = ((System.Drawing.Image)(resources.GetObject("Botpic.Image")));
+            this.Botpic.Location = new System.Drawing.Point(36, 442);
+            this.Botpic.Margin = new System.Windows.Forms.Padding(4);
+            this.Botpic.Name = "Botpic";
+            this.Botpic.Size = new System.Drawing.Size(52, 41);
+            this.Botpic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.Botpic.TabIndex = 7;
+            this.Botpic.TabStop = false;
+            // 
             // pictureBox5
             // 
             this.pictureBox5.Cursor = System.Windows.Forms.Cursors.No;
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
             this.pictureBox5.Location = new System.Drawing.Point(36, 282);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(52, 41);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -116,7 +151,7 @@
             this.pictureBox4.Cursor = System.Windows.Forms.Cursors.No;
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
             this.pictureBox4.Location = new System.Drawing.Point(36, 361);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(52, 41);
             this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -128,7 +163,7 @@
             this.pictureBox3.Cursor = System.Windows.Forms.Cursors.No;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(36, 203);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(52, 41);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -140,7 +175,7 @@
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.No;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(36, 127);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(52, 41);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -227,7 +262,7 @@
             this.panel1.Controls.Add(this.pictureBox6);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(441, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(788, 81);
             this.panel1.TabIndex = 2;
@@ -247,7 +282,7 @@
             // 
             this.pictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox6.Image")));
             this.pictureBox6.Location = new System.Drawing.Point(23, 0);
-            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox6.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox6.Name = "pictureBox6";
             this.pictureBox6.Size = new System.Drawing.Size(87, 78);
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
@@ -258,7 +293,7 @@
             // 
             this.mainPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.mainPanel.Location = new System.Drawing.Point(441, 81);
-            this.mainPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.mainPanel.Margin = new System.Windows.Forms.Padding(4);
             this.mainPanel.Name = "mainPanel";
             this.mainPanel.Size = new System.Drawing.Size(788, 573);
             this.mainPanel.TabIndex = 3;
@@ -280,6 +315,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.sidebarPanel.ResumeLayout(false);
             this.sidebarPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Botpic)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
@@ -307,5 +343,7 @@
         private System.Windows.Forms.Label gmsName;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Panel mainPanel;
+        private System.Windows.Forms.Button Botbtn;
+        private System.Windows.Forms.PictureBox Botpic;
     }
 }
