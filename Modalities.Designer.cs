@@ -45,6 +45,7 @@
             this.Templbl = new System.Windows.Forms.Label();
             this.Airlbl = new System.Windows.Forms.Label();
             this.Soillbl = new System.Windows.Forms.Label();
+            this._lbl = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -234,12 +235,24 @@
             this.Soillbl.TabIndex = 15;
             this.Soillbl.Text = "Soil Humidity";
             // 
+            // _lbl
+            // 
+            this._lbl.AutoSize = true;
+            this._lbl.Font = new System.Drawing.Font("Montserrat", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this._lbl.ForeColor = System.Drawing.Color.Transparent;
+            this._lbl.Location = new System.Drawing.Point(512, 487);
+            this._lbl.Name = "_lbl";
+            this._lbl.Size = new System.Drawing.Size(17, 24);
+            this._lbl.TabIndex = 16;
+            this._lbl.Text = "-";
+            // 
             // Modalities
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
             this.ClientSize = new System.Drawing.Size(1452, 814);
+            this.Controls.Add(this._lbl);
             this.Controls.Add(this.Soillbl);
             this.Controls.Add(this.Airlbl);
             this.Controls.Add(this.Templbl);
@@ -288,5 +301,6 @@
         private System.Windows.Forms.Label Templbl;
         private System.Windows.Forms.Label Airlbl;
         private System.Windows.Forms.Label Soillbl;
+        private System.Windows.Forms.Label _lbl;
     }
 }
