@@ -155,5 +155,10 @@ namespace GMS
         {
             loadform(new Form1());
         }
+
+        private void Userprofilebtn_Click(object sender, EventArgs e)
+        {
+            loadform(new UserProfile());
+        }
     }
 }
