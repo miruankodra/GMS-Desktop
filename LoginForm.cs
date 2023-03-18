@@ -106,5 +106,12 @@ namespace GMS
         {
 
         }
+
+        private void forgotPass_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            ForgotPassword fg = new ForgotPassword();
+            this.Hide();
+            fg.Show();
+        }
     }
 }
