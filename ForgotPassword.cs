@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -14,6 +15,10 @@ namespace GMS
 {
     public partial class ForgotPassword : Form
     {
+
+        MySqlConnection con;
+        public string conString = "SERVER=185.146.22.249;PORT=3306;DATABASE=gmsal_gms;UID=gmsal_gms;PASSWORD=gms123al456!!!";
+
         string randomcode;
         public static string to;
         public ForgotPassword()
@@ -33,7 +38,7 @@ namespace GMS
             randomcode = (rand.Next(999999)).ToString();
             MailMessage message = new MailMessage();
             to = (textBox1.Text).ToString();
-            from = "reizeqai@gmail.com";
+            from = "gmsalbania@gmail.com";
             pass = "rupi12rupi";
             messagebody = $"Your Reset Code is {randomcode}";
             message.To.Add(to);

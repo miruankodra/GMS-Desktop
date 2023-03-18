@@ -83,6 +83,7 @@
             this.reset.TabIndex = 6;
             this.reset.Text = "Reset";
             this.reset.UseVisualStyleBackColor = false;
+            this.reset.Click += new System.EventHandler(this.reset_Click);
             // 
             // newpassword
             // 
