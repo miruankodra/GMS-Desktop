@@ -33,33 +33,55 @@ namespace GMS
 
         private void loginBtn_Click(object sender, EventArgs e)
         {
-            string from, pass, messagebody;
-            Random rand = new Random();
-            randomcode = (rand.Next(999999)).ToString();
-            MailMessage message = new MailMessage();
-            to = (textBox1.Text).ToString();
-            from = "gmsalbania@gmail.com";
-            pass = "rupi12rupi";
-            messagebody = $"Your Reset Code is {randomcode}";
-            message.To.Add(to);
-            message.From = new MailAddress(from);
-            message.Body = messagebody;
-            message.Subject = "Password Reset Code ";
-            SmtpClient smtp = new SmtpClient("smtp.gmail.com");
-            smtp.EnableSsl = true;
-            smtp.Port = 3306;
-            smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
-            smtp.Credentials = new NetworkCredential(from, pass);
-            try
-            {
-                smtp.Send(message);
-                MessageBox.Show("Code successfully send!");
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
+            //   string from, pass, messagebody;
+            //  Random rand = new Random();
+            //   randomcode = (rand.Next(999999)).ToString();
+            //   MailMessage message = new MailMessage();
+            //   to = (textBox1.Text).ToString();
+            //   from = "gmsalbania@gmail.com";
+            //  pass = "rupi12rupi";
+            // messagebody = $"Your Reset Code is {randomcode}";
+            // message.To.Add(to);
+            // message.From = new MailAddress(from);
+            // message.Body = messagebody;
+            // message.Subject = "Password Reset Code ";
+            // SmtpClient smtp = new SmtpClient("smtp.gmail.com");
+            // smtp.EnableSsl = true;
+            // smtp.Port = 3306;
+            // smtp.DeliveryMethod = SmtpDeliveryMethod.Network;
+            // smtp.Credentials = new NetworkCredential(from, pass);
+            // try
+            // {
+            //     smtp.Send(message);
+            //     MessageBox.Show("Code successfully send!");
+            // }
+            // catch (Exception ex)
+            // {
+            //     MessageBox.Show(ex.Message);
 
-            }
+            //}
+
+
+
+
+            // Set up the email message
+            MailMessage message = new MailMessage();
+            message.From = new MailAddress("support@gms.al");
+            message.To.Add("miruankodra@gmail.com");
+            message.Subject = "GMS";
+            message.Body = "Bac u kry!";
+
+            // Set up the SMTP client
+            SmtpClient smtpClient = new SmtpClient("gms.al", 465);
+            smtpClient.EnableSsl = true;
+            smtpClient.Credentials = new NetworkCredential("support@gms.al", "Y9x)R%MJXS,3");
+
+            // Send the email
+            smtpClient.Send(message);
+
+
+
+
         }
 
         private void verify_Click(object sender, EventArgs e)

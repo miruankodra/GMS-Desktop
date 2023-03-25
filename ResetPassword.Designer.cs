@@ -39,32 +39,35 @@
             // resetpass
             // 
             this.resetpass.AutoSize = true;
-            this.resetpass.Font = new System.Drawing.Font("Montserrat", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.resetpass.Location = new System.Drawing.Point(235, 34);
+            this.resetpass.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.resetpass.Location = new System.Drawing.Point(176, 28);
+            this.resetpass.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.resetpass.Name = "resetpass";
-            this.resetpass.Size = new System.Drawing.Size(251, 39);
+            this.resetpass.Size = new System.Drawing.Size(185, 26);
             this.resetpass.TabIndex = 0;
             this.resetpass.Text = "Reset Password";
             // 
             // emailsender
             // 
             this.emailsender.AutoSize = true;
-            this.emailsender.Font = new System.Drawing.Font("Montserrat", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.emailsender.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.emailsender.ForeColor = System.Drawing.SystemColors.Control;
-            this.emailsender.Location = new System.Drawing.Point(96, 112);
+            this.emailsender.Location = new System.Drawing.Point(72, 91);
+            this.emailsender.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.emailsender.Name = "emailsender";
-            this.emailsender.Size = new System.Drawing.Size(202, 32);
+            this.emailsender.Size = new System.Drawing.Size(154, 24);
             this.emailsender.TabIndex = 2;
             this.emailsender.Text = "New Password:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Montserrat", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.Control;
-            this.label1.Location = new System.Drawing.Point(54, 227);
+            this.label1.Location = new System.Drawing.Point(40, 184);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(244, 32);
+            this.label1.Size = new System.Drawing.Size(184, 24);
             this.label1.TabIndex = 3;
             this.label1.Text = "Confirm Password:";
             // 
@@ -76,10 +79,10 @@
             this.reset.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.reset.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.reset.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.reset.Location = new System.Drawing.Point(435, 364);
-            this.reset.Margin = new System.Windows.Forms.Padding(5);
+            this.reset.Location = new System.Drawing.Point(326, 296);
+            this.reset.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.reset.Name = "reset";
-            this.reset.Size = new System.Drawing.Size(192, 50);
+            this.reset.Size = new System.Drawing.Size(144, 41);
             this.reset.TabIndex = 6;
             this.reset.Text = "Reset";
             this.reset.UseVisualStyleBackColor = false;
@@ -87,26 +90,28 @@
             // 
             // newpassword
             // 
-            this.newpassword.Font = new System.Drawing.Font("Montserrat", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.newpassword.Location = new System.Drawing.Point(309, 112);
+            this.newpassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.newpassword.Location = new System.Drawing.Point(232, 91);
+            this.newpassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.newpassword.Name = "newpassword";
-            this.newpassword.Size = new System.Drawing.Size(257, 32);
+            this.newpassword.Size = new System.Drawing.Size(194, 26);
             this.newpassword.TabIndex = 7;
             // 
             // confirmpassword
             // 
-            this.confirmpassword.Font = new System.Drawing.Font("Montserrat", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.confirmpassword.Location = new System.Drawing.Point(309, 228);
+            this.confirmpassword.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.confirmpassword.Location = new System.Drawing.Point(232, 185);
+            this.confirmpassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.confirmpassword.Name = "confirmpassword";
-            this.confirmpassword.Size = new System.Drawing.Size(257, 32);
+            this.confirmpassword.Size = new System.Drawing.Size(194, 26);
             this.confirmpassword.TabIndex = 8;
             // 
             // ResetPassword
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
-            this.ClientSize = new System.Drawing.Size(664, 452);
+            this.ClientSize = new System.Drawing.Size(498, 367);
             this.Controls.Add(this.confirmpassword);
             this.Controls.Add(this.newpassword);
             this.Controls.Add(this.reset);
@@ -114,7 +119,8 @@
             this.Controls.Add(this.emailsender);
             this.Controls.Add(this.resetpass);
             this.ForeColor = System.Drawing.SystemColors.Control;
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "ResetPassword";
             this.Text = "ResetPassword";
             this.ResumeLayout(false);

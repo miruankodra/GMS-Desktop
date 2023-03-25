@@ -158,7 +158,12 @@ namespace GMS
 
         private void Userprofilebtn_Click(object sender, EventArgs e)
         {
-            loadform(new UserProfile());
+            loadform(new UserProfile(user_id));
+        }
+
+        private void mainPanel_Paint_1(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

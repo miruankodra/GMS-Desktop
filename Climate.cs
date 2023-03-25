@@ -54,9 +54,9 @@ namespace GMS
             da.Fill(dt);
             foreach (DataRow row in dt.Rows)
             {
-                temp = row["temp"].ToString();
-                air_hum = row["air_humid"].ToString(); 
-                soil_hum = row["soil_humid"].ToString();
+                temp = row["temperature"].ToString();
+                air_hum = row["air_humidity"].ToString(); 
+                soil_hum = row["soil_humidity"].ToString();
             }
 
             TempLbl.Text = temp;
