@@ -48,6 +48,8 @@
             this.gmsName = new System.Windows.Forms.Label();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.mainPanel = new System.Windows.Forms.Panel();
+            this.usermanagementbtn = new System.Windows.Forms.Button();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.sidebarPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Botpic)).BeginInit();
@@ -58,6 +60,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.SuspendLayout();
             // 
             // LogoGms
@@ -75,6 +78,8 @@
             // 
             this.sidebarPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(18)))), ((int)(((byte)(18)))), ((int)(((byte)(18)))));
             this.sidebarPanel.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.sidebarPanel.Controls.Add(this.pictureBox8);
+            this.sidebarPanel.Controls.Add(this.usermanagementbtn);
             this.sidebarPanel.Controls.Add(this.Userprofilebtn);
             this.sidebarPanel.Controls.Add(this.pictureBox7);
             this.sidebarPanel.Controls.Add(this.Botbtn);
@@ -106,7 +111,7 @@
             this.Userprofilebtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Userprofilebtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Userprofilebtn.ForeColor = System.Drawing.Color.White;
-            this.Userprofilebtn.Location = new System.Drawing.Point(95, 504);
+            this.Userprofilebtn.Location = new System.Drawing.Point(95, 474);
             this.Userprofilebtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Userprofilebtn.Name = "Userprofilebtn";
             this.Userprofilebtn.Size = new System.Drawing.Size(345, 75);
@@ -120,7 +125,7 @@
             // 
             this.pictureBox7.Cursor = System.Windows.Forms.Cursors.No;
             this.pictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox7.Image")));
-            this.pictureBox7.Location = new System.Drawing.Point(36, 525);
+            this.pictureBox7.Location = new System.Drawing.Point(36, 495);
             this.pictureBox7.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(52, 41);
@@ -136,7 +141,7 @@
             this.Botbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.Botbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Botbtn.ForeColor = System.Drawing.Color.White;
-            this.Botbtn.Location = new System.Drawing.Point(95, 425);
+            this.Botbtn.Location = new System.Drawing.Point(95, 395);
             this.Botbtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Botbtn.Name = "Botbtn";
             this.Botbtn.Size = new System.Drawing.Size(345, 75);
@@ -150,7 +155,7 @@
             // 
             this.Botpic.Cursor = System.Windows.Forms.Cursors.No;
             this.Botpic.Image = ((System.Drawing.Image)(resources.GetObject("Botpic.Image")));
-            this.Botpic.Location = new System.Drawing.Point(36, 442);
+            this.Botpic.Location = new System.Drawing.Point(36, 412);
             this.Botpic.Margin = new System.Windows.Forms.Padding(4);
             this.Botpic.Name = "Botpic";
             this.Botpic.Size = new System.Drawing.Size(52, 41);
@@ -162,7 +167,7 @@
             // 
             this.pictureBox5.Cursor = System.Windows.Forms.Cursors.No;
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
-            this.pictureBox5.Location = new System.Drawing.Point(36, 282);
+            this.pictureBox5.Location = new System.Drawing.Point(36, 252);
             this.pictureBox5.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox5.Name = "pictureBox5";
             this.pictureBox5.Size = new System.Drawing.Size(52, 41);
@@ -174,7 +179,7 @@
             // 
             this.pictureBox4.Cursor = System.Windows.Forms.Cursors.No;
             this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(36, 361);
+            this.pictureBox4.Location = new System.Drawing.Point(36, 331);
             this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox4.Name = "pictureBox4";
             this.pictureBox4.Size = new System.Drawing.Size(52, 41);
@@ -186,7 +191,7 @@
             // 
             this.pictureBox3.Cursor = System.Windows.Forms.Cursors.No;
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(36, 203);
+            this.pictureBox3.Location = new System.Drawing.Point(36, 173);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(52, 41);
@@ -198,7 +203,7 @@
             // 
             this.pictureBox2.Cursor = System.Windows.Forms.Cursors.No;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(36, 127);
+            this.pictureBox2.Location = new System.Drawing.Point(36, 97);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(52, 41);
@@ -225,7 +230,7 @@
             this.ModalitetBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ModalitetBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ModalitetBtn.ForeColor = System.Drawing.Color.White;
-            this.ModalitetBtn.Location = new System.Drawing.Point(95, 346);
+            this.ModalitetBtn.Location = new System.Drawing.Point(95, 316);
             this.ModalitetBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ModalitetBtn.Name = "ModalitetBtn";
             this.ModalitetBtn.Size = new System.Drawing.Size(345, 75);
@@ -243,7 +248,7 @@
             this.ControlPanelBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ControlPanelBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ControlPanelBtn.ForeColor = System.Drawing.Color.White;
-            this.ControlPanelBtn.Location = new System.Drawing.Point(95, 265);
+            this.ControlPanelBtn.Location = new System.Drawing.Point(95, 235);
             this.ControlPanelBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ControlPanelBtn.Name = "ControlPanelBtn";
             this.ControlPanelBtn.Size = new System.Drawing.Size(345, 75);
@@ -261,7 +266,7 @@
             this.ClimateBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.ClimateBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ClimateBtn.ForeColor = System.Drawing.Color.White;
-            this.ClimateBtn.Location = new System.Drawing.Point(95, 187);
+            this.ClimateBtn.Location = new System.Drawing.Point(95, 157);
             this.ClimateBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ClimateBtn.Name = "ClimateBtn";
             this.ClimateBtn.Size = new System.Drawing.Size(345, 75);
@@ -279,7 +284,7 @@
             this.DashBoardBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.DashBoardBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DashBoardBtn.ForeColor = System.Drawing.Color.White;
-            this.DashBoardBtn.Location = new System.Drawing.Point(95, 110);
+            this.DashBoardBtn.Location = new System.Drawing.Point(95, 80);
             this.DashBoardBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.DashBoardBtn.Name = "DashBoardBtn";
             this.DashBoardBtn.Size = new System.Drawing.Size(345, 75);
@@ -333,6 +338,36 @@
             this.mainPanel.Size = new System.Drawing.Size(788, 573);
             this.mainPanel.TabIndex = 3;
             // 
+            // usermanagementbtn
+            // 
+            this.usermanagementbtn.BackColor = System.Drawing.Color.Transparent;
+            this.usermanagementbtn.FlatAppearance.BorderSize = 0;
+            this.usermanagementbtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(92)))), ((int)(((byte)(184)))), ((int)(((byte)(92)))));
+            this.usermanagementbtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.usermanagementbtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.usermanagementbtn.ForeColor = System.Drawing.Color.White;
+            this.usermanagementbtn.Location = new System.Drawing.Point(95, 567);
+            this.usermanagementbtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.usermanagementbtn.Name = "usermanagementbtn";
+            this.usermanagementbtn.Size = new System.Drawing.Size(345, 75);
+            this.usermanagementbtn.TabIndex = 11;
+            this.usermanagementbtn.Text = "User Management";
+            this.usermanagementbtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.usermanagementbtn.UseVisualStyleBackColor = false;
+            this.usermanagementbtn.Click += new System.EventHandler(this.usermanagementbtn_Click);
+            // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Cursor = System.Windows.Forms.Cursors.No;
+            this.pictureBox8.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox8.Image")));
+            this.pictureBox8.Location = new System.Drawing.Point(36, 582);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(52, 41);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox8.TabIndex = 12;
+            this.pictureBox8.TabStop = false;
+            // 
             // DashboardForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -359,6 +394,7 @@
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -383,5 +419,7 @@
         private System.Windows.Forms.PictureBox Botpic;
         private System.Windows.Forms.Button Userprofilebtn;
         private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.PictureBox pictureBox8;
+        private System.Windows.Forms.Button usermanagementbtn;
     }
 }
