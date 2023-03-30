@@ -64,7 +64,10 @@ namespace GMS
 
         private void loginLink_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            
+            LoginForm loginForm = new LoginForm();
+            this.Hide();
+            loginForm.Show();
+            this.Close();
         }
     }
 }
