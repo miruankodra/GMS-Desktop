@@ -165,5 +165,10 @@ namespace GMS
         {
 
         }
+
+        private void usermanagementbtn_Click(object sender, EventArgs e)
+        {
+            loadform(new UserManagement(greenhouse_id));
+        }
     }
 }
