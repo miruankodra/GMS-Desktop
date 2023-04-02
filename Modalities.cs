@@ -28,7 +28,8 @@ namespace GMS
         public string air_max;
         public string soil_min;
         public string soil_max;
-       
+
+        
 
         public Modalities(string gh_id, string modalityId)
         {
@@ -83,6 +84,10 @@ namespace GMS
             openform.Show();
 
           
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
         }
     }
 }
