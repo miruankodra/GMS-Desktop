@@ -292,6 +292,7 @@
             this.save.TabIndex = 46;
             this.save.Text = "Save";
             this.save.UseVisualStyleBackColor = false;
+            this.save.Click += new System.EventHandler(this.save_Click);
             // 
             // UserProfile
             // 
