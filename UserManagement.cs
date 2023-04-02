@@ -1,4 +1,5 @@
-﻿using MySql.Data.MySqlClient;
+﻿using Microsoft.EntityFrameworkCore.Metadata.Internal;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,12 +16,15 @@ namespace GMS
     public partial class UserManagement : Form
     {
         MySqlDataAdapter da;
-    
+
         DataTable dt;
         MySqlCommandBuilder scb;
         MySqlConnection con;
         public string conString = "SERVER=185.146.22.249;PORT=3306;DATABASE=gmsal_gms;UID=gmsal_gms;PASSWORD=gms123al456!!!";
         public string ghId;
+
+        public int index { get; private set; }
+
         public UserManagement(string ghId)
         {
             InitializeComponent();
@@ -60,6 +64,26 @@ namespace GMS
             da.Fill(dt);
             dataGridView1.DataSource = dt;
             con.Close();
+        }
+
+        private void searchtext_KeyDown(object sender, KeyEventArgs e)
+        {
+            con = new MySqlConnection();
+            con.ConnectionString = conString;
+
+            string query = "SELECT * FROM users WHERE greenhouse_id = '" + ghId + "'";
+            con.Open();
+            MySqlDataAdapter da = new MySqlDataAdapter();
+            da.SelectCommand = new MySqlCommand(query, con);
+            dt = new DataTable();
+            da.Fill(dt);
+            dataGridView1.DataSource = dt;
+            con.Close();
+        }
+
+        private void Clearbtn_Click(object sender, EventArgs e)
+        {
+            dataGridView1.Rows.RemoveAt(index);
         }
     }
     }
